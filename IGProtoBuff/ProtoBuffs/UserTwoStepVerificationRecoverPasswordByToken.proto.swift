@@ -347,6 +347,7 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
         }
         var fieldCheck:Bool = (lhs.hashValue == rhs.hashValue)
         fieldCheck = fieldCheck && (lhs.hasIgpResponse == rhs.hasIgpResponse) && (!lhs.hasIgpResponse || lhs.igpResponse == rhs.igpResponse)
+        fieldCheck = fieldCheck && (lhs.hasIgpToken == rhs.hasIgpToken) && (!lhs.hasIgpToken || lhs.igpToken == rhs.igpToken)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -359,6 +360,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
 
     //iGap Properties declaration end
 
+    public fileprivate(set) var igpToken:String = ""
+    public fileprivate(set) var hasIgpToken:Bool = false
+
     required public init() {
         super.init()
     }
@@ -368,6 +372,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
     override public func writeTo(codedOutputStream: CodedOutputStream) throws {
         if hasIgpResponse {
             try codedOutputStream.writeMessage(fieldNumber: 1, value:igpResponse)
+        }
+        if hasIgpToken {
+            try codedOutputStream.writeString(fieldNumber: 2, value:igpToken)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -382,6 +389,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
             if let varSizeigpResponse = igpResponse?.computeMessageSize(fieldNumber: 1) {
                 serialize_size += varSizeigpResponse
             }
+        }
+        if hasIgpToken {
+            serialize_size += igpToken.computeStringSize(fieldNumber: 2)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -414,6 +424,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
         if hasIgpResponse {
             jsonMap["IGPResponse"] = try igpResponse.encode()
         }
+        if hasIgpToken {
+            jsonMap["IGPToken"] = igpToken
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPUserTwoStepVerificationRecoverPasswordByTokenResponse {
@@ -431,6 +444,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
             }
             output += "\(indent) }\n"
         }
+        if hasIgpToken {
+            output += "\(indent) igpToken: \(igpToken) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -441,6 +457,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
                 if let hashValueigpResponse = igpResponse?.hashValue {
                     hashCode = (hashCode &* 31) &+ hashValueigpResponse
                 }
+            }
+            if hasIgpToken {
+                hashCode = (hashCode &* 31) &+ igpToken.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -521,6 +540,31 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
             builderResult.igpResponse = nil
             return self
         }
+        public var igpToken:String {
+            get {
+                return builderResult.igpToken
+            }
+            set (value) {
+                builderResult.hasIgpToken = true
+                builderResult.igpToken = value
+            }
+        }
+        public var hasIgpToken:Bool {
+            get {
+                return builderResult.hasIgpToken
+            }
+        }
+        @discardableResult
+        public func setIgpToken(_ value:String) -> IGPUserTwoStepVerificationRecoverPasswordByTokenResponse.Builder {
+            self.igpToken = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpToken() -> IGPUserTwoStepVerificationRecoverPasswordByTokenResponse.Builder{
+            builderResult.hasIgpToken = false
+            builderResult.igpToken = ""
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -550,6 +594,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
             if (other.hasIgpResponse) {
                 try mergeIgpResponse(value: other.igpResponse)
             }
+            if other.hasIgpToken {
+                igpToken = other.igpToken
+            }
             try merge(unknownField: other.unknownFields)
             return self
         }
@@ -575,6 +622,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
                     try codedInputStream.readMessage(builder: subBuilder, extensionRegistry:extensionRegistry)
                     igpResponse = subBuilder.buildPartial()
 
+                case 18:
+                    igpToken = try codedInputStream.readString()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -588,6 +638,9 @@ final public class IGPUserTwoStepVerificationRecoverPasswordByTokenResponse : Ge
             if let jsonValueIgpResponse = jsonMap["IGPResponse"] as? Dictionary<String,Any> {
                 resultDecodedBuilder.igpResponse = try IGPResponse.Builder.decodeToBuilder(jsonMap:jsonValueIgpResponse).build()
 
+            }
+            if let jsonValueIgpToken = jsonMap["IGPToken"] as? String {
+                resultDecodedBuilder.igpToken = jsonValueIgpToken
             }
             return resultDecodedBuilder
         }
@@ -697,6 +750,7 @@ extension IGPUserTwoStepVerificationRecoverPasswordByTokenResponse: GeneratedMes
     public subscript(key: String) -> Any? {
         switch key {
         case "igpResponse": return self.igpResponse
+        case "igpToken": return self.igpToken
         default: return nil
         }
     }
@@ -706,6 +760,7 @@ extension IGPUserTwoStepVerificationRecoverPasswordByTokenResponse.Builder: Gene
         get { 
             switch key {
             case "igpResponse": return self.igpResponse
+            case "igpToken": return self.igpToken
             default: return nil
             }
         }
@@ -716,6 +771,11 @@ extension IGPUserTwoStepVerificationRecoverPasswordByTokenResponse.Builder: Gene
                     return
                 }
                 self.igpResponse = newSubscriptValue
+            case "igpToken":
+                guard let newSubscriptValue = newSubscriptValue as? String else {
+                    return
+                }
+                self.igpToken = newSubscriptValue
             default: return
             }
         }

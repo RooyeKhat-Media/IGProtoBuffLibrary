@@ -32,6 +32,7 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpRequest == rhs.hasIgpRequest) && (!lhs.hasIgpRequest || lhs.igpRequest == rhs.igpRequest)
         fieldCheck = fieldCheck && (lhs.hasIgpRoomId == rhs.hasIgpRoomId) && (!lhs.hasIgpRoomId || lhs.igpRoomId == rhs.igpRoomId)
         fieldCheck = fieldCheck && (lhs.hasIgpFilterRole == rhs.hasIgpFilterRole) && (!lhs.hasIgpFilterRole || lhs.igpFilterRole == rhs.igpFilterRole)
+        fieldCheck = fieldCheck && (lhs.hasIgpPagination == rhs.hasIgpPagination) && (!lhs.hasIgpPagination || lhs.igpPagination == rhs.igpPagination)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -97,6 +98,8 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
 
     public fileprivate(set) var igpFilterRole:IGPGroupGetMemberList.IGPFilterRole = IGPGroupGetMemberList.IGPFilterRole.all
     public fileprivate(set) var hasIgpFilterRole:Bool = false
+    public fileprivate(set) var igpPagination:IGPPagination!
+    public fileprivate(set) var hasIgpPagination:Bool = false
     required public init() {
         super.init()
     }
@@ -112,6 +115,9 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
         }
         if hasIgpFilterRole {
             try codedOutputStream.writeEnum(fieldNumber: 3, value:igpFilterRole.rawValue)
+        }
+        if hasIgpPagination {
+            try codedOutputStream.writeMessage(fieldNumber: 4, value:igpPagination)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -132,6 +138,11 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
         }
         if (hasIgpFilterRole) {
             serialize_size += igpFilterRole.rawValue.computeEnumSize(fieldNumber: 3)
+        }
+        if hasIgpPagination {
+            if let varSizeigpPagination = igpPagination?.computeMessageSize(fieldNumber: 4) {
+                serialize_size += varSizeigpPagination
+            }
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -170,6 +181,9 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
         if hasIgpFilterRole {
             jsonMap["IGPFilterRole"] = igpFilterRole.toString()
         }
+        if hasIgpPagination {
+            jsonMap["IGPPagination"] = try igpPagination.encode()
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPGroupGetMemberList {
@@ -193,6 +207,13 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
         if (hasIgpFilterRole) {
             output += "\(indent) igpFilterRole: \(igpFilterRole.description)\n"
         }
+        if hasIgpPagination {
+            output += "\(indent) igpPagination {\n"
+            if let outDescIgpPagination = igpPagination {
+                output += try outDescIgpPagination.getDescription(indent: "\(indent)  ")
+            }
+            output += "\(indent) }\n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -209,6 +230,11 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
             }
             if hasIgpFilterRole {
                  hashCode = (hashCode &* 31) &+ igpFilterRole.hashValue
+            }
+            if hasIgpPagination {
+                if let hashValueigpPagination = igpPagination?.hashValue {
+                    hashCode = (hashCode &* 31) &+ hashValueigpPagination
+                }
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -339,6 +365,60 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
                builderResult.igpFilterRole = .all
                return self
             }
+        public var igpPagination:IGPPagination! {
+            get {
+                if igpPaginationBuilder_ != nil {
+                    builderResult.igpPagination = igpPaginationBuilder_.getMessage()
+                }
+                return builderResult.igpPagination
+            }
+            set (value) {
+                builderResult.hasIgpPagination = true
+                builderResult.igpPagination = value
+            }
+        }
+        public var hasIgpPagination:Bool {
+            get {
+                return builderResult.hasIgpPagination
+            }
+        }
+        fileprivate var igpPaginationBuilder_:IGPPagination.Builder! {
+            didSet {
+                builderResult.hasIgpPagination = true
+            }
+        }
+        public func getIgpPaginationBuilder() -> IGPPagination.Builder {
+            if igpPaginationBuilder_ == nil {
+                igpPaginationBuilder_ = IGPPagination.Builder()
+                builderResult.igpPagination = igpPaginationBuilder_.getMessage()
+                if igpPagination != nil {
+                    try! igpPaginationBuilder_.mergeFrom(other: igpPagination)
+                }
+            }
+            return igpPaginationBuilder_
+        }
+        @discardableResult
+        public func setIgpPagination(_ value:IGPPagination!) -> IGPGroupGetMemberList.Builder {
+            self.igpPagination = value
+            return self
+        }
+        @discardableResult
+        public func mergeIgpPagination(value:IGPPagination) throws -> IGPGroupGetMemberList.Builder {
+            if builderResult.hasIgpPagination {
+                builderResult.igpPagination = try IGPPagination.builderWithPrototype(prototype:builderResult.igpPagination).mergeFrom(other: value).buildPartial()
+            } else {
+                builderResult.igpPagination = value
+            }
+            builderResult.hasIgpPagination = true
+            return self
+        }
+        @discardableResult
+        public func clearIgpPagination() -> IGPGroupGetMemberList.Builder {
+            igpPaginationBuilder_ = nil
+            builderResult.hasIgpPagination = false
+            builderResult.igpPagination = nil
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -373,6 +453,9 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
             }
             if other.hasIgpFilterRole {
                 igpFilterRole = other.igpFilterRole
+            }
+            if (other.hasIgpPagination) {
+                try mergeIgpPagination(value: other.igpPagination)
             }
             try merge(unknownField: other.unknownFields)
             return self
@@ -410,6 +493,14 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
                         try unknownFieldsBuilder.mergeVarintField(fieldNumber: 3, value:Int64(valueIntigpFilterRole))
                     }
 
+                case 34:
+                    let subBuilder:IGPPagination.Builder = IGPPagination.Builder()
+                    if hasIgpPagination {
+                        try subBuilder.mergeFrom(other: igpPagination)
+                    }
+                    try codedInputStream.readMessage(builder: subBuilder, extensionRegistry:extensionRegistry)
+                    igpPagination = subBuilder.buildPartial()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -431,6 +522,10 @@ final public class IGPGroupGetMemberList : GeneratedMessage {
             }
             if let jsonValueIgpFilterRole = jsonMap["IGPFilterRole"] as? String {
                 resultDecodedBuilder.igpFilterRole = try IGPGroupGetMemberList.IGPFilterRole.fromString(str: jsonValueIgpFilterRole)
+            }
+            if let jsonValueIgpPagination = jsonMap["IGPPagination"] as? Dictionary<String,Any> {
+                resultDecodedBuilder.igpPagination = try IGPPagination.Builder.decodeToBuilder(jsonMap:jsonValueIgpPagination).build()
+
             }
             return resultDecodedBuilder
         }
@@ -1091,6 +1186,7 @@ extension IGPGroupGetMemberList: GeneratedMessageProtocol {
         case "igpRequest": return self.igpRequest
         case "igpRoomId": return self.igpRoomId
         case "igpFilterRole": return self.igpFilterRole
+        case "igpPagination": return self.igpPagination
         default: return nil
         }
     }
@@ -1102,6 +1198,7 @@ extension IGPGroupGetMemberList.Builder: GeneratedMessageBuilderProtocol {
             case "igpRequest": return self.igpRequest
             case "igpRoomId": return self.igpRoomId
             case "igpFilterRole": return self.igpFilterRole
+            case "igpPagination": return self.igpPagination
             default: return nil
             }
         }
@@ -1122,6 +1219,11 @@ extension IGPGroupGetMemberList.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpFilterRole = newSubscriptValue
+            case "igpPagination":
+                guard let newSubscriptValue = newSubscriptValue as? IGPPagination else {
+                    return
+                }
+                self.igpPagination = newSubscriptValue
             default: return
             }
         }

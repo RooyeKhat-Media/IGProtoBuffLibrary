@@ -370,11 +370,13 @@ final public class IGPFileUploadStatusResponse : GeneratedResponseMessage {
             case uploading = 0
             case processing = 1
             case processed = 2
+            case corrupted = 3
             public func toString() -> String {
                 switch self {
                 case .uploading: return "UPLOADING"
                 case .processing: return "PROCESSING"
                 case .processed: return "PROCESSED"
+                case .corrupted: return "CORRUPTED"
                 }
             }
             public static func fromString(str:String) throws -> IGPFileUploadStatusResponse.IGPStatus {
@@ -382,6 +384,7 @@ final public class IGPFileUploadStatusResponse : GeneratedResponseMessage {
                 case "UPLOADING":    return .uploading
                 case "PROCESSING":    return .processing
                 case "PROCESSED":    return .processed
+                case "CORRUPTED":    return .corrupted
                 default: throw ProtocolBuffersError.invalidProtocolBuffer("Conversion String to Enum has failed.")
                 }
             }
@@ -392,6 +395,7 @@ final public class IGPFileUploadStatusResponse : GeneratedResponseMessage {
                 case .uploading: return ".uploading"
                 case .processing: return ".processing"
                 case .processed: return ".processed"
+                case .corrupted: return ".corrupted"
                 }
             }
             public var hashValue:Int {

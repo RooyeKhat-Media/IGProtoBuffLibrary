@@ -843,6 +843,7 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpResponse == rhs.hasIgpResponse) && (!lhs.hasIgpResponse || lhs.igpResponse == rhs.igpResponse)
         fieldCheck = fieldCheck && (lhs.hasIgpDeprecatedClient == rhs.hasIgpDeprecatedClient) && (!lhs.hasIgpDeprecatedClient || lhs.igpDeprecatedClient == rhs.igpDeprecatedClient)
         fieldCheck = fieldCheck && (lhs.hasIgpSecondaryNodeName == rhs.hasIgpSecondaryNodeName) && (!lhs.hasIgpSecondaryNodeName || lhs.igpSecondaryNodeName == rhs.igpSecondaryNodeName)
+        fieldCheck = fieldCheck && (lhs.hasIgpUpdateAvailable == rhs.hasIgpUpdateAvailable) && (!lhs.hasIgpUpdateAvailable || lhs.igpUpdateAvailable == rhs.igpUpdateAvailable)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -861,6 +862,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
     public fileprivate(set) var igpSecondaryNodeName:String = ""
     public fileprivate(set) var hasIgpSecondaryNodeName:Bool = false
 
+    public fileprivate(set) var igpUpdateAvailable:Bool = false
+    public fileprivate(set) var hasIgpUpdateAvailable:Bool = false
+
     required public init() {
         super.init()
     }
@@ -876,6 +880,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
         }
         if hasIgpSecondaryNodeName {
             try codedOutputStream.writeString(fieldNumber: 3, value:igpSecondaryNodeName)
+        }
+        if hasIgpUpdateAvailable {
+            try codedOutputStream.writeBool(fieldNumber: 4, value:igpUpdateAvailable)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -896,6 +903,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
         }
         if hasIgpSecondaryNodeName {
             serialize_size += igpSecondaryNodeName.computeStringSize(fieldNumber: 3)
+        }
+        if hasIgpUpdateAvailable {
+            serialize_size += igpUpdateAvailable.computeBoolSize(fieldNumber: 4)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -934,6 +944,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
         if hasIgpSecondaryNodeName {
             jsonMap["IGPSecondaryNodeName"] = igpSecondaryNodeName
         }
+        if hasIgpUpdateAvailable {
+            jsonMap["IGPUpdateAvailable"] = igpUpdateAvailable
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPUserLoginResponse {
@@ -957,6 +970,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
         if hasIgpSecondaryNodeName {
             output += "\(indent) igpSecondaryNodeName: \(igpSecondaryNodeName) \n"
         }
+        if hasIgpUpdateAvailable {
+            output += "\(indent) igpUpdateAvailable: \(igpUpdateAvailable) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -973,6 +989,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
             }
             if hasIgpSecondaryNodeName {
                 hashCode = (hashCode &* 31) &+ igpSecondaryNodeName.hashValue
+            }
+            if hasIgpUpdateAvailable {
+                hashCode = (hashCode &* 31) &+ igpUpdateAvailable.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -1103,6 +1122,31 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
             builderResult.igpSecondaryNodeName = ""
             return self
         }
+        public var igpUpdateAvailable:Bool {
+            get {
+                return builderResult.igpUpdateAvailable
+            }
+            set (value) {
+                builderResult.hasIgpUpdateAvailable = true
+                builderResult.igpUpdateAvailable = value
+            }
+        }
+        public var hasIgpUpdateAvailable:Bool {
+            get {
+                return builderResult.hasIgpUpdateAvailable
+            }
+        }
+        @discardableResult
+        public func setIgpUpdateAvailable(_ value:Bool) -> IGPUserLoginResponse.Builder {
+            self.igpUpdateAvailable = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpUpdateAvailable() -> IGPUserLoginResponse.Builder{
+            builderResult.hasIgpUpdateAvailable = false
+            builderResult.igpUpdateAvailable = false
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -1138,6 +1182,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
             if other.hasIgpSecondaryNodeName {
                 igpSecondaryNodeName = other.igpSecondaryNodeName
             }
+            if other.hasIgpUpdateAvailable {
+                igpUpdateAvailable = other.igpUpdateAvailable
+            }
             try merge(unknownField: other.unknownFields)
             return self
         }
@@ -1169,6 +1216,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
                 case 26:
                     igpSecondaryNodeName = try codedInputStream.readString()
 
+                case 32:
+                    igpUpdateAvailable = try codedInputStream.readBool()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -1188,6 +1238,9 @@ final public class IGPUserLoginResponse : GeneratedResponseMessage {
             }
             if let jsonValueIgpSecondaryNodeName = jsonMap["IGPSecondaryNodeName"] as? String {
                 resultDecodedBuilder.igpSecondaryNodeName = jsonValueIgpSecondaryNodeName
+            }
+            if let jsonValueIgpUpdateAvailable = jsonMap["IGPUpdateAvailable"] as? Bool {
+                resultDecodedBuilder.igpUpdateAvailable = jsonValueIgpUpdateAvailable
             }
             return resultDecodedBuilder
         }
@@ -1362,6 +1415,7 @@ extension IGPUserLoginResponse: GeneratedMessageProtocol {
         case "igpResponse": return self.igpResponse
         case "igpDeprecatedClient": return self.igpDeprecatedClient
         case "igpSecondaryNodeName": return self.igpSecondaryNodeName
+        case "igpUpdateAvailable": return self.igpUpdateAvailable
         default: return nil
         }
     }
@@ -1373,6 +1427,7 @@ extension IGPUserLoginResponse.Builder: GeneratedMessageBuilderProtocol {
             case "igpResponse": return self.igpResponse
             case "igpDeprecatedClient": return self.igpDeprecatedClient
             case "igpSecondaryNodeName": return self.igpSecondaryNodeName
+            case "igpUpdateAvailable": return self.igpUpdateAvailable
             default: return nil
             }
         }
@@ -1393,6 +1448,11 @@ extension IGPUserLoginResponse.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpSecondaryNodeName = newSubscriptValue
+            case "igpUpdateAvailable":
+                guard let newSubscriptValue = newSubscriptValue as? Bool else {
+                    return
+                }
+                self.igpUpdateAvailable = newSubscriptValue
             default: return
             }
         }

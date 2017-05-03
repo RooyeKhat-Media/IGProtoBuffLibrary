@@ -6933,6 +6933,7 @@ final public class IGPRoom : GeneratedMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpChatRoomExtra == rhs.hasIgpChatRoomExtra) && (!lhs.hasIgpChatRoomExtra || lhs.igpChatRoomExtra == rhs.igpChatRoomExtra)
         fieldCheck = fieldCheck && (lhs.hasIgpGroupRoomExtra == rhs.hasIgpGroupRoomExtra) && (!lhs.hasIgpGroupRoomExtra || lhs.igpGroupRoomExtra == rhs.igpGroupRoomExtra)
         fieldCheck = fieldCheck && (lhs.hasIgpChannelRoomExtra == rhs.hasIgpChannelRoomExtra) && (!lhs.hasIgpChannelRoomExtra || lhs.igpChannelRoomExtra == rhs.igpChannelRoomExtra)
+        fieldCheck = fieldCheck && (lhs.hasIgpFirstUnreadMessage == rhs.hasIgpFirstUnreadMessage) && (!lhs.hasIgpFirstUnreadMessage || lhs.igpFirstUnreadMessage == rhs.igpFirstUnreadMessage)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -7014,6 +7015,8 @@ final public class IGPRoom : GeneratedMessage {
 
     public fileprivate(set) var igpDraft:IGPRoomDraft!
     public fileprivate(set) var hasIgpDraft:Bool = false
+    public fileprivate(set) var igpFirstUnreadMessage:IGPRoomMessage!
+    public fileprivate(set) var hasIgpFirstUnreadMessage:Bool = false
     public fileprivate(set) var igpChatRoomExtra:IGPChatRoom!
     public fileprivate(set) var hasIgpChatRoomExtra:Bool = false
     public fileprivate(set) var igpGroupRoomExtra:IGPGroupRoom!
@@ -7065,6 +7068,9 @@ final public class IGPRoom : GeneratedMessage {
         }
         if hasIgpChannelRoomExtra {
             try codedOutputStream.writeMessage(fieldNumber: 13, value:igpChannelRoomExtra)
+        }
+        if hasIgpFirstUnreadMessage {
+            try codedOutputStream.writeMessage(fieldNumber: 14, value:igpFirstUnreadMessage)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -7124,6 +7130,11 @@ final public class IGPRoom : GeneratedMessage {
                 serialize_size += varSizeigpChannelRoomExtra
             }
         }
+        if hasIgpFirstUnreadMessage {
+            if let varSizeigpFirstUnreadMessage = igpFirstUnreadMessage?.computeMessageSize(fieldNumber: 14) {
+                serialize_size += varSizeigpFirstUnreadMessage
+            }
+        }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
         return serialize_size
@@ -7181,6 +7192,9 @@ final public class IGPRoom : GeneratedMessage {
         }
         if hasIgpDraft {
             jsonMap["IGPDraft"] = try igpDraft.encode()
+        }
+        if hasIgpFirstUnreadMessage {
+            jsonMap["IGPFirstUnreadMessage"] = try igpFirstUnreadMessage.encode()
         }
         if hasIgpChatRoomExtra {
             jsonMap["IGPChatRoomExtra"] = try igpChatRoomExtra.encode()
@@ -7260,6 +7274,13 @@ final public class IGPRoom : GeneratedMessage {
             }
             output += "\(indent) }\n"
         }
+        if hasIgpFirstUnreadMessage {
+            output += "\(indent) igpFirstUnreadMessage {\n"
+            if let outDescIgpFirstUnreadMessage = igpFirstUnreadMessage {
+                output += try outDescIgpFirstUnreadMessage.getDescription(indent: "\(indent)  ")
+            }
+            output += "\(indent) }\n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -7313,6 +7334,11 @@ final public class IGPRoom : GeneratedMessage {
             if hasIgpChannelRoomExtra {
                 if let hashValueigpChannelRoomExtra = igpChannelRoomExtra?.hashValue {
                     hashCode = (hashCode &* 31) &+ hashValueigpChannelRoomExtra
+                }
+            }
+            if hasIgpFirstUnreadMessage {
+                if let hashValueigpFirstUnreadMessage = igpFirstUnreadMessage?.hashValue {
+                    hashCode = (hashCode &* 31) &+ hashValueigpFirstUnreadMessage
                 }
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
@@ -7648,6 +7674,60 @@ final public class IGPRoom : GeneratedMessage {
             builderResult.igpDraft = nil
             return self
         }
+        public var igpFirstUnreadMessage:IGPRoomMessage! {
+            get {
+                if igpFirstUnreadMessageBuilder_ != nil {
+                    builderResult.igpFirstUnreadMessage = igpFirstUnreadMessageBuilder_.getMessage()
+                }
+                return builderResult.igpFirstUnreadMessage
+            }
+            set (value) {
+                builderResult.hasIgpFirstUnreadMessage = true
+                builderResult.igpFirstUnreadMessage = value
+            }
+        }
+        public var hasIgpFirstUnreadMessage:Bool {
+            get {
+                return builderResult.hasIgpFirstUnreadMessage
+            }
+        }
+        fileprivate var igpFirstUnreadMessageBuilder_:IGPRoomMessage.Builder! {
+            didSet {
+                builderResult.hasIgpFirstUnreadMessage = true
+            }
+        }
+        public func getIgpFirstUnreadMessageBuilder() -> IGPRoomMessage.Builder {
+            if igpFirstUnreadMessageBuilder_ == nil {
+                igpFirstUnreadMessageBuilder_ = IGPRoomMessage.Builder()
+                builderResult.igpFirstUnreadMessage = igpFirstUnreadMessageBuilder_.getMessage()
+                if igpFirstUnreadMessage != nil {
+                    try! igpFirstUnreadMessageBuilder_.mergeFrom(other: igpFirstUnreadMessage)
+                }
+            }
+            return igpFirstUnreadMessageBuilder_
+        }
+        @discardableResult
+        public func setIgpFirstUnreadMessage(_ value:IGPRoomMessage!) -> IGPRoom.Builder {
+            self.igpFirstUnreadMessage = value
+            return self
+        }
+        @discardableResult
+        public func mergeIgpFirstUnreadMessage(value:IGPRoomMessage) throws -> IGPRoom.Builder {
+            if builderResult.hasIgpFirstUnreadMessage {
+                builderResult.igpFirstUnreadMessage = try IGPRoomMessage.builderWithPrototype(prototype:builderResult.igpFirstUnreadMessage).mergeFrom(other: value).buildPartial()
+            } else {
+                builderResult.igpFirstUnreadMessage = value
+            }
+            builderResult.hasIgpFirstUnreadMessage = true
+            return self
+        }
+        @discardableResult
+        public func clearIgpFirstUnreadMessage() -> IGPRoom.Builder {
+            igpFirstUnreadMessageBuilder_ = nil
+            builderResult.hasIgpFirstUnreadMessage = false
+            builderResult.igpFirstUnreadMessage = nil
+            return self
+        }
         public var igpChatRoomExtra:IGPChatRoom! {
             get {
                 if igpChatRoomExtraBuilder_ != nil {
@@ -7866,6 +7946,9 @@ final public class IGPRoom : GeneratedMessage {
             if (other.hasIgpDraft) {
                 try mergeIgpDraft(value: other.igpDraft)
             }
+            if (other.hasIgpFirstUnreadMessage) {
+                try mergeIgpFirstUnreadMessage(value: other.igpFirstUnreadMessage)
+            }
             if (other.hasIgpChatRoomExtra) {
                 try mergeIgpChatRoomExtra(value: other.igpChatRoomExtra)
             }
@@ -7961,6 +8044,14 @@ final public class IGPRoom : GeneratedMessage {
                     try codedInputStream.readMessage(builder: subBuilder, extensionRegistry:extensionRegistry)
                     igpChannelRoomExtra = subBuilder.buildPartial()
 
+                case 114:
+                    let subBuilder:IGPRoomMessage.Builder = IGPRoomMessage.Builder()
+                    if hasIgpFirstUnreadMessage {
+                        try subBuilder.mergeFrom(other: igpFirstUnreadMessage)
+                    }
+                    try codedInputStream.readMessage(builder: subBuilder, extensionRegistry:extensionRegistry)
+                    igpFirstUnreadMessage = subBuilder.buildPartial()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -8005,6 +8096,10 @@ final public class IGPRoom : GeneratedMessage {
             }
             if let jsonValueIgpDraft = jsonMap["IGPDraft"] as? Dictionary<String,Any> {
                 resultDecodedBuilder.igpDraft = try IGPRoomDraft.Builder.decodeToBuilder(jsonMap:jsonValueIgpDraft).build()
+
+            }
+            if let jsonValueIgpFirstUnreadMessage = jsonMap["IGPFirstUnreadMessage"] as? Dictionary<String,Any> {
+                resultDecodedBuilder.igpFirstUnreadMessage = try IGPRoomMessage.Builder.decodeToBuilder(jsonMap:jsonValueIgpFirstUnreadMessage).build()
 
             }
             if let jsonValueIgpChatRoomExtra = jsonMap["IGPChatRoomExtra"] as? Dictionary<String,Any> {
@@ -12813,6 +12908,286 @@ final public class IGPWallpaper : GeneratedMessage {
 
 }
 
+final public class IGPPagination : GeneratedMessage {
+
+    public static func == (lhs: IGPPagination, rhs: IGPPagination) -> Bool {
+        if lhs === rhs {
+            return true
+        }
+        var fieldCheck:Bool = (lhs.hashValue == rhs.hashValue)
+        fieldCheck = fieldCheck && (lhs.hasIgpOffset == rhs.hasIgpOffset) && (!lhs.hasIgpOffset || lhs.igpOffset == rhs.igpOffset)
+        fieldCheck = fieldCheck && (lhs.hasIgpLimit == rhs.hasIgpLimit) && (!lhs.hasIgpLimit || lhs.igpLimit == rhs.igpLimit)
+        fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
+        return fieldCheck
+    }
+
+
+
+    //iGap Properties declaration start
+
+
+
+    //iGap Properties declaration end
+
+    public fileprivate(set) var igpOffset:Int32 = Int32(0)
+    public fileprivate(set) var hasIgpOffset:Bool = false
+
+    public fileprivate(set) var igpLimit:Int32 = Int32(0)
+    public fileprivate(set) var hasIgpLimit:Bool = false
+
+    required public init() {
+        super.init()
+    }
+    override public func isInitialized() -> Bool {
+        return true
+    }
+    override public func writeTo(codedOutputStream: CodedOutputStream) throws {
+        if hasIgpOffset {
+            try codedOutputStream.writeInt32(fieldNumber: 1, value:igpOffset)
+        }
+        if hasIgpLimit {
+            try codedOutputStream.writeInt32(fieldNumber: 2, value:igpLimit)
+        }
+        try unknownFields.writeTo(codedOutputStream: codedOutputStream)
+    }
+    override public func serializedSize() -> Int32 {
+        var serialize_size:Int32 = memoizedSerializedSize
+        if serialize_size != -1 {
+         return serialize_size
+        }
+
+        serialize_size = 0
+        if hasIgpOffset {
+            serialize_size += igpOffset.computeInt32Size(fieldNumber: 1)
+        }
+        if hasIgpLimit {
+            serialize_size += igpLimit.computeInt32Size(fieldNumber: 2)
+        }
+        serialize_size += unknownFields.serializedSize()
+        memoizedSerializedSize = serialize_size
+        return serialize_size
+    }
+    public class func getBuilder() -> IGPPagination.Builder {
+        return IGPPagination.classBuilder() as! IGPPagination.Builder
+    }
+    public func getBuilder() -> IGPPagination.Builder {
+        return classBuilder() as! IGPPagination.Builder
+    }
+    override public class func classBuilder() -> ProtocolBuffersMessageBuilder {
+        return IGPPagination.Builder()
+    }
+    override public func classBuilder() -> ProtocolBuffersMessageBuilder {
+        return IGPPagination.Builder()
+    }
+    public func toBuilder() throws -> IGPPagination.Builder {
+        return try IGPPagination.builderWithPrototype(prototype:self)
+    }
+    public class func builderWithPrototype(prototype:IGPPagination) throws -> IGPPagination.Builder {
+        return try IGPPagination.Builder().mergeFrom(other:prototype)
+    }
+    override public func encode() throws -> Dictionary<String,Any> {
+        guard isInitialized() else {
+            throw ProtocolBuffersError.invalidProtocolBuffer("Uninitialized Message")
+        }
+
+        var jsonMap:Dictionary<String,Any> = Dictionary<String,Any>()
+        if hasIgpOffset {
+            jsonMap["IGPOffset"] = Int(igpOffset)
+        }
+        if hasIgpLimit {
+            jsonMap["IGPLimit"] = Int(igpLimit)
+        }
+        return jsonMap
+    }
+    override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPPagination {
+        return try IGPPagination.Builder.decodeToBuilder(jsonMap:jsonMap).build()
+    }
+    override class public func fromJSON(data:Data) throws -> IGPPagination {
+        return try IGPPagination.Builder.fromJSONToBuilder(data:data).build()
+    }
+    override public func getDescription(indent:String) throws -> String {
+        var output = ""
+        if hasIgpOffset {
+            output += "\(indent) igpOffset: \(igpOffset) \n"
+        }
+        if hasIgpLimit {
+            output += "\(indent) igpLimit: \(igpLimit) \n"
+        }
+        output += unknownFields.getDescription(indent: indent)
+        return output
+    }
+    override public var hashValue:Int {
+        get {
+            var hashCode:Int = 7
+            if hasIgpOffset {
+                hashCode = (hashCode &* 31) &+ igpOffset.hashValue
+            }
+            if hasIgpLimit {
+                hashCode = (hashCode &* 31) &+ igpLimit.hashValue
+            }
+            hashCode = (hashCode &* 31) &+  unknownFields.hashValue
+            return hashCode
+        }
+    }
+
+
+    //Meta information declaration start
+
+    override public class func className() -> String {
+        return "IGPPagination"
+    }
+    override public func className() -> String {
+        return "IGPPagination"
+    }
+    //Meta information declaration end
+
+    final public class Builder : GeneratedMessageBuilder {
+        fileprivate var builderResult:IGPPagination = IGPPagination()
+        public func getMessage() -> IGPPagination {
+            return builderResult
+        }
+
+        required override public init () {
+            super.init()
+        }
+        public var igpOffset:Int32 {
+            get {
+                return builderResult.igpOffset
+            }
+            set (value) {
+                builderResult.hasIgpOffset = true
+                builderResult.igpOffset = value
+            }
+        }
+        public var hasIgpOffset:Bool {
+            get {
+                return builderResult.hasIgpOffset
+            }
+        }
+        @discardableResult
+        public func setIgpOffset(_ value:Int32) -> IGPPagination.Builder {
+            self.igpOffset = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpOffset() -> IGPPagination.Builder{
+            builderResult.hasIgpOffset = false
+            builderResult.igpOffset = Int32(0)
+            return self
+        }
+        public var igpLimit:Int32 {
+            get {
+                return builderResult.igpLimit
+            }
+            set (value) {
+                builderResult.hasIgpLimit = true
+                builderResult.igpLimit = value
+            }
+        }
+        public var hasIgpLimit:Bool {
+            get {
+                return builderResult.hasIgpLimit
+            }
+        }
+        @discardableResult
+        public func setIgpLimit(_ value:Int32) -> IGPPagination.Builder {
+            self.igpLimit = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpLimit() -> IGPPagination.Builder{
+            builderResult.hasIgpLimit = false
+            builderResult.igpLimit = Int32(0)
+            return self
+        }
+        override public var internalGetResult:GeneratedMessage {
+            get {
+                return builderResult
+            }
+        }
+        @discardableResult
+        override public func clear() -> IGPPagination.Builder {
+            builderResult = IGPPagination()
+            return self
+        }
+        override public func clone() throws -> IGPPagination.Builder {
+            return try IGPPagination.builderWithPrototype(prototype:builderResult)
+        }
+        override public func build() throws -> IGPPagination {
+            try checkInitialized()
+            return buildPartial()
+        }
+        public func buildPartial() -> IGPPagination {
+            let returnMe:IGPPagination = builderResult
+            return returnMe
+        }
+        @discardableResult
+        public func mergeFrom(other:IGPPagination) throws -> IGPPagination.Builder {
+            if other == IGPPagination() {
+                return self
+            }
+            if other.hasIgpOffset {
+                igpOffset = other.igpOffset
+            }
+            if other.hasIgpLimit {
+                igpLimit = other.igpLimit
+            }
+            try merge(unknownField: other.unknownFields)
+            return self
+        }
+        @discardableResult
+        override public func mergeFrom(codedInputStream: CodedInputStream) throws -> IGPPagination.Builder {
+            return try mergeFrom(codedInputStream: codedInputStream, extensionRegistry:ExtensionRegistry())
+        }
+        @discardableResult
+        override public func mergeFrom(codedInputStream: CodedInputStream, extensionRegistry:ExtensionRegistry) throws -> IGPPagination.Builder {
+            let unknownFieldsBuilder:UnknownFieldSet.Builder = try UnknownFieldSet.builderWithUnknownFields(copyFrom:self.unknownFields)
+            while (true) {
+                let protobufTag = try codedInputStream.readTag()
+                switch protobufTag {
+                case 0: 
+                    self.unknownFields = try unknownFieldsBuilder.build()
+                    return self
+
+                case 8:
+                    igpOffset = try codedInputStream.readInt32()
+
+                case 16:
+                    igpLimit = try codedInputStream.readInt32()
+
+                default:
+                    if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
+                        unknownFields = try unknownFieldsBuilder.build()
+                        return self
+                    }
+                }
+            }
+        }
+        class override public func decodeToBuilder(jsonMap:Dictionary<String,Any>) throws -> IGPPagination.Builder {
+            let resultDecodedBuilder = IGPPagination.Builder()
+            if let jsonValueIgpOffset = jsonMap["IGPOffset"] as? Int {
+                resultDecodedBuilder.igpOffset = Int32(jsonValueIgpOffset)
+            } else if let jsonValueIgpOffset = jsonMap["IGPOffset"] as? String {
+                resultDecodedBuilder.igpOffset = Int32(jsonValueIgpOffset)!
+            }
+            if let jsonValueIgpLimit = jsonMap["IGPLimit"] as? Int {
+                resultDecodedBuilder.igpLimit = Int32(jsonValueIgpLimit)
+            } else if let jsonValueIgpLimit = jsonMap["IGPLimit"] as? String {
+                resultDecodedBuilder.igpLimit = Int32(jsonValueIgpLimit)!
+            }
+            return resultDecodedBuilder
+        }
+        override class public func fromJSONToBuilder(data:Data) throws -> IGPPagination.Builder {
+            let jsonData = try JSONSerialization.jsonObject(with:data, options: JSONSerialization.ReadingOptions(rawValue: 0))
+            guard let jsDataCast = jsonData as? Dictionary<String,Any> else {
+              throw ProtocolBuffersError.invalidProtocolBuffer("Invalid JSON data")
+            }
+            return try IGPPagination.Builder.decodeToBuilder(jsonMap:jsDataCast)
+        }
+    }
+
+}
+
 extension IGPRoomMessageLocation: GeneratedMessageProtocol {
     public class func parseArrayDelimitedFrom(inputStream: InputStream) throws -> Array<IGPRoomMessageLocation> {
         var mergedArray = Array<IGPRoomMessageLocation>()
@@ -13925,6 +14300,7 @@ extension IGPRoom: GeneratedMessageProtocol {
         case "igpReadOnly": return self.igpReadOnly
         case "igpIsParticipant": return self.igpIsParticipant
         case "igpDraft": return self.igpDraft
+        case "igpFirstUnreadMessage": return self.igpFirstUnreadMessage
         case "igpChatRoomExtra": return self.igpChatRoomExtra
         case "igpGroupRoomExtra": return self.igpGroupRoomExtra
         case "igpChannelRoomExtra": return self.igpChannelRoomExtra
@@ -13946,6 +14322,7 @@ extension IGPRoom.Builder: GeneratedMessageBuilderProtocol {
             case "igpReadOnly": return self.igpReadOnly
             case "igpIsParticipant": return self.igpIsParticipant
             case "igpDraft": return self.igpDraft
+            case "igpFirstUnreadMessage": return self.igpFirstUnreadMessage
             case "igpChatRoomExtra": return self.igpChatRoomExtra
             case "igpGroupRoomExtra": return self.igpGroupRoomExtra
             case "igpChannelRoomExtra": return self.igpChannelRoomExtra
@@ -14004,6 +14381,11 @@ extension IGPRoom.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpDraft = newSubscriptValue
+            case "igpFirstUnreadMessage":
+                guard let newSubscriptValue = newSubscriptValue as? IGPRoomMessage else {
+                    return
+                }
+                self.igpFirstUnreadMessage = newSubscriptValue
             case "igpChatRoomExtra":
                 guard let newSubscriptValue = newSubscriptValue as? IGPChatRoom else {
                     return
@@ -14824,6 +15206,69 @@ extension IGPWallpaper.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpColor = newSubscriptValue
+            default: return
+            }
+        }
+    }
+}
+extension IGPPagination: GeneratedMessageProtocol {
+    public class func parseArrayDelimitedFrom(inputStream: InputStream) throws -> Array<IGPPagination> {
+        var mergedArray = Array<IGPPagination>()
+        while let value = try parseDelimitedFrom(inputStream: inputStream) {
+          mergedArray.append(value)
+        }
+        return mergedArray
+    }
+    public class func parseDelimitedFrom(inputStream: InputStream) throws -> IGPPagination? {
+        return try IGPPagination.Builder().mergeDelimitedFrom(inputStream: inputStream)?.build()
+    }
+    public class func parseFrom(data: Data) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(data: data, extensionRegistry:GlobalRoot.default.extensionRegistry).build()
+    }
+    public class func parseFrom(data: Data, extensionRegistry:ExtensionRegistry) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(data: data, extensionRegistry:extensionRegistry).build()
+    }
+    public class func parseFrom(inputStream: InputStream) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(inputStream: inputStream).build()
+    }
+    public class func parseFrom(inputStream: InputStream, extensionRegistry:ExtensionRegistry) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(inputStream: inputStream, extensionRegistry:extensionRegistry).build()
+    }
+    public class func parseFrom(codedInputStream: CodedInputStream) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(codedInputStream: codedInputStream).build()
+    }
+    public class func parseFrom(codedInputStream: CodedInputStream, extensionRegistry:ExtensionRegistry) throws -> IGPPagination {
+        return try IGPPagination.Builder().mergeFrom(codedInputStream: codedInputStream, extensionRegistry:extensionRegistry).build()
+    }
+    public subscript(key: String) -> Any? {
+        switch key {
+        case "igpOffset": return self.igpOffset
+        case "igpLimit": return self.igpLimit
+        default: return nil
+        }
+    }
+}
+extension IGPPagination.Builder: GeneratedMessageBuilderProtocol {
+    public subscript(key: String) -> Any? {
+        get { 
+            switch key {
+            case "igpOffset": return self.igpOffset
+            case "igpLimit": return self.igpLimit
+            default: return nil
+            }
+        }
+        set (newSubscriptValue) { 
+            switch key {
+            case "igpOffset":
+                guard let newSubscriptValue = newSubscriptValue as? Int32 else {
+                    return
+                }
+                self.igpOffset = newSubscriptValue
+            case "igpLimit":
+                guard let newSubscriptValue = newSubscriptValue as? Int32 else {
+                    return
+                }
+                self.igpLimit = newSubscriptValue
             default: return
             }
         }

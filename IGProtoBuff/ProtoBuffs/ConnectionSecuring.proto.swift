@@ -509,6 +509,7 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
         var fieldCheck:Bool = (lhs.hashValue == rhs.hashValue)
         fieldCheck = fieldCheck && (lhs.hasIgpRequest == rhs.hasIgpRequest) && (!lhs.hasIgpRequest || lhs.igpRequest == rhs.igpRequest)
         fieldCheck = fieldCheck && (lhs.hasIgpSymmetricKey == rhs.hasIgpSymmetricKey) && (!lhs.hasIgpSymmetricKey || lhs.igpSymmetricKey == rhs.igpSymmetricKey)
+        fieldCheck = fieldCheck && (lhs.hasIgpVersion == rhs.hasIgpVersion) && (!lhs.hasIgpVersion || lhs.igpVersion == rhs.igpVersion)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -526,6 +527,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
     public fileprivate(set) var igpSymmetricKey:Data = Data()
     public fileprivate(set) var hasIgpSymmetricKey:Bool = false
 
+    public fileprivate(set) var igpVersion:Int32 = Int32(0)
+    public fileprivate(set) var hasIgpVersion:Bool = false
+
     required public init() {
         super.init()
     }
@@ -538,6 +542,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
         }
         if hasIgpSymmetricKey {
             try codedOutputStream.writeData(fieldNumber: 2, value:igpSymmetricKey)
+        }
+        if hasIgpVersion {
+            try codedOutputStream.writeInt32(fieldNumber: 3, value:igpVersion)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -555,6 +562,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
         }
         if hasIgpSymmetricKey {
             serialize_size += igpSymmetricKey.computeDataSize(fieldNumber: 2)
+        }
+        if hasIgpVersion {
+            serialize_size += igpVersion.computeInt32Size(fieldNumber: 3)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -590,6 +600,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
         if hasIgpSymmetricKey {
             jsonMap["IGPSymmetricKey"] = igpSymmetricKey.base64EncodedString(options: Data.Base64EncodingOptions(rawValue: 0))
         }
+        if hasIgpVersion {
+            jsonMap["IGPVersion"] = Int(igpVersion)
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPConnectionSymmetricKey {
@@ -610,6 +623,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
         if hasIgpSymmetricKey {
             output += "\(indent) igpSymmetricKey: \(igpSymmetricKey) \n"
         }
+        if hasIgpVersion {
+            output += "\(indent) igpVersion: \(igpVersion) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -623,6 +639,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
             }
             if hasIgpSymmetricKey {
                 hashCode = (hashCode &* 31) &+ igpSymmetricKey.hashValue
+            }
+            if hasIgpVersion {
+                hashCode = (hashCode &* 31) &+ igpVersion.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -728,6 +747,31 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
             builderResult.igpSymmetricKey = Data()
             return self
         }
+        public var igpVersion:Int32 {
+            get {
+                return builderResult.igpVersion
+            }
+            set (value) {
+                builderResult.hasIgpVersion = true
+                builderResult.igpVersion = value
+            }
+        }
+        public var hasIgpVersion:Bool {
+            get {
+                return builderResult.hasIgpVersion
+            }
+        }
+        @discardableResult
+        public func setIgpVersion(_ value:Int32) -> IGPConnectionSymmetricKey.Builder {
+            self.igpVersion = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpVersion() -> IGPConnectionSymmetricKey.Builder{
+            builderResult.hasIgpVersion = false
+            builderResult.igpVersion = Int32(0)
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -760,6 +804,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
             if other.hasIgpSymmetricKey {
                 igpSymmetricKey = other.igpSymmetricKey
             }
+            if other.hasIgpVersion {
+                igpVersion = other.igpVersion
+            }
             try merge(unknownField: other.unknownFields)
             return self
         }
@@ -788,6 +835,9 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
                 case 18:
                     igpSymmetricKey = try codedInputStream.readData()
 
+                case 24:
+                    igpVersion = try codedInputStream.readInt32()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -804,6 +854,11 @@ final public class IGPConnectionSymmetricKey : GeneratedMessage {
             }
             if let jsonValueIgpSymmetricKey = jsonMap["IGPSymmetricKey"] as? String {
                 resultDecodedBuilder.igpSymmetricKey = Data(base64Encoded:jsonValueIgpSymmetricKey, options: Data.Base64DecodingOptions(rawValue:0))!
+            }
+            if let jsonValueIgpVersion = jsonMap["IGPVersion"] as? Int {
+                resultDecodedBuilder.igpVersion = Int32(jsonValueIgpVersion)
+            } else if let jsonValueIgpVersion = jsonMap["IGPVersion"] as? String {
+                resultDecodedBuilder.igpVersion = Int32(jsonValueIgpVersion)!
             }
             return resultDecodedBuilder
         }
@@ -829,6 +884,7 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
         fieldCheck = fieldCheck && (lhs.hasIgpStatus == rhs.hasIgpStatus) && (!lhs.hasIgpStatus || lhs.igpStatus == rhs.igpStatus)
         fieldCheck = fieldCheck && (lhs.hasIgpSymmetricMethod == rhs.hasIgpSymmetricMethod) && (!lhs.hasIgpSymmetricMethod || lhs.igpSymmetricMethod == rhs.igpSymmetricMethod)
         fieldCheck = fieldCheck && (lhs.hasIgpSymmetricIvSize == rhs.hasIgpSymmetricIvSize) && (!lhs.hasIgpSymmetricIvSize || lhs.igpSymmetricIvSize == rhs.igpSymmetricIvSize)
+        fieldCheck = fieldCheck && (lhs.hasIgpSecurityIssue == rhs.hasIgpSecurityIssue) && (!lhs.hasIgpSecurityIssue || lhs.igpSecurityIssue == rhs.igpSecurityIssue)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -887,6 +943,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
     public fileprivate(set) var igpSymmetricIvSize:Int32 = Int32(0)
     public fileprivate(set) var hasIgpSymmetricIvSize:Bool = false
 
+    public fileprivate(set) var igpSecurityIssue:Bool = false
+    public fileprivate(set) var hasIgpSecurityIssue:Bool = false
+
     required public init() {
         super.init()
     }
@@ -905,6 +964,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
         }
         if hasIgpSymmetricIvSize {
             try codedOutputStream.writeInt32(fieldNumber: 4, value:igpSymmetricIvSize)
+        }
+        if hasIgpSecurityIssue {
+            try codedOutputStream.writeBool(fieldNumber: 5, value:igpSecurityIssue)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -928,6 +990,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
         }
         if hasIgpSymmetricIvSize {
             serialize_size += igpSymmetricIvSize.computeInt32Size(fieldNumber: 4)
+        }
+        if hasIgpSecurityIssue {
+            serialize_size += igpSecurityIssue.computeBoolSize(fieldNumber: 5)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -969,6 +1034,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
         if hasIgpSymmetricIvSize {
             jsonMap["IGPSymmetricIvSize"] = Int(igpSymmetricIvSize)
         }
+        if hasIgpSecurityIssue {
+            jsonMap["IGPSecurityIssue"] = igpSecurityIssue
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPConnectionSymmetricKeyResponse {
@@ -995,6 +1063,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
         if hasIgpSymmetricIvSize {
             output += "\(indent) igpSymmetricIvSize: \(igpSymmetricIvSize) \n"
         }
+        if hasIgpSecurityIssue {
+            output += "\(indent) igpSecurityIssue: \(igpSecurityIssue) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -1014,6 +1085,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
             }
             if hasIgpSymmetricIvSize {
                 hashCode = (hashCode &* 31) &+ igpSymmetricIvSize.hashValue
+            }
+            if hasIgpSecurityIssue {
+                hashCode = (hashCode &* 31) &+ igpSecurityIssue.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -1169,6 +1243,31 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
             builderResult.igpSymmetricIvSize = Int32(0)
             return self
         }
+        public var igpSecurityIssue:Bool {
+            get {
+                return builderResult.igpSecurityIssue
+            }
+            set (value) {
+                builderResult.hasIgpSecurityIssue = true
+                builderResult.igpSecurityIssue = value
+            }
+        }
+        public var hasIgpSecurityIssue:Bool {
+            get {
+                return builderResult.hasIgpSecurityIssue
+            }
+        }
+        @discardableResult
+        public func setIgpSecurityIssue(_ value:Bool) -> IGPConnectionSymmetricKeyResponse.Builder {
+            self.igpSecurityIssue = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpSecurityIssue() -> IGPConnectionSymmetricKeyResponse.Builder{
+            builderResult.hasIgpSecurityIssue = false
+            builderResult.igpSecurityIssue = false
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -1206,6 +1305,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
             }
             if other.hasIgpSymmetricIvSize {
                 igpSymmetricIvSize = other.igpSymmetricIvSize
+            }
+            if other.hasIgpSecurityIssue {
+                igpSecurityIssue = other.igpSecurityIssue
             }
             try merge(unknownField: other.unknownFields)
             return self
@@ -1246,6 +1348,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
                 case 32:
                     igpSymmetricIvSize = try codedInputStream.readInt32()
 
+                case 40:
+                    igpSecurityIssue = try codedInputStream.readBool()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -1270,6 +1375,9 @@ final public class IGPConnectionSymmetricKeyResponse : GeneratedResponseMessage 
                 resultDecodedBuilder.igpSymmetricIvSize = Int32(jsonValueIgpSymmetricIvSize)
             } else if let jsonValueIgpSymmetricIvSize = jsonMap["IGPSymmetricIvSize"] as? String {
                 resultDecodedBuilder.igpSymmetricIvSize = Int32(jsonValueIgpSymmetricIvSize)!
+            }
+            if let jsonValueIgpSecurityIssue = jsonMap["IGPSecurityIssue"] as? Bool {
+                resultDecodedBuilder.igpSecurityIssue = jsonValueIgpSecurityIssue
             }
             return resultDecodedBuilder
         }
@@ -1401,6 +1509,7 @@ extension IGPConnectionSymmetricKey: GeneratedMessageProtocol {
         switch key {
         case "igpRequest": return self.igpRequest
         case "igpSymmetricKey": return self.igpSymmetricKey
+        case "igpVersion": return self.igpVersion
         default: return nil
         }
     }
@@ -1411,6 +1520,7 @@ extension IGPConnectionSymmetricKey.Builder: GeneratedMessageBuilderProtocol {
             switch key {
             case "igpRequest": return self.igpRequest
             case "igpSymmetricKey": return self.igpSymmetricKey
+            case "igpVersion": return self.igpVersion
             default: return nil
             }
         }
@@ -1426,6 +1536,11 @@ extension IGPConnectionSymmetricKey.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpSymmetricKey = newSubscriptValue
+            case "igpVersion":
+                guard let newSubscriptValue = newSubscriptValue as? Int32 else {
+                    return
+                }
+                self.igpVersion = newSubscriptValue
             default: return
             }
         }
@@ -1466,6 +1581,7 @@ extension IGPConnectionSymmetricKeyResponse: GeneratedMessageProtocol {
         case "igpStatus": return self.igpStatus
         case "igpSymmetricMethod": return self.igpSymmetricMethod
         case "igpSymmetricIvSize": return self.igpSymmetricIvSize
+        case "igpSecurityIssue": return self.igpSecurityIssue
         default: return nil
         }
     }
@@ -1478,6 +1594,7 @@ extension IGPConnectionSymmetricKeyResponse.Builder: GeneratedMessageBuilderProt
             case "igpStatus": return self.igpStatus
             case "igpSymmetricMethod": return self.igpSymmetricMethod
             case "igpSymmetricIvSize": return self.igpSymmetricIvSize
+            case "igpSecurityIssue": return self.igpSecurityIssue
             default: return nil
             }
         }
@@ -1503,6 +1620,11 @@ extension IGPConnectionSymmetricKeyResponse.Builder: GeneratedMessageBuilderProt
                     return
                 }
                 self.igpSymmetricIvSize = newSubscriptValue
+            case "igpSecurityIssue":
+                guard let newSubscriptValue = newSubscriptValue as? Bool else {
+                    return
+                }
+                self.igpSecurityIssue = newSubscriptValue
             default: return
             }
         }

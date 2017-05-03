@@ -31,6 +31,7 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpMajorCode == rhs.hasIgpMajorCode) && (!lhs.hasIgpMajorCode || lhs.igpMajorCode == rhs.igpMajorCode)
         fieldCheck = fieldCheck && (lhs.hasIgpMinorCode == rhs.hasIgpMinorCode) && (!lhs.hasIgpMinorCode || lhs.igpMinorCode == rhs.igpMinorCode)
         fieldCheck = fieldCheck && (lhs.hasIgpWait == rhs.hasIgpWait) && (!lhs.hasIgpWait || lhs.igpWait == rhs.igpWait)
+        fieldCheck = fieldCheck && (lhs.hasIgpMessage == rhs.hasIgpMessage) && (!lhs.hasIgpMessage || lhs.igpMessage == rhs.igpMessage)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -52,6 +53,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
     public fileprivate(set) var igpWait:Int32 = Int32(0)
     public fileprivate(set) var hasIgpWait:Bool = false
 
+    public fileprivate(set) var igpMessage:String = ""
+    public fileprivate(set) var hasIgpMessage:Bool = false
+
     required public init() {
         super.init()
     }
@@ -70,6 +74,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
         }
         if hasIgpWait {
             try codedOutputStream.writeInt32(fieldNumber: 4, value:igpWait)
+        }
+        if hasIgpMessage {
+            try codedOutputStream.writeString(fieldNumber: 5, value:igpMessage)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -93,6 +100,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
         }
         if hasIgpWait {
             serialize_size += igpWait.computeInt32Size(fieldNumber: 4)
+        }
+        if hasIgpMessage {
+            serialize_size += igpMessage.computeStringSize(fieldNumber: 5)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -134,6 +144,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
         if hasIgpWait {
             jsonMap["IGPWait"] = Int(igpWait)
         }
+        if hasIgpMessage {
+            jsonMap["IGPMessage"] = igpMessage
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPErrorResponse {
@@ -160,6 +173,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
         if hasIgpWait {
             output += "\(indent) igpWait: \(igpWait) \n"
         }
+        if hasIgpMessage {
+            output += "\(indent) igpMessage: \(igpMessage) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -179,6 +195,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
             }
             if hasIgpWait {
                 hashCode = (hashCode &* 31) &+ igpWait.hashValue
+            }
+            if hasIgpMessage {
+                hashCode = (hashCode &* 31) &+ igpMessage.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -334,6 +353,31 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
             builderResult.igpWait = Int32(0)
             return self
         }
+        public var igpMessage:String {
+            get {
+                return builderResult.igpMessage
+            }
+            set (value) {
+                builderResult.hasIgpMessage = true
+                builderResult.igpMessage = value
+            }
+        }
+        public var hasIgpMessage:Bool {
+            get {
+                return builderResult.hasIgpMessage
+            }
+        }
+        @discardableResult
+        public func setIgpMessage(_ value:String) -> IGPErrorResponse.Builder {
+            self.igpMessage = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpMessage() -> IGPErrorResponse.Builder{
+            builderResult.hasIgpMessage = false
+            builderResult.igpMessage = ""
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -372,6 +416,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
             if other.hasIgpWait {
                 igpWait = other.igpWait
             }
+            if other.hasIgpMessage {
+                igpMessage = other.igpMessage
+            }
             try merge(unknownField: other.unknownFields)
             return self
         }
@@ -406,6 +453,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
                 case 32:
                     igpWait = try codedInputStream.readInt32()
 
+                case 42:
+                    igpMessage = try codedInputStream.readString()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -434,6 +484,9 @@ final public class IGPErrorResponse : GeneratedResponseMessage {
                 resultDecodedBuilder.igpWait = Int32(jsonValueIgpWait)
             } else if let jsonValueIgpWait = jsonMap["IGPWait"] as? String {
                 resultDecodedBuilder.igpWait = Int32(jsonValueIgpWait)!
+            }
+            if let jsonValueIgpMessage = jsonMap["IGPMessage"] as? String {
+                resultDecodedBuilder.igpMessage = jsonValueIgpMessage
             }
             return resultDecodedBuilder
         }
@@ -483,6 +536,7 @@ extension IGPErrorResponse: GeneratedMessageProtocol {
         case "igpMajorCode": return self.igpMajorCode
         case "igpMinorCode": return self.igpMinorCode
         case "igpWait": return self.igpWait
+        case "igpMessage": return self.igpMessage
         default: return nil
         }
     }
@@ -495,6 +549,7 @@ extension IGPErrorResponse.Builder: GeneratedMessageBuilderProtocol {
             case "igpMajorCode": return self.igpMajorCode
             case "igpMinorCode": return self.igpMinorCode
             case "igpWait": return self.igpWait
+            case "igpMessage": return self.igpMessage
             default: return nil
             }
         }
@@ -520,6 +575,11 @@ extension IGPErrorResponse.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpWait = newSubscriptValue
+            case "igpMessage":
+                guard let newSubscriptValue = newSubscriptValue as? String else {
+                    return
+                }
+                self.igpMessage = newSubscriptValue
             default: return
             }
         }
