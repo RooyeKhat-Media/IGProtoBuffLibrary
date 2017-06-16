@@ -33,6 +33,7 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpSymmetricKeyLength == rhs.hasIgpSymmetricKeyLength) && (!lhs.hasIgpSymmetricKeyLength || lhs.igpSymmetricKeyLength == rhs.igpSymmetricKeyLength)
         fieldCheck = fieldCheck && (lhs.hasIgpHeartbeatInterval == rhs.hasIgpHeartbeatInterval) && (!lhs.hasIgpHeartbeatInterval || lhs.igpHeartbeatInterval == rhs.igpHeartbeatInterval)
         fieldCheck = fieldCheck && (lhs.hasIgpPrimaryNodeName == rhs.hasIgpPrimaryNodeName) && (!lhs.hasIgpPrimaryNodeName || lhs.igpPrimaryNodeName == rhs.igpPrimaryNodeName)
+        fieldCheck = fieldCheck && (lhs.hasIgpSecondaryChunkSize == rhs.hasIgpSecondaryChunkSize) && (!lhs.hasIgpSecondaryChunkSize || lhs.igpSecondaryChunkSize == rhs.igpSecondaryChunkSize)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -57,6 +58,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
     public fileprivate(set) var igpPrimaryNodeName:String = ""
     public fileprivate(set) var hasIgpPrimaryNodeName:Bool = false
 
+    public fileprivate(set) var igpSecondaryChunkSize:Int32 = Int32(0)
+    public fileprivate(set) var hasIgpSecondaryChunkSize:Bool = false
+
     required public init() {
         super.init()
     }
@@ -78,6 +82,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
         }
         if hasIgpPrimaryNodeName {
             try codedOutputStream.writeString(fieldNumber: 5, value:igpPrimaryNodeName)
+        }
+        if hasIgpSecondaryChunkSize {
+            try codedOutputStream.writeInt32(fieldNumber: 6, value:igpSecondaryChunkSize)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -104,6 +111,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
         }
         if hasIgpPrimaryNodeName {
             serialize_size += igpPrimaryNodeName.computeStringSize(fieldNumber: 5)
+        }
+        if hasIgpSecondaryChunkSize {
+            serialize_size += igpSecondaryChunkSize.computeInt32Size(fieldNumber: 6)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -148,6 +158,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
         if hasIgpPrimaryNodeName {
             jsonMap["IGPPrimaryNodeName"] = igpPrimaryNodeName
         }
+        if hasIgpSecondaryChunkSize {
+            jsonMap["IGPSecondaryChunkSize"] = Int(igpSecondaryChunkSize)
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPConnectionSecuringResponse {
@@ -177,6 +190,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
         if hasIgpPrimaryNodeName {
             output += "\(indent) igpPrimaryNodeName: \(igpPrimaryNodeName) \n"
         }
+        if hasIgpSecondaryChunkSize {
+            output += "\(indent) igpSecondaryChunkSize: \(igpSecondaryChunkSize) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -199,6 +215,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
             }
             if hasIgpPrimaryNodeName {
                 hashCode = (hashCode &* 31) &+ igpPrimaryNodeName.hashValue
+            }
+            if hasIgpSecondaryChunkSize {
+                hashCode = (hashCode &* 31) &+ igpSecondaryChunkSize.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -379,6 +398,31 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
             builderResult.igpPrimaryNodeName = ""
             return self
         }
+        public var igpSecondaryChunkSize:Int32 {
+            get {
+                return builderResult.igpSecondaryChunkSize
+            }
+            set (value) {
+                builderResult.hasIgpSecondaryChunkSize = true
+                builderResult.igpSecondaryChunkSize = value
+            }
+        }
+        public var hasIgpSecondaryChunkSize:Bool {
+            get {
+                return builderResult.hasIgpSecondaryChunkSize
+            }
+        }
+        @discardableResult
+        public func setIgpSecondaryChunkSize(_ value:Int32) -> IGPConnectionSecuringResponse.Builder {
+            self.igpSecondaryChunkSize = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpSecondaryChunkSize() -> IGPConnectionSecuringResponse.Builder{
+            builderResult.hasIgpSecondaryChunkSize = false
+            builderResult.igpSecondaryChunkSize = Int32(0)
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -420,6 +464,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
             if other.hasIgpPrimaryNodeName {
                 igpPrimaryNodeName = other.igpPrimaryNodeName
             }
+            if other.hasIgpSecondaryChunkSize {
+                igpSecondaryChunkSize = other.igpSecondaryChunkSize
+            }
             try merge(unknownField: other.unknownFields)
             return self
         }
@@ -457,6 +504,9 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
                 case 42:
                     igpPrimaryNodeName = try codedInputStream.readString()
 
+                case 48:
+                    igpSecondaryChunkSize = try codedInputStream.readInt32()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -486,6 +536,11 @@ final public class IGPConnectionSecuringResponse : GeneratedResponseMessage {
             }
             if let jsonValueIgpPrimaryNodeName = jsonMap["IGPPrimaryNodeName"] as? String {
                 resultDecodedBuilder.igpPrimaryNodeName = jsonValueIgpPrimaryNodeName
+            }
+            if let jsonValueIgpSecondaryChunkSize = jsonMap["IGPSecondaryChunkSize"] as? Int {
+                resultDecodedBuilder.igpSecondaryChunkSize = Int32(jsonValueIgpSecondaryChunkSize)
+            } else if let jsonValueIgpSecondaryChunkSize = jsonMap["IGPSecondaryChunkSize"] as? String {
+                resultDecodedBuilder.igpSecondaryChunkSize = Int32(jsonValueIgpSecondaryChunkSize)!
             }
             return resultDecodedBuilder
         }
@@ -1428,6 +1483,7 @@ extension IGPConnectionSecuringResponse: GeneratedMessageProtocol {
         case "igpSymmetricKeyLength": return self.igpSymmetricKeyLength
         case "igpHeartbeatInterval": return self.igpHeartbeatInterval
         case "igpPrimaryNodeName": return self.igpPrimaryNodeName
+        case "igpSecondaryChunkSize": return self.igpSecondaryChunkSize
         default: return nil
         }
     }
@@ -1441,6 +1497,7 @@ extension IGPConnectionSecuringResponse.Builder: GeneratedMessageBuilderProtocol
             case "igpSymmetricKeyLength": return self.igpSymmetricKeyLength
             case "igpHeartbeatInterval": return self.igpHeartbeatInterval
             case "igpPrimaryNodeName": return self.igpPrimaryNodeName
+            case "igpSecondaryChunkSize": return self.igpSecondaryChunkSize
             default: return nil
             }
         }
@@ -1471,6 +1528,11 @@ extension IGPConnectionSecuringResponse.Builder: GeneratedMessageBuilderProtocol
                     return
                 }
                 self.igpPrimaryNodeName = newSubscriptValue
+            case "igpSecondaryChunkSize":
+                guard let newSubscriptValue = newSubscriptValue as? Int32 else {
+                    return
+                }
+                self.igpSecondaryChunkSize = newSubscriptValue
             default: return
             }
         }
