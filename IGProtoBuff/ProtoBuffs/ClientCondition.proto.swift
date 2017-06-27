@@ -56,6 +56,7 @@ final public class IGPClientCondition : GeneratedMessage {
             fieldCheck = fieldCheck && (lhs.hasIgpCacheStartId == rhs.hasIgpCacheStartId) && (!lhs.hasIgpCacheStartId || lhs.igpCacheStartId == rhs.igpCacheStartId)
             fieldCheck = fieldCheck && (lhs.hasIgpCacheEndId == rhs.hasIgpCacheEndId) && (!lhs.hasIgpCacheEndId || lhs.igpCacheEndId == rhs.igpCacheEndId)
             fieldCheck = fieldCheck && (lhs.hasIgpOfflineMute == rhs.hasIgpOfflineMute) && (!lhs.hasIgpOfflineMute || lhs.igpOfflineMute == rhs.igpOfflineMute)
+            fieldCheck = fieldCheck && (lhs.igpOfflineListened == rhs.igpOfflineListened)
             fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
             return fieldCheck
         }
@@ -359,8 +360,6 @@ final public class IGPClientCondition : GeneratedMessage {
             public enum IGPOfflineMute:Int32, CustomDebugStringConvertible, CustomStringConvertible, Hashable {
                 case unchanged = 0
                 case muted = 1
-
-                /// TODO [Amerehie] - 2016-08-10 11:48 AM - 1hour 8hour 2 days
                 case unmuted = 2
                 public func toString() -> String {
                     switch self {
@@ -424,6 +423,8 @@ final public class IGPClientCondition : GeneratedMessage {
 
         public fileprivate(set) var igpOfflineMute:IGPClientCondition.IGPRoom.IGPOfflineMute = IGPClientCondition.IGPRoom.IGPOfflineMute.unchanged
         public fileprivate(set) var hasIgpOfflineMute:Bool = false
+        public fileprivate(set) var igpOfflineListened:Array<Int64> = Array<Int64>()
+        private var igpOfflineListenedMemoizedSerializedSize:Int32 = -1
         required public init() {
             super.init()
         }
@@ -471,6 +472,13 @@ final public class IGPClientCondition : GeneratedMessage {
             }
             if hasIgpOfflineMute {
                 try codedOutputStream.writeEnum(fieldNumber: 12, value:igpOfflineMute.rawValue)
+            }
+            if !igpOfflineListened.isEmpty {
+                try codedOutputStream.writeRawVarint32(value: 106)
+                try codedOutputStream.writeRawVarint32(value: igpOfflineListenedMemoizedSerializedSize)
+                for oneValueigpOfflineListened in igpOfflineListened {
+                    try codedOutputStream.writeInt64NoTag(value: oneValueigpOfflineListened)
+                }
             }
             try unknownFields.writeTo(codedOutputStream: codedOutputStream)
         }
@@ -528,6 +536,16 @@ final public class IGPClientCondition : GeneratedMessage {
             if (hasIgpOfflineMute) {
                 serialize_size += igpOfflineMute.rawValue.computeEnumSize(fieldNumber: 12)
             }
+            var dataSizeIgpOfflineListened:Int32 = 0
+            for oneValueigpOfflineListened in igpOfflineListened {
+                dataSizeIgpOfflineListened += oneValueigpOfflineListened.computeInt64SizeNoTag()
+            }
+            serialize_size += dataSizeIgpOfflineListened
+            if !igpOfflineListened.isEmpty {
+                serialize_size += 1
+                serialize_size += dataSizeIgpOfflineListened.computeInt32SizeNoTag()
+            }
+            igpOfflineListenedMemoizedSerializedSize = dataSizeIgpOfflineListened
             serialize_size += unknownFields.serializedSize()
             memoizedSerializedSize = serialize_size
             return serialize_size
@@ -602,6 +620,13 @@ final public class IGPClientCondition : GeneratedMessage {
             if hasIgpOfflineMute {
                 jsonMap["IGPOfflineMute"] = igpOfflineMute.toString()
             }
+            if !igpOfflineListened.isEmpty {
+                var jsonArrayIgpOfflineListened:Array<String> = []
+                for oneValueIgpOfflineListened in igpOfflineListened {
+                    jsonArrayIgpOfflineListened.append("\(oneValueIgpOfflineListened)")
+                }
+                jsonMap["IGPOfflineListened"] = jsonArrayIgpOfflineListened
+            }
             return jsonMap
         }
         override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPClientCondition.IGPRoom {
@@ -653,6 +678,11 @@ final public class IGPClientCondition : GeneratedMessage {
             if (hasIgpOfflineMute) {
                 output += "\(indent) igpOfflineMute: \(igpOfflineMute.description)\n"
             }
+            var igpOfflineListenedElementIndex:Int = 0
+            for oneValueIgpOfflineListened in igpOfflineListened  {
+                output += "\(indent) igpOfflineListened[\(igpOfflineListenedElementIndex)]: \(oneValueIgpOfflineListened)\n"
+                igpOfflineListenedElementIndex += 1
+            }
             output += unknownFields.getDescription(indent: indent)
             return output
         }
@@ -691,6 +721,9 @@ final public class IGPClientCondition : GeneratedMessage {
                 }
                 if hasIgpOfflineMute {
                      hashCode = (hashCode &* 31) &+ igpOfflineMute.hashValue
+                }
+                for oneValueIgpOfflineListened in igpOfflineListened {
+                    hashCode = (hashCode &* 31) &+ oneValueIgpOfflineListened.hashValue
                 }
                 hashCode = (hashCode &* 31) &+  unknownFields.hashValue
                 return hashCode
@@ -971,6 +1004,24 @@ final public class IGPClientCondition : GeneratedMessage {
                    builderResult.igpOfflineMute = .unchanged
                    return self
                 }
+            public var igpOfflineListened:Array<Int64> {
+                get {
+                    return builderResult.igpOfflineListened
+                }
+                set (array) {
+                    builderResult.igpOfflineListened = array
+                }
+            }
+            @discardableResult
+            public func setIgpOfflineListened(_ value:Array<Int64>) -> IGPClientCondition.IGPRoom.Builder {
+                self.igpOfflineListened = value
+                return self
+            }
+            @discardableResult
+            public func clearIgpOfflineListened() -> IGPClientCondition.IGPRoom.Builder {
+                builderResult.igpOfflineListened.removeAll(keepingCapacity: false)
+                return self
+            }
             override public var internalGetResult:GeneratedMessage {
                 get {
                     return builderResult
@@ -1029,6 +1080,9 @@ final public class IGPClientCondition : GeneratedMessage {
                 }
                 if other.hasIgpOfflineMute {
                     igpOfflineMute = other.igpOfflineMute
+                }
+                if !other.igpOfflineListened.isEmpty {
+                    builderResult.igpOfflineListened += other.igpOfflineListened
                 }
                 try merge(unknownField: other.unknownFields)
                 return self
@@ -1096,6 +1150,14 @@ final public class IGPClientCondition : GeneratedMessage {
                         } else {
                             try unknownFieldsBuilder.mergeVarintField(fieldNumber: 12, value:Int64(valueIntigpOfflineMute))
                         }
+
+                    case 106:
+                        let length = Int(try codedInputStream.readRawVarint32())
+                        let limit = try codedInputStream.pushLimit(byteLimit: length)
+                        while (codedInputStream.bytesUntilLimit() > 0) {
+                            builderResult.igpOfflineListened.append(try codedInputStream.readInt64())
+                        }
+                        codedInputStream.popLimit(oldLimit: limit)
 
                     default:
                         if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
@@ -1167,6 +1229,13 @@ final public class IGPClientCondition : GeneratedMessage {
                 }
                 if let jsonValueIgpOfflineMute = jsonMap["IGPOfflineMute"] as? String {
                     resultDecodedBuilder.igpOfflineMute = try IGPClientCondition.IGPRoom.IGPOfflineMute.fromString(str: jsonValueIgpOfflineMute)
+                }
+                if let jsonValueIgpOfflineListened = jsonMap["IGPOfflineListened"] as? Array<String> {
+                    var jsonArrayIgpOfflineListened:Array<Int64> = []
+                    for oneValueIgpOfflineListened in jsonValueIgpOfflineListened {
+                        jsonArrayIgpOfflineListened.append(Int64(oneValueIgpOfflineListened)!)
+                    }
+                    resultDecodedBuilder.igpOfflineListened = jsonArrayIgpOfflineListened
                 }
                 return resultDecodedBuilder
             }
@@ -1838,6 +1907,7 @@ extension IGPClientCondition.IGPRoom: GeneratedMessageProtocol {
         case "igpCacheStartId": return self.igpCacheStartId
         case "igpCacheEndId": return self.igpCacheEndId
         case "igpOfflineMute": return self.igpOfflineMute
+        case "igpOfflineListened": return self.igpOfflineListened
         default: return nil
         }
     }
@@ -1920,6 +1990,7 @@ extension IGPClientCondition.IGPRoom.Builder: GeneratedMessageBuilderProtocol {
             case "igpCacheStartId": return self.igpCacheStartId
             case "igpCacheEndId": return self.igpCacheEndId
             case "igpOfflineMute": return self.igpOfflineMute
+            case "igpOfflineListened": return self.igpOfflineListened
             default: return nil
             }
         }
@@ -1980,6 +2051,11 @@ extension IGPClientCondition.IGPRoom.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpOfflineMute = newSubscriptValue
+            case "igpOfflineListened":
+                guard let newSubscriptValue = newSubscriptValue as? Array<Int64> else {
+                    return
+                }
+                self.igpOfflineListened = newSubscriptValue
             default: return
             }
         }

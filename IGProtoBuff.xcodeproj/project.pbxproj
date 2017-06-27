@@ -155,6 +155,17 @@
 		4F0514F61EB9D9FD0056D1D5 /* UserUsernameToId.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0514621EB9D9FD0056D1D5 /* UserUsernameToId.proto.swift */; };
 		4F0514F71EB9D9FD0056D1D5 /* UserVerify.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0514631EB9D9FD0056D1D5 /* UserVerify.proto.swift */; };
 		4F0514F81EB9D9FD0056D1D5 /* UserVerifyNewDevice.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F0514641EB9D9FD0056D1D5 /* UserVerifyNewDevice.proto.swift */; };
+		4F51946D1F02421200E51205 /* PushRateSignaling.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51942C1F02421200E51205 /* PushRateSignaling.proto.swift */; };
+		4F51946E1F02421200E51205 /* SignalingAccept.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194341F02421200E51205 /* SignalingAccept.proto.swift */; };
+		4F51946F1F02421200E51205 /* SignalingCandidate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194351F02421200E51205 /* SignalingCandidate.proto.swift */; };
+		4F5194701F02421200E51205 /* SignalingClearLog.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194361F02421200E51205 /* SignalingClearLog.proto.swift */; };
+		4F5194711F02421200E51205 /* SignalingGetConfiguration.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194371F02421200E51205 /* SignalingGetConfiguration.proto.swift */; };
+		4F5194721F02421200E51205 /* SignalingGetLog.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194381F02421200E51205 /* SignalingGetLog.proto.swift */; };
+		4F5194731F02421200E51205 /* SignalingLeave.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F5194391F02421200E51205 /* SignalingLeave.proto.swift */; };
+		4F5194741F02421200E51205 /* SignalingOffer.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51943A1F02421200E51205 /* SignalingOffer.proto.swift */; };
+		4F5194751F02421200E51205 /* SignalingRate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51943B1F02421200E51205 /* SignalingRate.proto.swift */; };
+		4F5194761F02421200E51205 /* SignalingRinging.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51943C1F02421200E51205 /* SignalingRinging.proto.swift */; };
+		4F5194771F02421200E51205 /* SignalingSessionHold.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F51943D1F02421200E51205 /* SignalingSessionHold.proto.swift */; };
 		FA76382E1E2FFD5E00C24391 /* IGProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA7638361E2FFFD200C24391 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7638351E2FFFD200C24391 /* ProtocolBuffers.framework */; };
 /* End PBXBuildFile section */
@@ -459,6 +470,165 @@
 		4F36DDD11EB9C9FE00BC148D /* UserVerify.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserVerify.proto.swift; path = IGProtoBuff/ProtoBuffs/UserVerify.proto.swift; sourceTree = "<group>"; };
 		4F36DDD21EB9C9FE00BC148D /* UserVerifyNewDevice.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserVerifyNewDevice.proto.swift; path = IGProtoBuff/ProtoBuffs/UserVerifyNewDevice.proto.swift; sourceTree = "<group>"; };
 		4F36DDD51EB9D12A00BC148D /* ProtoBuffs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ProtoBuffs; path = IGProtoBuff/ProtoBuffs; sourceTree = "<group>"; };
+		4F5193CE1F02421100E51205 /* ChannelAddAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAddAdmin.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAddAdmin.proto.swift; sourceTree = "<group>"; };
+		4F5193CF1F02421100E51205 /* ChannelAddMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAddMember.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAddMember.proto.swift; sourceTree = "<group>"; };
+		4F5193D01F02421100E51205 /* ChannelAddMessageReaction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAddMessageReaction.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAddMessageReaction.proto.swift; sourceTree = "<group>"; };
+		4F5193D11F02421100E51205 /* ChannelAddModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAddModerator.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAddModerator.proto.swift; sourceTree = "<group>"; };
+		4F5193D21F02421100E51205 /* ChannelAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAvatarAdd.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAvatarAdd.proto.swift; sourceTree = "<group>"; };
+		4F5193D31F02421100E51205 /* ChannelAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAvatarDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAvatarDelete.proto.swift; sourceTree = "<group>"; };
+		4F5193D41F02421100E51205 /* ChannelAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelAvatarGetList.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelAvatarGetList.proto.swift; sourceTree = "<group>"; };
+		4F5193D51F02421100E51205 /* ChannelCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelCheckUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelCheckUsername.proto.swift; sourceTree = "<group>"; };
+		4F5193D61F02421100E51205 /* ChannelCreate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelCreate.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelCreate.proto.swift; sourceTree = "<group>"; };
+		4F5193D71F02421100E51205 /* ChannelDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelDelete.proto.swift; sourceTree = "<group>"; };
+		4F5193D81F02421100E51205 /* ChannelDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelDeleteMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelDeleteMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193D91F02421100E51205 /* ChannelEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelEdit.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelEdit.proto.swift; sourceTree = "<group>"; };
+		4F5193DA1F02421100E51205 /* ChannelEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelEditMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelEditMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193DB1F02421100E51205 /* ChannelGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelGetDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelGetDraft.proto.swift; sourceTree = "<group>"; };
+		4F5193DC1F02421100E51205 /* ChannelGetMemberList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelGetMemberList.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelGetMemberList.proto.swift; sourceTree = "<group>"; };
+		4F5193DD1F02421100E51205 /* ChannelGetMessagesStats.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelGetMessagesStats.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelGetMessagesStats.proto.swift; sourceTree = "<group>"; };
+		4F5193DE1F02421100E51205 /* ChannelKickAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelKickAdmin.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelKickAdmin.proto.swift; sourceTree = "<group>"; };
+		4F5193DF1F02421100E51205 /* ChannelKickMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelKickMember.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelKickMember.proto.swift; sourceTree = "<group>"; };
+		4F5193E01F02421100E51205 /* ChannelKickModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelKickModerator.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelKickModerator.proto.swift; sourceTree = "<group>"; };
+		4F5193E11F02421100E51205 /* ChannelLeft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelLeft.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelLeft.proto.swift; sourceTree = "<group>"; };
+		4F5193E21F02421100E51205 /* ChannelRemoveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelRemoveUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelRemoveUsername.proto.swift; sourceTree = "<group>"; };
+		4F5193E31F02421100E51205 /* ChannelRevokeLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelRevokeLink.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelRevokeLink.proto.swift; sourceTree = "<group>"; };
+		4F5193E41F02421100E51205 /* ChannelSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelSendMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelSendMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193E51F02421100E51205 /* ChannelSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelSetAction.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelSetAction.proto.swift; sourceTree = "<group>"; };
+		4F5193E61F02421100E51205 /* ChannelUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelUpdateDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelUpdateDraft.proto.swift; sourceTree = "<group>"; };
+		4F5193E71F02421100E51205 /* ChannelUpdateSignature.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelUpdateSignature.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelUpdateSignature.proto.swift; sourceTree = "<group>"; };
+		4F5193E81F02421100E51205 /* ChannelUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChannelUpdateUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ChannelUpdateUsername.proto.swift; sourceTree = "<group>"; };
+		4F5193E91F02421100E51205 /* ChatClearMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatClearMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatClearMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193EA1F02421100E51205 /* ChatConvertToGroup.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatConvertToGroup.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatConvertToGroup.proto.swift; sourceTree = "<group>"; };
+		4F5193EB1F02421100E51205 /* ChatDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatDelete.proto.swift; sourceTree = "<group>"; };
+		4F5193EC1F02421100E51205 /* ChatDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatDeleteMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatDeleteMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193ED1F02421100E51205 /* ChatEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatEditMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatEditMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193EE1F02421100E51205 /* ChatGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatGetDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatGetDraft.proto.swift; sourceTree = "<group>"; };
+		4F5193EF1F02421100E51205 /* ChatGetRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatGetRoom.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatGetRoom.proto.swift; sourceTree = "<group>"; };
+		4F5193F01F02421100E51205 /* ChatSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatSendMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatSendMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193F11F02421100E51205 /* ChatSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatSetAction.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatSetAction.proto.swift; sourceTree = "<group>"; };
+		4F5193F21F02421100E51205 /* ChatUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatUpdateDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatUpdateDraft.proto.swift; sourceTree = "<group>"; };
+		4F5193F31F02421100E51205 /* ChatUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatUpdateStatus.proto.swift; path = IGProtoBuff/ProtoBuffs/ChatUpdateStatus.proto.swift; sourceTree = "<group>"; };
+		4F5193F41F02421100E51205 /* ClientCheckInviteLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientCheckInviteLink.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientCheckInviteLink.proto.swift; sourceTree = "<group>"; };
+		4F5193F51F02421100E51205 /* ClientCondition.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientCondition.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientCondition.proto.swift; sourceTree = "<group>"; };
+		4F5193F61F02421100E51205 /* ClientCountRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientCountRoomHistory.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientCountRoomHistory.proto.swift; sourceTree = "<group>"; };
+		4F5193F71F02421100E51205 /* ClientGetRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientGetRoom.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientGetRoom.proto.swift; sourceTree = "<group>"; };
+		4F5193F81F02421100E51205 /* ClientGetRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientGetRoomHistory.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientGetRoomHistory.proto.swift; sourceTree = "<group>"; };
+		4F5193F91F02421100E51205 /* ClientGetRoomList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientGetRoomList.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientGetRoomList.proto.swift; sourceTree = "<group>"; };
+		4F5193FA1F02421100E51205 /* ClientGetRoomMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientGetRoomMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientGetRoomMessage.proto.swift; sourceTree = "<group>"; };
+		4F5193FB1F02421100E51205 /* ClientJoinByInviteLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientJoinByInviteLink.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientJoinByInviteLink.proto.swift; sourceTree = "<group>"; };
+		4F5193FC1F02421100E51205 /* ClientJoinByUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientJoinByUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientJoinByUsername.proto.swift; sourceTree = "<group>"; };
+		4F5193FD1F02421100E51205 /* ClientResolveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientResolveUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientResolveUsername.proto.swift; sourceTree = "<group>"; };
+		4F5193FE1F02421100E51205 /* ClientSearchRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientSearchRoomHistory.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientSearchRoomHistory.proto.swift; sourceTree = "<group>"; };
+		4F5193FF1F02421100E51205 /* ClientSearchUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientSearchUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientSearchUsername.proto.swift; sourceTree = "<group>"; };
+		4F5194001F02421100E51205 /* ClientSubscribeToRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientSubscribeToRoom.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientSubscribeToRoom.proto.swift; sourceTree = "<group>"; };
+		4F5194011F02421100E51205 /* ClientUnsubscribeFromRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ClientUnsubscribeFromRoom.proto.swift; path = IGProtoBuff/ProtoBuffs/ClientUnsubscribeFromRoom.proto.swift; sourceTree = "<group>"; };
+		4F5194021F02421100E51205 /* ConnectionSecuring.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConnectionSecuring.proto.swift; path = IGProtoBuff/ProtoBuffs/ConnectionSecuring.proto.swift; sourceTree = "<group>"; };
+		4F5194031F02421100E51205 /* Error.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Error.proto.swift; path = IGProtoBuff/ProtoBuffs/Error.proto.swift; sourceTree = "<group>"; };
+		4F5194041F02421100E51205 /* FileDownload.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileDownload.proto.swift; path = IGProtoBuff/ProtoBuffs/FileDownload.proto.swift; sourceTree = "<group>"; };
+		4F5194051F02421100E51205 /* FileInfo.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileInfo.proto.swift; path = IGProtoBuff/ProtoBuffs/FileInfo.proto.swift; sourceTree = "<group>"; };
+		4F5194061F02421100E51205 /* FileUpload.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileUpload.proto.swift; path = IGProtoBuff/ProtoBuffs/FileUpload.proto.swift; sourceTree = "<group>"; };
+		4F5194071F02421100E51205 /* FileUploadInit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileUploadInit.proto.swift; path = IGProtoBuff/ProtoBuffs/FileUploadInit.proto.swift; sourceTree = "<group>"; };
+		4F5194081F02421100E51205 /* FileUploadOption.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileUploadOption.proto.swift; path = IGProtoBuff/ProtoBuffs/FileUploadOption.proto.swift; sourceTree = "<group>"; };
+		4F5194091F02421100E51205 /* FileUploadStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileUploadStatus.proto.swift; path = IGProtoBuff/ProtoBuffs/FileUploadStatus.proto.swift; sourceTree = "<group>"; };
+		4F51940A1F02421100E51205 /* Global.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Global.proto.swift; path = IGProtoBuff/ProtoBuffs/Global.proto.swift; sourceTree = "<group>"; };
+		4F51940B1F02421100E51205 /* GroupAddAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAddAdmin.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAddAdmin.proto.swift; sourceTree = "<group>"; };
+		4F51940C1F02421100E51205 /* GroupAddMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAddMember.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAddMember.proto.swift; sourceTree = "<group>"; };
+		4F51940D1F02421100E51205 /* GroupAddModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAddModerator.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAddModerator.proto.swift; sourceTree = "<group>"; };
+		4F51940E1F02421100E51205 /* GroupAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAvatarAdd.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAvatarAdd.proto.swift; sourceTree = "<group>"; };
+		4F51940F1F02421100E51205 /* GroupAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAvatarDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAvatarDelete.proto.swift; sourceTree = "<group>"; };
+		4F5194101F02421100E51205 /* GroupAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupAvatarGetList.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupAvatarGetList.proto.swift; sourceTree = "<group>"; };
+		4F5194111F02421100E51205 /* GroupCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupCheckUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupCheckUsername.proto.swift; sourceTree = "<group>"; };
+		4F5194121F02421100E51205 /* GroupClearMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupClearMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupClearMessage.proto.swift; sourceTree = "<group>"; };
+		4F5194131F02421100E51205 /* GroupCreate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupCreate.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupCreate.proto.swift; sourceTree = "<group>"; };
+		4F5194141F02421100E51205 /* GroupDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupDelete.proto.swift; sourceTree = "<group>"; };
+		4F5194151F02421100E51205 /* GroupDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupDeleteMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupDeleteMessage.proto.swift; sourceTree = "<group>"; };
+		4F5194161F02421100E51205 /* GroupEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupEdit.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupEdit.proto.swift; sourceTree = "<group>"; };
+		4F5194171F02421200E51205 /* GroupEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupEditMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupEditMessage.proto.swift; sourceTree = "<group>"; };
+		4F5194181F02421200E51205 /* GroupGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupGetDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupGetDraft.proto.swift; sourceTree = "<group>"; };
+		4F5194191F02421200E51205 /* GroupGetMemberList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupGetMemberList.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupGetMemberList.proto.swift; sourceTree = "<group>"; };
+		4F51941A1F02421200E51205 /* GroupKickAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupKickAdmin.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupKickAdmin.proto.swift; sourceTree = "<group>"; };
+		4F51941B1F02421200E51205 /* GroupKickMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupKickMember.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupKickMember.proto.swift; sourceTree = "<group>"; };
+		4F51941C1F02421200E51205 /* GroupKickModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupKickModerator.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupKickModerator.proto.swift; sourceTree = "<group>"; };
+		4F51941D1F02421200E51205 /* GroupLeft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupLeft.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupLeft.proto.swift; sourceTree = "<group>"; };
+		4F51941E1F02421200E51205 /* GroupRemoveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupRemoveUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupRemoveUsername.proto.swift; sourceTree = "<group>"; };
+		4F51941F1F02421200E51205 /* GroupRevokeLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupRevokeLink.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupRevokeLink.proto.swift; sourceTree = "<group>"; };
+		4F5194201F02421200E51205 /* GroupSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupSendMessage.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupSendMessage.proto.swift; sourceTree = "<group>"; };
+		4F5194211F02421200E51205 /* GroupSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupSetAction.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupSetAction.proto.swift; sourceTree = "<group>"; };
+		4F5194221F02421200E51205 /* GroupUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupUpdateDraft.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupUpdateDraft.proto.swift; sourceTree = "<group>"; };
+		4F5194231F02421200E51205 /* GroupUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupUpdateStatus.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupUpdateStatus.proto.swift; sourceTree = "<group>"; };
+		4F5194241F02421200E51205 /* GroupUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GroupUpdateUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/GroupUpdateUsername.proto.swift; sourceTree = "<group>"; };
+		4F5194251F02421200E51205 /* Heartbeat.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Heartbeat.proto.swift; path = IGProtoBuff/ProtoBuffs/Heartbeat.proto.swift; sourceTree = "<group>"; };
+		4F5194261F02421200E51205 /* InfoCountry.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoCountry.proto.swift; path = IGProtoBuff/ProtoBuffs/InfoCountry.proto.swift; sourceTree = "<group>"; };
+		4F5194271F02421200E51205 /* InfoLocation.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoLocation.proto.swift; path = IGProtoBuff/ProtoBuffs/InfoLocation.proto.swift; sourceTree = "<group>"; };
+		4F5194281F02421200E51205 /* InfoPage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoPage.proto.swift; path = IGProtoBuff/ProtoBuffs/InfoPage.proto.swift; sourceTree = "<group>"; };
+		4F5194291F02421200E51205 /* InfoTime.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoTime.proto.swift; path = IGProtoBuff/ProtoBuffs/InfoTime.proto.swift; sourceTree = "<group>"; };
+		4F51942A1F02421200E51205 /* InfoWallpaper.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoWallpaper.proto.swift; path = IGProtoBuff/ProtoBuffs/InfoWallpaper.proto.swift; sourceTree = "<group>"; };
+		4F51942B1F02421200E51205 /* PushLoginToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushLoginToken.proto.swift; path = IGProtoBuff/ProtoBuffs/PushLoginToken.proto.swift; sourceTree = "<group>"; };
+		4F51942C1F02421200E51205 /* PushRateSignaling.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushRateSignaling.proto.swift; path = IGProtoBuff/ProtoBuffs/PushRateSignaling.proto.swift; sourceTree = "<group>"; };
+		4F51942D1F02421200E51205 /* PushTwoStepVerification.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushTwoStepVerification.proto.swift; path = IGProtoBuff/ProtoBuffs/PushTwoStepVerification.proto.swift; sourceTree = "<group>"; };
+		4F51942E1F02421200E51205 /* PushUserInfoExpired.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PushUserInfoExpired.proto.swift; path = IGProtoBuff/ProtoBuffs/PushUserInfoExpired.proto.swift; sourceTree = "<group>"; };
+		4F51942F1F02421200E51205 /* QrCodeAddContact.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeAddContact.proto.swift; path = IGProtoBuff/ProtoBuffs/QrCodeAddContact.proto.swift; sourceTree = "<group>"; };
+		4F5194301F02421200E51205 /* QrCodeAddMe.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeAddMe.proto.swift; path = IGProtoBuff/ProtoBuffs/QrCodeAddMe.proto.swift; sourceTree = "<group>"; };
+		4F5194311F02421200E51205 /* QrCodeJoin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeJoin.proto.swift; path = IGProtoBuff/ProtoBuffs/QrCodeJoin.proto.swift; sourceTree = "<group>"; };
+		4F5194321F02421200E51205 /* QrCodeNewDevice.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeNewDevice.proto.swift; path = IGProtoBuff/ProtoBuffs/QrCodeNewDevice.proto.swift; sourceTree = "<group>"; };
+		4F5194331F02421200E51205 /* QrCodeResolve.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QrCodeResolve.proto.swift; path = IGProtoBuff/ProtoBuffs/QrCodeResolve.proto.swift; sourceTree = "<group>"; };
+		4F5194341F02421200E51205 /* SignalingAccept.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingAccept.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingAccept.proto.swift; sourceTree = "<group>"; };
+		4F5194351F02421200E51205 /* SignalingCandidate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingCandidate.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingCandidate.proto.swift; sourceTree = "<group>"; };
+		4F5194361F02421200E51205 /* SignalingClearLog.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingClearLog.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingClearLog.proto.swift; sourceTree = "<group>"; };
+		4F5194371F02421200E51205 /* SignalingGetConfiguration.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingGetConfiguration.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingGetConfiguration.proto.swift; sourceTree = "<group>"; };
+		4F5194381F02421200E51205 /* SignalingGetLog.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingGetLog.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingGetLog.proto.swift; sourceTree = "<group>"; };
+		4F5194391F02421200E51205 /* SignalingLeave.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingLeave.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingLeave.proto.swift; sourceTree = "<group>"; };
+		4F51943A1F02421200E51205 /* SignalingOffer.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingOffer.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingOffer.proto.swift; sourceTree = "<group>"; };
+		4F51943B1F02421200E51205 /* SignalingRate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingRate.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingRate.proto.swift; sourceTree = "<group>"; };
+		4F51943C1F02421200E51205 /* SignalingRinging.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingRinging.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingRinging.proto.swift; sourceTree = "<group>"; };
+		4F51943D1F02421200E51205 /* SignalingSessionHold.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignalingSessionHold.proto.swift; path = IGProtoBuff/ProtoBuffs/SignalingSessionHold.proto.swift; sourceTree = "<group>"; };
+		4F51943E1F02421200E51205 /* UserAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserAvatarAdd.proto.swift; path = IGProtoBuff/ProtoBuffs/UserAvatarAdd.proto.swift; sourceTree = "<group>"; };
+		4F51943F1F02421200E51205 /* UserAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserAvatarDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/UserAvatarDelete.proto.swift; sourceTree = "<group>"; };
+		4F5194401F02421200E51205 /* UserAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserAvatarGetList.proto.swift; path = IGProtoBuff/ProtoBuffs/UserAvatarGetList.proto.swift; sourceTree = "<group>"; };
+		4F5194411F02421200E51205 /* UserContactsBlock.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsBlock.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsBlock.proto.swift; sourceTree = "<group>"; };
+		4F5194421F02421200E51205 /* UserContactsDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsDelete.proto.swift; sourceTree = "<group>"; };
+		4F5194431F02421200E51205 /* UserContactsEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsEdit.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsEdit.proto.swift; sourceTree = "<group>"; };
+		4F5194441F02421200E51205 /* UserContactsGetBlockedList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsGetBlockedList.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsGetBlockedList.proto.swift; sourceTree = "<group>"; };
+		4F5194451F02421200E51205 /* UserContactsGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsGetList.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsGetList.proto.swift; sourceTree = "<group>"; };
+		4F5194461F02421200E51205 /* UserContactsImport.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsImport.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsImport.proto.swift; sourceTree = "<group>"; };
+		4F5194471F02421200E51205 /* UserContactsUnblock.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserContactsUnblock.proto.swift; path = IGProtoBuff/ProtoBuffs/UserContactsUnblock.proto.swift; sourceTree = "<group>"; };
+		4F5194481F02421200E51205 /* UserDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDelete.proto.swift; path = IGProtoBuff/ProtoBuffs/UserDelete.proto.swift; sourceTree = "<group>"; };
+		4F5194491F02421200E51205 /* UserGetDeleteToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserGetDeleteToken.proto.swift; path = IGProtoBuff/ProtoBuffs/UserGetDeleteToken.proto.swift; sourceTree = "<group>"; };
+		4F51944A1F02421200E51205 /* UserInfo.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserInfo.proto.swift; path = IGProtoBuff/ProtoBuffs/UserInfo.proto.swift; sourceTree = "<group>"; };
+		4F51944B1F02421200E51205 /* UserLogin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserLogin.proto.swift; path = IGProtoBuff/ProtoBuffs/UserLogin.proto.swift; sourceTree = "<group>"; };
+		4F51944C1F02421200E51205 /* UserPrivacyGetRule.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPrivacyGetRule.proto.swift; path = IGProtoBuff/ProtoBuffs/UserPrivacyGetRule.proto.swift; sourceTree = "<group>"; };
+		4F51944D1F02421200E51205 /* UserPrivacySetRule.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserPrivacySetRule.proto.swift; path = IGProtoBuff/ProtoBuffs/UserPrivacySetRule.proto.swift; sourceTree = "<group>"; };
+		4F51944E1F02421200E51205 /* UserProfileCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileCheckUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileCheckUsername.proto.swift; sourceTree = "<group>"; };
+		4F51944F1F02421200E51205 /* UserProfileGetEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileGetEmail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileGetEmail.proto.swift; sourceTree = "<group>"; };
+		4F5194501F02421200E51205 /* UserProfileGetGender.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileGetGender.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileGetGender.proto.swift; sourceTree = "<group>"; };
+		4F5194511F02421200E51205 /* UserProfileGetNickname.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileGetNickname.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileGetNickname.proto.swift; sourceTree = "<group>"; };
+		4F5194521F02421200E51205 /* UserProfileGetSelfRemove.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileGetSelfRemove.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileGetSelfRemove.proto.swift; sourceTree = "<group>"; };
+		4F5194531F02421200E51205 /* UserProfileSetEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileSetEmail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileSetEmail.proto.swift; sourceTree = "<group>"; };
+		4F5194541F02421200E51205 /* UserProfileSetGender.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileSetGender.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileSetGender.proto.swift; sourceTree = "<group>"; };
+		4F5194551F02421200E51205 /* UserProfileSetNickname.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileSetNickname.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileSetNickname.proto.swift; sourceTree = "<group>"; };
+		4F5194561F02421200E51205 /* UserProfileSetSelfRemove.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileSetSelfRemove.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileSetSelfRemove.proto.swift; sourceTree = "<group>"; };
+		4F5194571F02421200E51205 /* UserProfileUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfileUpdateUsername.proto.swift; path = IGProtoBuff/ProtoBuffs/UserProfileUpdateUsername.proto.swift; sourceTree = "<group>"; };
+		4F5194581F02421200E51205 /* UserRegister.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserRegister.proto.swift; path = IGProtoBuff/ProtoBuffs/UserRegister.proto.swift; sourceTree = "<group>"; };
+		4F5194591F02421200E51205 /* UserSessionGetActiveList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSessionGetActiveList.proto.swift; path = IGProtoBuff/ProtoBuffs/UserSessionGetActiveList.proto.swift; sourceTree = "<group>"; };
+		4F51945A1F02421200E51205 /* UserSessionLogout.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSessionLogout.proto.swift; path = IGProtoBuff/ProtoBuffs/UserSessionLogout.proto.swift; sourceTree = "<group>"; };
+		4F51945B1F02421200E51205 /* UserSessionTerminate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserSessionTerminate.proto.swift; path = IGProtoBuff/ProtoBuffs/UserSessionTerminate.proto.swift; sourceTree = "<group>"; };
+		4F51945C1F02421200E51205 /* UserTwoStepVerificationChangeHint.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationChangeHint.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationChangeHint.proto.swift; sourceTree = "<group>"; };
+		4F51945D1F02421200E51205 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationChangeRecoveryEmail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationChangeRecoveryEmail.proto.swift; sourceTree = "<group>"; };
+		4F51945E1F02421200E51205 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationChangeRecoveryQuestion.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationChangeRecoveryQuestion.proto.swift; sourceTree = "<group>"; };
+		4F51945F1F02421200E51205 /* UserTwoStepVerificationCheckPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationCheckPassword.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationCheckPassword.proto.swift; sourceTree = "<group>"; };
+		4F5194601F02421200E51205 /* UserTwoStepVerificationGetPasswordDetail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationGetPasswordDetail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationGetPasswordDetail.proto.swift; sourceTree = "<group>"; };
+		4F5194611F02421200E51205 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift; sourceTree = "<group>"; };
+		4F5194621F02421200E51205 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationRecoverPasswordByToken.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationRecoverPasswordByToken.proto.swift; sourceTree = "<group>"; };
+		4F5194631F02421200E51205 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationRequestRecoveryToken.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationRequestRecoveryToken.proto.swift; sourceTree = "<group>"; };
+		4F5194641F02421200E51205 /* UserTwoStepVerificationResendVerifyEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationResendVerifyEmail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationResendVerifyEmail.proto.swift; sourceTree = "<group>"; };
+		4F5194651F02421200E51205 /* UserTwoStepVerificationSetPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationSetPassword.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationSetPassword.proto.swift; sourceTree = "<group>"; };
+		4F5194661F02421200E51205 /* UserTwoStepVerificationUnsetPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationUnsetPassword.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationUnsetPassword.proto.swift; sourceTree = "<group>"; };
+		4F5194671F02421200E51205 /* UserTwoStepVerificationVerifyPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationVerifyPassword.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationVerifyPassword.proto.swift; sourceTree = "<group>"; };
+		4F5194681F02421200E51205 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserTwoStepVerificationVerifyRecoveryEmail.proto.swift; path = IGProtoBuff/ProtoBuffs/UserTwoStepVerificationVerifyRecoveryEmail.proto.swift; sourceTree = "<group>"; };
+		4F5194691F02421200E51205 /* UserUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserUpdateStatus.proto.swift; path = IGProtoBuff/ProtoBuffs/UserUpdateStatus.proto.swift; sourceTree = "<group>"; };
+		4F51946A1F02421200E51205 /* UserUsernameToId.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserUsernameToId.proto.swift; path = IGProtoBuff/ProtoBuffs/UserUsernameToId.proto.swift; sourceTree = "<group>"; };
+		4F51946B1F02421200E51205 /* UserVerify.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserVerify.proto.swift; path = IGProtoBuff/ProtoBuffs/UserVerify.proto.swift; sourceTree = "<group>"; };
+		4F51946C1F02421200E51205 /* UserVerifyNewDevice.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserVerifyNewDevice.proto.swift; path = IGProtoBuff/ProtoBuffs/UserVerifyNewDevice.proto.swift; sourceTree = "<group>"; };
 		FA7638291E2FFD5E00C24391 /* IGProtoBuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGProtoBuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGProtoBuff.h; sourceTree = "<group>"; };
 		FA76382D1E2FFD5E00C24391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -625,6 +795,165 @@
 		FA76381F1E2FFD5E00C24391 = {
 			isa = PBXGroup;
 			children = (
+				4F5193CE1F02421100E51205 /* ChannelAddAdmin.proto.swift */,
+				4F5193CF1F02421100E51205 /* ChannelAddMember.proto.swift */,
+				4F5193D01F02421100E51205 /* ChannelAddMessageReaction.proto.swift */,
+				4F5193D11F02421100E51205 /* ChannelAddModerator.proto.swift */,
+				4F5193D21F02421100E51205 /* ChannelAvatarAdd.proto.swift */,
+				4F5193D31F02421100E51205 /* ChannelAvatarDelete.proto.swift */,
+				4F5193D41F02421100E51205 /* ChannelAvatarGetList.proto.swift */,
+				4F5193D51F02421100E51205 /* ChannelCheckUsername.proto.swift */,
+				4F5193D61F02421100E51205 /* ChannelCreate.proto.swift */,
+				4F5193D71F02421100E51205 /* ChannelDelete.proto.swift */,
+				4F5193D81F02421100E51205 /* ChannelDeleteMessage.proto.swift */,
+				4F5193D91F02421100E51205 /* ChannelEdit.proto.swift */,
+				4F5193DA1F02421100E51205 /* ChannelEditMessage.proto.swift */,
+				4F5193DB1F02421100E51205 /* ChannelGetDraft.proto.swift */,
+				4F5193DC1F02421100E51205 /* ChannelGetMemberList.proto.swift */,
+				4F5193DD1F02421100E51205 /* ChannelGetMessagesStats.proto.swift */,
+				4F5193DE1F02421100E51205 /* ChannelKickAdmin.proto.swift */,
+				4F5193DF1F02421100E51205 /* ChannelKickMember.proto.swift */,
+				4F5193E01F02421100E51205 /* ChannelKickModerator.proto.swift */,
+				4F5193E11F02421100E51205 /* ChannelLeft.proto.swift */,
+				4F5193E21F02421100E51205 /* ChannelRemoveUsername.proto.swift */,
+				4F5193E31F02421100E51205 /* ChannelRevokeLink.proto.swift */,
+				4F5193E41F02421100E51205 /* ChannelSendMessage.proto.swift */,
+				4F5193E51F02421100E51205 /* ChannelSetAction.proto.swift */,
+				4F5193E61F02421100E51205 /* ChannelUpdateDraft.proto.swift */,
+				4F5193E71F02421100E51205 /* ChannelUpdateSignature.proto.swift */,
+				4F5193E81F02421100E51205 /* ChannelUpdateUsername.proto.swift */,
+				4F5193E91F02421100E51205 /* ChatClearMessage.proto.swift */,
+				4F5193EA1F02421100E51205 /* ChatConvertToGroup.proto.swift */,
+				4F5193EB1F02421100E51205 /* ChatDelete.proto.swift */,
+				4F5193EC1F02421100E51205 /* ChatDeleteMessage.proto.swift */,
+				4F5193ED1F02421100E51205 /* ChatEditMessage.proto.swift */,
+				4F5193EE1F02421100E51205 /* ChatGetDraft.proto.swift */,
+				4F5193EF1F02421100E51205 /* ChatGetRoom.proto.swift */,
+				4F5193F01F02421100E51205 /* ChatSendMessage.proto.swift */,
+				4F5193F11F02421100E51205 /* ChatSetAction.proto.swift */,
+				4F5193F21F02421100E51205 /* ChatUpdateDraft.proto.swift */,
+				4F5193F31F02421100E51205 /* ChatUpdateStatus.proto.swift */,
+				4F5193F41F02421100E51205 /* ClientCheckInviteLink.proto.swift */,
+				4F5193F51F02421100E51205 /* ClientCondition.proto.swift */,
+				4F5193F61F02421100E51205 /* ClientCountRoomHistory.proto.swift */,
+				4F5193F71F02421100E51205 /* ClientGetRoom.proto.swift */,
+				4F5193F81F02421100E51205 /* ClientGetRoomHistory.proto.swift */,
+				4F5193F91F02421100E51205 /* ClientGetRoomList.proto.swift */,
+				4F5193FA1F02421100E51205 /* ClientGetRoomMessage.proto.swift */,
+				4F5193FB1F02421100E51205 /* ClientJoinByInviteLink.proto.swift */,
+				4F5193FC1F02421100E51205 /* ClientJoinByUsername.proto.swift */,
+				4F5193FD1F02421100E51205 /* ClientResolveUsername.proto.swift */,
+				4F5193FE1F02421100E51205 /* ClientSearchRoomHistory.proto.swift */,
+				4F5193FF1F02421100E51205 /* ClientSearchUsername.proto.swift */,
+				4F5194001F02421100E51205 /* ClientSubscribeToRoom.proto.swift */,
+				4F5194011F02421100E51205 /* ClientUnsubscribeFromRoom.proto.swift */,
+				4F5194021F02421100E51205 /* ConnectionSecuring.proto.swift */,
+				4F5194031F02421100E51205 /* Error.proto.swift */,
+				4F5194041F02421100E51205 /* FileDownload.proto.swift */,
+				4F5194051F02421100E51205 /* FileInfo.proto.swift */,
+				4F5194061F02421100E51205 /* FileUpload.proto.swift */,
+				4F5194071F02421100E51205 /* FileUploadInit.proto.swift */,
+				4F5194081F02421100E51205 /* FileUploadOption.proto.swift */,
+				4F5194091F02421100E51205 /* FileUploadStatus.proto.swift */,
+				4F51940A1F02421100E51205 /* Global.proto.swift */,
+				4F51940B1F02421100E51205 /* GroupAddAdmin.proto.swift */,
+				4F51940C1F02421100E51205 /* GroupAddMember.proto.swift */,
+				4F51940D1F02421100E51205 /* GroupAddModerator.proto.swift */,
+				4F51940E1F02421100E51205 /* GroupAvatarAdd.proto.swift */,
+				4F51940F1F02421100E51205 /* GroupAvatarDelete.proto.swift */,
+				4F5194101F02421100E51205 /* GroupAvatarGetList.proto.swift */,
+				4F5194111F02421100E51205 /* GroupCheckUsername.proto.swift */,
+				4F5194121F02421100E51205 /* GroupClearMessage.proto.swift */,
+				4F5194131F02421100E51205 /* GroupCreate.proto.swift */,
+				4F5194141F02421100E51205 /* GroupDelete.proto.swift */,
+				4F5194151F02421100E51205 /* GroupDeleteMessage.proto.swift */,
+				4F5194161F02421100E51205 /* GroupEdit.proto.swift */,
+				4F5194171F02421200E51205 /* GroupEditMessage.proto.swift */,
+				4F5194181F02421200E51205 /* GroupGetDraft.proto.swift */,
+				4F5194191F02421200E51205 /* GroupGetMemberList.proto.swift */,
+				4F51941A1F02421200E51205 /* GroupKickAdmin.proto.swift */,
+				4F51941B1F02421200E51205 /* GroupKickMember.proto.swift */,
+				4F51941C1F02421200E51205 /* GroupKickModerator.proto.swift */,
+				4F51941D1F02421200E51205 /* GroupLeft.proto.swift */,
+				4F51941E1F02421200E51205 /* GroupRemoveUsername.proto.swift */,
+				4F51941F1F02421200E51205 /* GroupRevokeLink.proto.swift */,
+				4F5194201F02421200E51205 /* GroupSendMessage.proto.swift */,
+				4F5194211F02421200E51205 /* GroupSetAction.proto.swift */,
+				4F5194221F02421200E51205 /* GroupUpdateDraft.proto.swift */,
+				4F5194231F02421200E51205 /* GroupUpdateStatus.proto.swift */,
+				4F5194241F02421200E51205 /* GroupUpdateUsername.proto.swift */,
+				4F5194251F02421200E51205 /* Heartbeat.proto.swift */,
+				4F5194261F02421200E51205 /* InfoCountry.proto.swift */,
+				4F5194271F02421200E51205 /* InfoLocation.proto.swift */,
+				4F5194281F02421200E51205 /* InfoPage.proto.swift */,
+				4F5194291F02421200E51205 /* InfoTime.proto.swift */,
+				4F51942A1F02421200E51205 /* InfoWallpaper.proto.swift */,
+				4F51942B1F02421200E51205 /* PushLoginToken.proto.swift */,
+				4F51942C1F02421200E51205 /* PushRateSignaling.proto.swift */,
+				4F51942D1F02421200E51205 /* PushTwoStepVerification.proto.swift */,
+				4F51942E1F02421200E51205 /* PushUserInfoExpired.proto.swift */,
+				4F51942F1F02421200E51205 /* QrCodeAddContact.proto.swift */,
+				4F5194301F02421200E51205 /* QrCodeAddMe.proto.swift */,
+				4F5194311F02421200E51205 /* QrCodeJoin.proto.swift */,
+				4F5194321F02421200E51205 /* QrCodeNewDevice.proto.swift */,
+				4F5194331F02421200E51205 /* QrCodeResolve.proto.swift */,
+				4F5194341F02421200E51205 /* SignalingAccept.proto.swift */,
+				4F5194351F02421200E51205 /* SignalingCandidate.proto.swift */,
+				4F5194361F02421200E51205 /* SignalingClearLog.proto.swift */,
+				4F5194371F02421200E51205 /* SignalingGetConfiguration.proto.swift */,
+				4F5194381F02421200E51205 /* SignalingGetLog.proto.swift */,
+				4F5194391F02421200E51205 /* SignalingLeave.proto.swift */,
+				4F51943A1F02421200E51205 /* SignalingOffer.proto.swift */,
+				4F51943B1F02421200E51205 /* SignalingRate.proto.swift */,
+				4F51943C1F02421200E51205 /* SignalingRinging.proto.swift */,
+				4F51943D1F02421200E51205 /* SignalingSessionHold.proto.swift */,
+				4F51943E1F02421200E51205 /* UserAvatarAdd.proto.swift */,
+				4F51943F1F02421200E51205 /* UserAvatarDelete.proto.swift */,
+				4F5194401F02421200E51205 /* UserAvatarGetList.proto.swift */,
+				4F5194411F02421200E51205 /* UserContactsBlock.proto.swift */,
+				4F5194421F02421200E51205 /* UserContactsDelete.proto.swift */,
+				4F5194431F02421200E51205 /* UserContactsEdit.proto.swift */,
+				4F5194441F02421200E51205 /* UserContactsGetBlockedList.proto.swift */,
+				4F5194451F02421200E51205 /* UserContactsGetList.proto.swift */,
+				4F5194461F02421200E51205 /* UserContactsImport.proto.swift */,
+				4F5194471F02421200E51205 /* UserContactsUnblock.proto.swift */,
+				4F5194481F02421200E51205 /* UserDelete.proto.swift */,
+				4F5194491F02421200E51205 /* UserGetDeleteToken.proto.swift */,
+				4F51944A1F02421200E51205 /* UserInfo.proto.swift */,
+				4F51944B1F02421200E51205 /* UserLogin.proto.swift */,
+				4F51944C1F02421200E51205 /* UserPrivacyGetRule.proto.swift */,
+				4F51944D1F02421200E51205 /* UserPrivacySetRule.proto.swift */,
+				4F51944E1F02421200E51205 /* UserProfileCheckUsername.proto.swift */,
+				4F51944F1F02421200E51205 /* UserProfileGetEmail.proto.swift */,
+				4F5194501F02421200E51205 /* UserProfileGetGender.proto.swift */,
+				4F5194511F02421200E51205 /* UserProfileGetNickname.proto.swift */,
+				4F5194521F02421200E51205 /* UserProfileGetSelfRemove.proto.swift */,
+				4F5194531F02421200E51205 /* UserProfileSetEmail.proto.swift */,
+				4F5194541F02421200E51205 /* UserProfileSetGender.proto.swift */,
+				4F5194551F02421200E51205 /* UserProfileSetNickname.proto.swift */,
+				4F5194561F02421200E51205 /* UserProfileSetSelfRemove.proto.swift */,
+				4F5194571F02421200E51205 /* UserProfileUpdateUsername.proto.swift */,
+				4F5194581F02421200E51205 /* UserRegister.proto.swift */,
+				4F5194591F02421200E51205 /* UserSessionGetActiveList.proto.swift */,
+				4F51945A1F02421200E51205 /* UserSessionLogout.proto.swift */,
+				4F51945B1F02421200E51205 /* UserSessionTerminate.proto.swift */,
+				4F51945C1F02421200E51205 /* UserTwoStepVerificationChangeHint.proto.swift */,
+				4F51945D1F02421200E51205 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift */,
+				4F51945E1F02421200E51205 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift */,
+				4F51945F1F02421200E51205 /* UserTwoStepVerificationCheckPassword.proto.swift */,
+				4F5194601F02421200E51205 /* UserTwoStepVerificationGetPasswordDetail.proto.swift */,
+				4F5194611F02421200E51205 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift */,
+				4F5194621F02421200E51205 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift */,
+				4F5194631F02421200E51205 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift */,
+				4F5194641F02421200E51205 /* UserTwoStepVerificationResendVerifyEmail.proto.swift */,
+				4F5194651F02421200E51205 /* UserTwoStepVerificationSetPassword.proto.swift */,
+				4F5194661F02421200E51205 /* UserTwoStepVerificationUnsetPassword.proto.swift */,
+				4F5194671F02421200E51205 /* UserTwoStepVerificationVerifyPassword.proto.swift */,
+				4F5194681F02421200E51205 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift */,
+				4F5194691F02421200E51205 /* UserUpdateStatus.proto.swift */,
+				4F51946A1F02421200E51205 /* UserUsernameToId.proto.swift */,
+				4F51946B1F02421200E51205 /* UserVerify.proto.swift */,
+				4F51946C1F02421200E51205 /* UserVerifyNewDevice.proto.swift */,
 				4F0513D11EB9D9FC0056D1D5 /* ChannelAddAdmin.proto.swift */,
 				4F0513D21EB9D9FC0056D1D5 /* ChannelAddMember.proto.swift */,
 				4F0513D31EB9D9FC0056D1D5 /* ChannelAddMessageReaction.proto.swift */,
@@ -1281,6 +1610,7 @@
 				4F0514C01EB9D9FD0056D1D5 /* InfoTime.proto.swift in Sources */,
 				4F0514C11EB9D9FD0056D1D5 /* InfoWallpaper.proto.swift in Sources */,
 				4F0514C21EB9D9FD0056D1D5 /* PushLoginToken.proto.swift in Sources */,
+				4F51946D1F02421200E51205 /* PushRateSignaling.proto.swift in Sources */,
 				4F0514C31EB9D9FD0056D1D5 /* PushTwoStepVerification.proto.swift in Sources */,
 				4F0514C41EB9D9FD0056D1D5 /* PushUserInfoExpired.proto.swift in Sources */,
 				4F0514C51EB9D9FD0056D1D5 /* QrCodeAddContact.proto.swift in Sources */,
@@ -1288,6 +1618,16 @@
 				4F0514C71EB9D9FD0056D1D5 /* QrCodeJoin.proto.swift in Sources */,
 				4F0514C81EB9D9FD0056D1D5 /* QrCodeNewDevice.proto.swift in Sources */,
 				4F0514C91EB9D9FD0056D1D5 /* QrCodeResolve.proto.swift in Sources */,
+				4F51946E1F02421200E51205 /* SignalingAccept.proto.swift in Sources */,
+				4F51946F1F02421200E51205 /* SignalingCandidate.proto.swift in Sources */,
+				4F5194701F02421200E51205 /* SignalingClearLog.proto.swift in Sources */,
+				4F5194711F02421200E51205 /* SignalingGetConfiguration.proto.swift in Sources */,
+				4F5194721F02421200E51205 /* SignalingGetLog.proto.swift in Sources */,
+				4F5194731F02421200E51205 /* SignalingLeave.proto.swift in Sources */,
+				4F5194741F02421200E51205 /* SignalingOffer.proto.swift in Sources */,
+				4F5194751F02421200E51205 /* SignalingRate.proto.swift in Sources */,
+				4F5194761F02421200E51205 /* SignalingRinging.proto.swift in Sources */,
+				4F5194771F02421200E51205 /* SignalingSessionHold.proto.swift in Sources */,
 				4F0514CA1EB9D9FD0056D1D5 /* UserAvatarAdd.proto.swift in Sources */,
 				4F0514CB1EB9D9FD0056D1D5 /* UserAvatarDelete.proto.swift in Sources */,
 				4F0514CC1EB9D9FD0056D1D5 /* UserAvatarGetList.proto.swift in Sources */,

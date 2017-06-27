@@ -303,6 +303,7 @@ public enum IGPRoomMessageStatus:Int32, CustomDebugStringConvertible, CustomStri
     case sent = 2
     case delivered = 3
     case seen = 4
+    case listened = 5
     public func toString() -> String {
         switch self {
         case .failed: return "FAILED"
@@ -310,6 +311,7 @@ public enum IGPRoomMessageStatus:Int32, CustomDebugStringConvertible, CustomStri
         case .sent: return "SENT"
         case .delivered: return "DELIVERED"
         case .seen: return "SEEN"
+        case .listened: return "LISTENED"
         }
     }
     public static func fromString(str:String) throws -> IGPRoomMessageStatus {
@@ -319,6 +321,7 @@ public enum IGPRoomMessageStatus:Int32, CustomDebugStringConvertible, CustomStri
         case "SENT":    return .sent
         case "DELIVERED":    return .delivered
         case "SEEN":    return .seen
+        case "LISTENED":    return .listened
         default: throw ProtocolBuffersError.invalidProtocolBuffer("Conversion String to Enum has failed.")
         }
     }
@@ -331,6 +334,7 @@ public enum IGPRoomMessageStatus:Int32, CustomDebugStringConvertible, CustomStri
         case .sent: return ".sent"
         case .delivered: return ".delivered"
         case .seen: return ".seen"
+        case .listened: return ".listened"
         }
     }
     public var hashValue:Int {
@@ -480,12 +484,20 @@ public enum IGPPrivacyType:Int32, CustomDebugStringConvertible, CustomStringConv
     case avatar = 1
     case groupInvite = 2
     case channelInvite = 3
+    case voiceCalling = 4
+    case videoCalling = 5
+    case screenSharing = 6
+    case secretChat = 7
     public func toString() -> String {
         switch self {
         case .userStatus: return "USER_STATUS"
         case .avatar: return "AVATAR"
         case .groupInvite: return "GROUP_INVITE"
         case .channelInvite: return "CHANNEL_INVITE"
+        case .voiceCalling: return "VOICE_CALLING"
+        case .videoCalling: return "VIDEO_CALLING"
+        case .screenSharing: return "SCREEN_SHARING"
+        case .secretChat: return "SECRET_CHAT"
         }
     }
     public static func fromString(str:String) throws -> IGPPrivacyType {
@@ -494,6 +506,10 @@ public enum IGPPrivacyType:Int32, CustomDebugStringConvertible, CustomStringConv
         case "AVATAR":    return .avatar
         case "GROUP_INVITE":    return .groupInvite
         case "CHANNEL_INVITE":    return .channelInvite
+        case "VOICE_CALLING":    return .voiceCalling
+        case "VIDEO_CALLING":    return .videoCalling
+        case "SCREEN_SHARING":    return .screenSharing
+        case "SECRET_CHAT":    return .secretChat
         default: throw ProtocolBuffersError.invalidProtocolBuffer("Conversion String to Enum has failed.")
         }
     }
@@ -505,6 +521,10 @@ public enum IGPPrivacyType:Int32, CustomDebugStringConvertible, CustomStringConv
         case .avatar: return ".avatar"
         case .groupInvite: return ".groupInvite"
         case .channelInvite: return ".channelInvite"
+        case .voiceCalling: return ".voiceCalling"
+        case .videoCalling: return ".videoCalling"
+        case .screenSharing: return ".screenSharing"
+        case .secretChat: return ".secretChat"
         }
     }
     public var hashValue:Int {
@@ -1107,6 +1127,10 @@ final public class IGPRoomMessageLog : GeneratedMessage {
             case roomConvertedToPrivate = 7
             case memberJoinedByInviteLink = 8
             case roomDeleted = 9
+            case missedVoiceCall = 10
+            case missedVideoCall = 11
+            case missedScreenShare = 12
+            case missedSecretChat = 13
             public func toString() -> String {
                 switch self {
                 case .userJoined: return "USER_JOINED"
@@ -1119,6 +1143,10 @@ final public class IGPRoomMessageLog : GeneratedMessage {
                 case .roomConvertedToPrivate: return "ROOM_CONVERTED_TO_PRIVATE"
                 case .memberJoinedByInviteLink: return "MEMBER_JOINED_BY_INVITE_LINK"
                 case .roomDeleted: return "ROOM_DELETED"
+                case .missedVoiceCall: return "MISSED_VOICE_CALL"
+                case .missedVideoCall: return "MISSED_VIDEO_CALL"
+                case .missedScreenShare: return "MISSED_SCREEN_SHARE"
+                case .missedSecretChat: return "MISSED_SECRET_CHAT"
                 }
             }
             public static func fromString(str:String) throws -> IGPRoomMessageLog.IGPType {
@@ -1133,6 +1161,10 @@ final public class IGPRoomMessageLog : GeneratedMessage {
                 case "ROOM_CONVERTED_TO_PRIVATE":    return .roomConvertedToPrivate
                 case "MEMBER_JOINED_BY_INVITE_LINK":    return .memberJoinedByInviteLink
                 case "ROOM_DELETED":    return .roomDeleted
+                case "MISSED_VOICE_CALL":    return .missedVoiceCall
+                case "MISSED_VIDEO_CALL":    return .missedVideoCall
+                case "MISSED_SCREEN_SHARE":    return .missedScreenShare
+                case "MISSED_SECRET_CHAT":    return .missedSecretChat
                 default: throw ProtocolBuffersError.invalidProtocolBuffer("Conversion String to Enum has failed.")
                 }
             }
@@ -1150,6 +1182,10 @@ final public class IGPRoomMessageLog : GeneratedMessage {
                 case .roomConvertedToPrivate: return ".roomConvertedToPrivate"
                 case .memberJoinedByInviteLink: return ".memberJoinedByInviteLink"
                 case .roomDeleted: return ".roomDeleted"
+                case .missedVoiceCall: return ".missedVoiceCall"
+                case .missedVideoCall: return ".missedVideoCall"
+                case .missedScreenShare: return ".missedScreenShare"
+                case .missedSecretChat: return ".missedSecretChat"
                 }
             }
             public var hashValue:Int {

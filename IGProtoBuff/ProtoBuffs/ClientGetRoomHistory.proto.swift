@@ -33,6 +33,7 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
         fieldCheck = fieldCheck && (lhs.hasIgpRoomId == rhs.hasIgpRoomId) && (!lhs.hasIgpRoomId || lhs.igpRoomId == rhs.igpRoomId)
         fieldCheck = fieldCheck && (lhs.hasIgpFirstMessageId == rhs.hasIgpFirstMessageId) && (!lhs.hasIgpFirstMessageId || lhs.igpFirstMessageId == rhs.igpFirstMessageId)
         fieldCheck = fieldCheck && (lhs.hasIgpDirection == rhs.hasIgpDirection) && (!lhs.hasIgpDirection || lhs.igpDirection == rhs.igpDirection)
+        fieldCheck = fieldCheck && (lhs.hasIgpLimit == rhs.hasIgpLimit) && (!lhs.hasIgpLimit || lhs.igpLimit == rhs.igpLimit)
         fieldCheck = (fieldCheck && (lhs.unknownFields == rhs.unknownFields))
         return fieldCheck
     }
@@ -93,6 +94,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
 
     public fileprivate(set) var igpDirection:IGPClientGetRoomHistory.IGPDirection = IGPClientGetRoomHistory.IGPDirection.up
     public fileprivate(set) var hasIgpDirection:Bool = false
+    public fileprivate(set) var igpLimit:Int32 = Int32(0)
+    public fileprivate(set) var hasIgpLimit:Bool = false
+
     required public init() {
         super.init()
     }
@@ -111,6 +115,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
         }
         if hasIgpDirection {
             try codedOutputStream.writeEnum(fieldNumber: 4, value:igpDirection.rawValue)
+        }
+        if hasIgpLimit {
+            try codedOutputStream.writeInt32(fieldNumber: 5, value:igpLimit)
         }
         try unknownFields.writeTo(codedOutputStream: codedOutputStream)
     }
@@ -134,6 +141,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
         }
         if (hasIgpDirection) {
             serialize_size += igpDirection.rawValue.computeEnumSize(fieldNumber: 4)
+        }
+        if hasIgpLimit {
+            serialize_size += igpLimit.computeInt32Size(fieldNumber: 5)
         }
         serialize_size += unknownFields.serializedSize()
         memoizedSerializedSize = serialize_size
@@ -175,6 +185,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
         if hasIgpDirection {
             jsonMap["IGPDirection"] = igpDirection.toString()
         }
+        if hasIgpLimit {
+            jsonMap["IGPLimit"] = Int(igpLimit)
+        }
         return jsonMap
     }
     override class public func decode(jsonMap:Dictionary<String,Any>) throws -> IGPClientGetRoomHistory {
@@ -201,6 +214,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
         if (hasIgpDirection) {
             output += "\(indent) igpDirection: \(igpDirection.description)\n"
         }
+        if hasIgpLimit {
+            output += "\(indent) igpLimit: \(igpLimit) \n"
+        }
         output += unknownFields.getDescription(indent: indent)
         return output
     }
@@ -220,6 +236,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
             }
             if hasIgpDirection {
                  hashCode = (hashCode &* 31) &+ igpDirection.hashValue
+            }
+            if hasIgpLimit {
+                hashCode = (hashCode &* 31) &+ igpLimit.hashValue
             }
             hashCode = (hashCode &* 31) &+  unknownFields.hashValue
             return hashCode
@@ -375,6 +394,31 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
                builderResult.igpDirection = .up
                return self
             }
+        public var igpLimit:Int32 {
+            get {
+                return builderResult.igpLimit
+            }
+            set (value) {
+                builderResult.hasIgpLimit = true
+                builderResult.igpLimit = value
+            }
+        }
+        public var hasIgpLimit:Bool {
+            get {
+                return builderResult.hasIgpLimit
+            }
+        }
+        @discardableResult
+        public func setIgpLimit(_ value:Int32) -> IGPClientGetRoomHistory.Builder {
+            self.igpLimit = value
+            return self
+        }
+        @discardableResult
+        public func clearIgpLimit() -> IGPClientGetRoomHistory.Builder{
+            builderResult.hasIgpLimit = false
+            builderResult.igpLimit = Int32(0)
+            return self
+        }
         override public var internalGetResult:GeneratedMessage {
             get {
                 return builderResult
@@ -412,6 +456,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
             }
             if other.hasIgpDirection {
                 igpDirection = other.igpDirection
+            }
+            if other.hasIgpLimit {
+                igpLimit = other.igpLimit
             }
             try merge(unknownField: other.unknownFields)
             return self
@@ -452,6 +499,9 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
                         try unknownFieldsBuilder.mergeVarintField(fieldNumber: 4, value:Int64(valueIntigpDirection))
                     }
 
+                case 40:
+                    igpLimit = try codedInputStream.readInt32()
+
                 default:
                     if (!(try parse(codedInputStream:codedInputStream, unknownFields:unknownFieldsBuilder, extensionRegistry:extensionRegistry, tag:protobufTag))) {
                         unknownFields = try unknownFieldsBuilder.build()
@@ -478,6 +528,11 @@ final public class IGPClientGetRoomHistory : GeneratedMessage {
             }
             if let jsonValueIgpDirection = jsonMap["IGPDirection"] as? String {
                 resultDecodedBuilder.igpDirection = try IGPClientGetRoomHistory.IGPDirection.fromString(str: jsonValueIgpDirection)
+            }
+            if let jsonValueIgpLimit = jsonMap["IGPLimit"] as? Int {
+                resultDecodedBuilder.igpLimit = Int32(jsonValueIgpLimit)
+            } else if let jsonValueIgpLimit = jsonMap["IGPLimit"] as? String {
+                resultDecodedBuilder.igpLimit = Int32(jsonValueIgpLimit)!
             }
             return resultDecodedBuilder
         }
@@ -851,6 +906,7 @@ extension IGPClientGetRoomHistory: GeneratedMessageProtocol {
         case "igpRoomId": return self.igpRoomId
         case "igpFirstMessageId": return self.igpFirstMessageId
         case "igpDirection": return self.igpDirection
+        case "igpLimit": return self.igpLimit
         default: return nil
         }
     }
@@ -863,6 +919,7 @@ extension IGPClientGetRoomHistory.Builder: GeneratedMessageBuilderProtocol {
             case "igpRoomId": return self.igpRoomId
             case "igpFirstMessageId": return self.igpFirstMessageId
             case "igpDirection": return self.igpDirection
+            case "igpLimit": return self.igpLimit
             default: return nil
             }
         }
@@ -888,6 +945,11 @@ extension IGPClientGetRoomHistory.Builder: GeneratedMessageBuilderProtocol {
                     return
                 }
                 self.igpDirection = newSubscriptValue
+            case "igpLimit":
+                guard let newSubscriptValue = newSubscriptValue as? Int32 else {
+                    return
+                }
+                self.igpLimit = newSubscriptValue
             default: return
             }
         }
