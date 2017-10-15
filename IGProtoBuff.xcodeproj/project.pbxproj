@@ -7,349 +7,349 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA5AA09B1F71ED4800D925F5 /* ChannelAddAdmin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF21F71ECEF00D925F5 /* ChannelAddAdmin.proto.swift */; };
-		FA5AA09C1F71ED4800D925F5 /* ChannelAddMember.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF31F71ECEF00D925F5 /* ChannelAddMember.proto.swift */; };
-		FA5AA09D1F71ED4800D925F5 /* ChannelAddMessageReaction.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF41F71ECEF00D925F5 /* ChannelAddMessageReaction.proto.swift */; };
-		FA5AA09E1F71ED4800D925F5 /* ChannelAddModerator.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF51F71ECEF00D925F5 /* ChannelAddModerator.proto.swift */; };
-		FA5AA09F1F71ED4800D925F5 /* ChannelAvatarAdd.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF61F71ECEF00D925F5 /* ChannelAvatarAdd.proto.swift */; };
-		FA5AA0A01F71ED4800D925F5 /* ChannelAvatarDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF71F71ECEF00D925F5 /* ChannelAvatarDelete.proto.swift */; };
-		FA5AA0A11F71ED4800D925F5 /* ChannelAvatarGetList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF81F71ECEF00D925F5 /* ChannelAvatarGetList.proto.swift */; };
-		FA5AA0A21F71ED4800D925F5 /* ChannelCheckUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FF91F71ECEF00D925F5 /* ChannelCheckUsername.proto.swift */; };
-		FA5AA0A31F71ED4800D925F5 /* ChannelCreate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFA1F71ECEF00D925F5 /* ChannelCreate.proto.swift */; };
-		FA5AA0A41F71ED4800D925F5 /* ChannelDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFB1F71ECEF00D925F5 /* ChannelDelete.proto.swift */; };
-		FA5AA0A51F71ED4800D925F5 /* ChannelDeleteMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFC1F71ECEF00D925F5 /* ChannelDeleteMessage.proto.swift */; };
-		FA5AA0A61F71ED4800D925F5 /* ChannelEdit.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFD1F71ECEF00D925F5 /* ChannelEdit.proto.swift */; };
-		FA5AA0A71F71ED4800D925F5 /* ChannelEditMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFE1F71ECEF00D925F5 /* ChannelEditMessage.proto.swift */; };
-		FA5AA0A81F71ED4800D925F5 /* ChannelGetDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5A9FFF1F71ECEF00D925F5 /* ChannelGetDraft.proto.swift */; };
-		FA5AA0A91F71ED4800D925F5 /* ChannelGetMemberList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0001F71ECEF00D925F5 /* ChannelGetMemberList.proto.swift */; };
-		FA5AA0AA1F71ED4800D925F5 /* ChannelGetMessagesStats.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0011F71ECEF00D925F5 /* ChannelGetMessagesStats.proto.swift */; };
-		FA5AA0AB1F71ED4800D925F5 /* ChannelKickAdmin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0021F71ECEF00D925F5 /* ChannelKickAdmin.proto.swift */; };
-		FA5AA0AC1F71ED4800D925F5 /* ChannelKickMember.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0031F71ECEF00D925F5 /* ChannelKickMember.proto.swift */; };
-		FA5AA0AD1F71ED4800D925F5 /* ChannelKickModerator.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0041F71ECEF00D925F5 /* ChannelKickModerator.proto.swift */; };
-		FA5AA0AE1F71ED4800D925F5 /* ChannelLeft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0051F71ECEF00D925F5 /* ChannelLeft.proto.swift */; };
-		FA5AA0AF1F71ED4800D925F5 /* ChannelRemoveUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0061F71ECEF00D925F5 /* ChannelRemoveUsername.proto.swift */; };
-		FA5AA0B01F71ED4800D925F5 /* ChannelRevokeLink.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0071F71ECEF00D925F5 /* ChannelRevokeLink.proto.swift */; };
-		FA5AA0B11F71ED4800D925F5 /* ChannelSendMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0081F71ECEF00D925F5 /* ChannelSendMessage.proto.swift */; };
-		FA5AA0B21F71ED4800D925F5 /* ChannelSetAction.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0091F71ECEF00D925F5 /* ChannelSetAction.proto.swift */; };
-		FA5AA0B31F71ED4800D925F5 /* ChannelUpdateDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00A1F71ECEF00D925F5 /* ChannelUpdateDraft.proto.swift */; };
-		FA5AA0B41F71ED4800D925F5 /* ChannelUpdateSignature.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00B1F71ECEF00D925F5 /* ChannelUpdateSignature.proto.swift */; };
-		FA5AA0B51F71ED4800D925F5 /* ChannelUpdateUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00C1F71ECEF00D925F5 /* ChannelUpdateUsername.proto.swift */; };
-		FA5AA0B61F71ED4800D925F5 /* ChatClearMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00D1F71ECEF00D925F5 /* ChatClearMessage.proto.swift */; };
-		FA5AA0B71F71ED4800D925F5 /* ChatConvertToGroup.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00E1F71ECEF00D925F5 /* ChatConvertToGroup.proto.swift */; };
-		FA5AA0B81F71ED4800D925F5 /* ChatDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA00F1F71ECEF00D925F5 /* ChatDelete.proto.swift */; };
-		FA5AA0B91F71ED4800D925F5 /* ChatDeleteMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0101F71ECEF00D925F5 /* ChatDeleteMessage.proto.swift */; };
-		FA5AA0BA1F71ED4800D925F5 /* ChatEditMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0111F71ECEF00D925F5 /* ChatEditMessage.proto.swift */; };
-		FA5AA0BB1F71ED4800D925F5 /* ChatGetDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0121F71ECEF00D925F5 /* ChatGetDraft.proto.swift */; };
-		FA5AA0BC1F71ED4800D925F5 /* ChatGetRoom.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0131F71ECEF00D925F5 /* ChatGetRoom.proto.swift */; };
-		FA5AA0BD1F71ED4800D925F5 /* ChatSendMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0141F71ECEF00D925F5 /* ChatSendMessage.proto.swift */; };
-		FA5AA0BE1F71ED4800D925F5 /* ChatSetAction.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0151F71ECEF00D925F5 /* ChatSetAction.proto.swift */; };
-		FA5AA0BF1F71ED4800D925F5 /* ChatUpdateDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0161F71ECEF00D925F5 /* ChatUpdateDraft.proto.swift */; };
-		FA5AA0C01F71ED4800D925F5 /* ChatUpdateStatus.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0171F71ECEF00D925F5 /* ChatUpdateStatus.proto.swift */; };
-		FA5AA0C11F71ED4800D925F5 /* ClientCheckInviteLink.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0181F71ECEF00D925F5 /* ClientCheckInviteLink.proto.swift */; };
-		FA5AA0C21F71ED4800D925F5 /* ClientCondition.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0191F71ECEF00D925F5 /* ClientCondition.proto.swift */; };
-		FA5AA0C31F71ED4800D925F5 /* ClientCountRoomHistory.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01A1F71ECEF00D925F5 /* ClientCountRoomHistory.proto.swift */; };
-		FA5AA0C41F71ED4800D925F5 /* ClientGetRoom.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01B1F71ECEF00D925F5 /* ClientGetRoom.proto.swift */; };
-		FA5AA0C51F71ED4800D925F5 /* ClientGetRoomHistory.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01C1F71ECEF00D925F5 /* ClientGetRoomHistory.proto.swift */; };
-		FA5AA0C61F71ED4800D925F5 /* ClientGetRoomList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01D1F71ECEF00D925F5 /* ClientGetRoomList.proto.swift */; };
-		FA5AA0C71F71ED4800D925F5 /* ClientGetRoomMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01E1F71ECEF00D925F5 /* ClientGetRoomMessage.proto.swift */; };
-		FA5AA0C81F71ED4800D925F5 /* ClientJoinByInviteLink.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA01F1F71ECEF00D925F5 /* ClientJoinByInviteLink.proto.swift */; };
-		FA5AA0C91F71ED4800D925F5 /* ClientJoinByUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0201F71ECEF00D925F5 /* ClientJoinByUsername.proto.swift */; };
-		FA5AA0CA1F71ED4800D925F5 /* ClientResolveUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0211F71ECEF00D925F5 /* ClientResolveUsername.proto.swift */; };
-		FA5AA0CB1F71ED4800D925F5 /* ClientSearchRoomHistory.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0221F71ECEF00D925F5 /* ClientSearchRoomHistory.proto.swift */; };
-		FA5AA0CC1F71ED4800D925F5 /* ClientSearchUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0231F71ECEF00D925F5 /* ClientSearchUsername.proto.swift */; };
-		FA5AA0CD1F71ED4800D925F5 /* ClientSubscribeToRoom.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0241F71ECEF00D925F5 /* ClientSubscribeToRoom.proto.swift */; };
-		FA5AA0CE1F71ED4800D925F5 /* ClientUnsubscribeFromRoom.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0251F71ECEF00D925F5 /* ClientUnsubscribeFromRoom.proto.swift */; };
-		FA5AA0CF1F71ED4800D925F5 /* ConnectionSecuring.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0261F71ECEF00D925F5 /* ConnectionSecuring.proto.swift */; };
-		FA5AA0D01F71ED4800D925F5 /* Error.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0271F71ECEF00D925F5 /* Error.proto.swift */; };
-		FA5AA0D11F71ED4800D925F5 /* FileDownload.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0281F71ECEF00D925F5 /* FileDownload.proto.swift */; };
-		FA5AA0D21F71ED4800D925F5 /* FileInfo.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0291F71ECEF00D925F5 /* FileInfo.proto.swift */; };
-		FA5AA0D31F71ED4800D925F5 /* FileUpload.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02A1F71ECEF00D925F5 /* FileUpload.proto.swift */; };
-		FA5AA0D41F71ED4800D925F5 /* FileUploadInit.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02B1F71ECEF00D925F5 /* FileUploadInit.proto.swift */; };
-		FA5AA0D51F71ED4800D925F5 /* FileUploadOption.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02C1F71ECEF00D925F5 /* FileUploadOption.proto.swift */; };
-		FA5AA0D61F71ED4800D925F5 /* FileUploadStatus.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02D1F71ECEF00D925F5 /* FileUploadStatus.proto.swift */; };
-		FA5AA0D71F71ED4800D925F5 /* GeoGetComment.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02E1F71ECEF00D925F5 /* GeoGetComment.proto.swift */; };
-		FA5AA0D81F71ED4800D925F5 /* GeoGetConfiguration.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA02F1F71ECEF00D925F5 /* GeoGetConfiguration.proto.swift */; };
-		FA5AA0D91F71ED4800D925F5 /* GeoGetNearbyCoordinate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0301F71ECEF00D925F5 /* GeoGetNearbyCoordinate.proto.swift */; };
-		FA5AA0DA1F71ED4800D925F5 /* GeoGetNearbyDistance.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0311F71ECEF00D925F5 /* GeoGetNearbyDistance.proto.swift */; };
-		FA5AA0DB1F71ED4800D925F5 /* GeoGetRegisterStatus.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0321F71ECEF00D925F5 /* GeoGetRegisterStatus.proto.swift */; };
-		FA5AA0DC1F71ED4800D925F5 /* GeoRegister.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0331F71ECEF00D925F5 /* GeoRegister.proto.swift */; };
-		FA5AA0DD1F71ED4800D925F5 /* GeoUpdateComment.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0341F71ECEF00D925F5 /* GeoUpdateComment.proto.swift */; };
-		FA5AA0DE1F71ED4800D925F5 /* GeoUpdatePosition.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0351F71ECEF00D925F5 /* GeoUpdatePosition.proto.swift */; };
-		FA5AA0DF1F71ED4800D925F5 /* Global.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0361F71ECEF00D925F5 /* Global.proto.swift */; };
-		FA5AA0E01F71ED4800D925F5 /* GroupAddAdmin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0371F71ECEF00D925F5 /* GroupAddAdmin.proto.swift */; };
-		FA5AA0E11F71ED4800D925F5 /* GroupAddMember.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0381F71ECEF00D925F5 /* GroupAddMember.proto.swift */; };
-		FA5AA0E21F71ED4800D925F5 /* GroupAddModerator.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0391F71ECEF00D925F5 /* GroupAddModerator.proto.swift */; };
-		FA5AA0E31F71ED4800D925F5 /* GroupAvatarAdd.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03A1F71ECEF00D925F5 /* GroupAvatarAdd.proto.swift */; };
-		FA5AA0E41F71ED4800D925F5 /* GroupAvatarDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03B1F71ECEF00D925F5 /* GroupAvatarDelete.proto.swift */; };
-		FA5AA0E51F71ED4800D925F5 /* GroupAvatarGetList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03C1F71ECEF00D925F5 /* GroupAvatarGetList.proto.swift */; };
-		FA5AA0E61F71ED4800D925F5 /* GroupCheckUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03D1F71ECEF00D925F5 /* GroupCheckUsername.proto.swift */; };
-		FA5AA0E71F71ED4800D925F5 /* GroupClearMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03E1F71ECEF00D925F5 /* GroupClearMessage.proto.swift */; };
-		FA5AA0E81F71ED4800D925F5 /* GroupCreate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA03F1F71ECEF00D925F5 /* GroupCreate.proto.swift */; };
-		FA5AA0E91F71ED4800D925F5 /* GroupDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0401F71ECEF00D925F5 /* GroupDelete.proto.swift */; };
-		FA5AA0EA1F71ED4800D925F5 /* GroupDeleteMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0411F71ECEF00D925F5 /* GroupDeleteMessage.proto.swift */; };
-		FA5AA0EB1F71ED4800D925F5 /* GroupEdit.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0421F71ECEF00D925F5 /* GroupEdit.proto.swift */; };
-		FA5AA0EC1F71ED4800D925F5 /* GroupEditMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0431F71ECEF00D925F5 /* GroupEditMessage.proto.swift */; };
-		FA5AA0ED1F71ED4800D925F5 /* GroupGetDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0441F71ECEF00D925F5 /* GroupGetDraft.proto.swift */; };
-		FA5AA0EE1F71ED4800D925F5 /* GroupGetMemberList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0451F71ECEF00D925F5 /* GroupGetMemberList.proto.swift */; };
-		FA5AA0EF1F71ED4800D925F5 /* GroupKickAdmin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0461F71ECEF00D925F5 /* GroupKickAdmin.proto.swift */; };
-		FA5AA0F01F71ED4800D925F5 /* GroupKickMember.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0471F71ECEF00D925F5 /* GroupKickMember.proto.swift */; };
-		FA5AA0F11F71ED4800D925F5 /* GroupKickModerator.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0481F71ECEF00D925F5 /* GroupKickModerator.proto.swift */; };
-		FA5AA0F21F71ED4800D925F5 /* GroupLeft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0491F71ECEF00D925F5 /* GroupLeft.proto.swift */; };
-		FA5AA0F31F71ED4800D925F5 /* GroupRemoveUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04A1F71ECEF00D925F5 /* GroupRemoveUsername.proto.swift */; };
-		FA5AA0F41F71ED4800D925F5 /* GroupRevokeLink.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04B1F71ECEF00D925F5 /* GroupRevokeLink.proto.swift */; };
-		FA5AA0F51F71ED4800D925F5 /* GroupSendMessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04C1F71ECEF00D925F5 /* GroupSendMessage.proto.swift */; };
-		FA5AA0F61F71ED4800D925F5 /* GroupSetAction.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04D1F71ECEF00D925F5 /* GroupSetAction.proto.swift */; };
-		FA5AA0F71F71ED4800D925F5 /* GroupUpdateDraft.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04E1F71ECEF00D925F5 /* GroupUpdateDraft.proto.swift */; };
-		FA5AA0F81F71ED4800D925F5 /* GroupUpdateStatus.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA04F1F71ECEF00D925F5 /* GroupUpdateStatus.proto.swift */; };
-		FA5AA0F91F71ED4800D925F5 /* GroupUpdateUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0501F71ECEF00D925F5 /* GroupUpdateUsername.proto.swift */; };
-		FA5AA0FA1F71ED4800D925F5 /* Heartbeat.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0511F71ECEF00D925F5 /* Heartbeat.proto.swift */; };
-		FA5AA0FB1F71ED4800D925F5 /* InfoCountry.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0521F71ECEF00D925F5 /* InfoCountry.proto.swift */; };
-		FA5AA0FC1F71ED4800D925F5 /* InfoLocation.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0531F71ECEF00D925F5 /* InfoLocation.proto.swift */; };
-		FA5AA0FD1F71ED4800D925F5 /* InfoPage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0541F71ECEF00D925F5 /* InfoPage.proto.swift */; };
-		FA5AA0FE1F71ED4800D925F5 /* InfoTime.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0551F71ECEF00D925F5 /* InfoTime.proto.swift */; };
-		FA5AA0FF1F71ED4800D925F5 /* InfoWallpaper.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0561F71ECEF00D925F5 /* InfoWallpaper.proto.swift */; };
-		FA5AA1001F71ED4800D925F5 /* PushLoginToken.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0571F71ECEF00D925F5 /* PushLoginToken.proto.swift */; };
-		FA5AA1011F71ED4800D925F5 /* PushRateSignaling.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0581F71ECEF00D925F5 /* PushRateSignaling.proto.swift */; };
-		FA5AA1021F71ED4800D925F5 /* PushTwoStepVerification.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0591F71ECEF00D925F5 /* PushTwoStepVerification.proto.swift */; };
-		FA5AA1031F71ED4800D925F5 /* PushUserInfoExpired.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05A1F71ECEF00D925F5 /* PushUserInfoExpired.proto.swift */; };
-		FA5AA1041F71ED4800D925F5 /* QrCodeAddContact.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05B1F71ECEF00D925F5 /* QrCodeAddContact.proto.swift */; };
-		FA5AA1051F71ED4800D925F5 /* QrCodeAddMe.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05C1F71ECEF00D925F5 /* QrCodeAddMe.proto.swift */; };
-		FA5AA1061F71ED4800D925F5 /* QrCodeJoin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05D1F71ECEF00D925F5 /* QrCodeJoin.proto.swift */; };
-		FA5AA1071F71ED4800D925F5 /* QrCodeNewDevice.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05E1F71ECEF00D925F5 /* QrCodeNewDevice.proto.swift */; };
-		FA5AA1081F71ED4800D925F5 /* QrCodeResolve.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA05F1F71ECEF00D925F5 /* QrCodeResolve.proto.swift */; };
-		FA5AA10B1F71ED4800D925F5 /* SignalingAccept.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0621F71ECEF00D925F5 /* SignalingAccept.proto.swift */; };
-		FA5AA10C1F71ED4800D925F5 /* SignalingCandidate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0631F71ECEF00D925F5 /* SignalingCandidate.proto.swift */; };
-		FA5AA10D1F71ED4800D925F5 /* SignalingClearLog.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0641F71ECEF00D925F5 /* SignalingClearLog.proto.swift */; };
-		FA5AA10E1F71ED4800D925F5 /* SignalingGetConfiguration.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0651F71ECEF00D925F5 /* SignalingGetConfiguration.proto.swift */; };
-		FA5AA10F1F71ED4800D925F5 /* SignalingGetLog.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0661F71ECEF00D925F5 /* SignalingGetLog.proto.swift */; };
-		FA5AA1101F71ED4800D925F5 /* SignalingLeave.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0671F71ECEF00D925F5 /* SignalingLeave.proto.swift */; };
-		FA5AA1111F71ED4800D925F5 /* SignalingOffer.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0681F71ECEF00D925F5 /* SignalingOffer.proto.swift */; };
-		FA5AA1121F71ED4800D925F5 /* SignalingRate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0691F71ECEF00D925F5 /* SignalingRate.proto.swift */; };
-		FA5AA1131F71ED4800D925F5 /* SignalingRinging.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06A1F71ECEF00D925F5 /* SignalingRinging.proto.swift */; };
-		FA5AA1141F71ED4800D925F5 /* SignalingSessionHold.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06B1F71ECEF00D925F5 /* SignalingSessionHold.proto.swift */; };
-		FA5AA1151F71ED4800D925F5 /* UserAvatarAdd.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06C1F71ECEF00D925F5 /* UserAvatarAdd.proto.swift */; };
-		FA5AA1161F71ED4800D925F5 /* UserAvatarDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06D1F71ECEF00D925F5 /* UserAvatarDelete.proto.swift */; };
-		FA5AA1171F71ED4800D925F5 /* UserAvatarGetList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06E1F71ECEF00D925F5 /* UserAvatarGetList.proto.swift */; };
-		FA5AA1181F71ED4800D925F5 /* UserContactsBlock.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA06F1F71ECEF00D925F5 /* UserContactsBlock.proto.swift */; };
-		FA5AA1191F71ED4800D925F5 /* UserContactsDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0701F71ECEF00D925F5 /* UserContactsDelete.proto.swift */; };
-		FA5AA11A1F71ED4800D925F5 /* UserContactsEdit.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0711F71ECEF00D925F5 /* UserContactsEdit.proto.swift */; };
-		FA5AA11B1F71ED4800D925F5 /* UserContactsGetBlockedList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0721F71ECEF00D925F5 /* UserContactsGetBlockedList.proto.swift */; };
-		FA5AA11C1F71ED4800D925F5 /* UserContactsGetList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0731F71ECEF00D925F5 /* UserContactsGetList.proto.swift */; };
-		FA5AA11D1F71ED4800D925F5 /* UserContactsImport.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0741F71ECEF00D925F5 /* UserContactsImport.proto.swift */; };
-		FA5AA11E1F71ED4800D925F5 /* UserContactsUnblock.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0751F71ECEF00D925F5 /* UserContactsUnblock.proto.swift */; };
-		FA5AA11F1F71ED4800D925F5 /* UserDelete.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0761F71ECEF00D925F5 /* UserDelete.proto.swift */; };
-		FA5AA1201F71ED4800D925F5 /* UserGetDeleteToken.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0771F71ECEF00D925F5 /* UserGetDeleteToken.proto.swift */; };
-		FA5AA1211F71ED4800D925F5 /* UserInfo.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0781F71ECEF00D925F5 /* UserInfo.proto.swift */; };
-		FA5AA1221F71ED4800D925F5 /* UserLogin.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0791F71ECEF00D925F5 /* UserLogin.proto.swift */; };
-		FA5AA1231F71ED4800D925F5 /* UserPrivacyGetRule.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07A1F71ECEF00D925F5 /* UserPrivacyGetRule.proto.swift */; };
-		FA5AA1241F71ED4800D925F5 /* UserPrivacySetRule.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07B1F71ECEF00D925F5 /* UserPrivacySetRule.proto.swift */; };
-		FA5AA1251F71ED4800D925F5 /* UserProfileCheckUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07C1F71ECEF00D925F5 /* UserProfileCheckUsername.proto.swift */; };
-		FA5AA1261F71ED4800D925F5 /* UserProfileGetEmail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07D1F71ECEF00D925F5 /* UserProfileGetEmail.proto.swift */; };
-		FA5AA1271F71ED4800D925F5 /* UserProfileGetGender.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07E1F71ECEF00D925F5 /* UserProfileGetGender.proto.swift */; };
-		FA5AA1281F71ED4800D925F5 /* UserProfileGetNickname.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA07F1F71ECEF00D925F5 /* UserProfileGetNickname.proto.swift */; };
-		FA5AA1291F71ED4800D925F5 /* UserProfileGetSelfRemove.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0801F71ECEF00D925F5 /* UserProfileGetSelfRemove.proto.swift */; };
-		FA5AA12A1F71ED4800D925F5 /* UserProfileSetEmail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0811F71ECEF00D925F5 /* UserProfileSetEmail.proto.swift */; };
-		FA5AA12B1F71ED4800D925F5 /* UserProfileSetGender.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0821F71ECEF00D925F5 /* UserProfileSetGender.proto.swift */; };
-		FA5AA12C1F71ED4800D925F5 /* UserProfileSetNickname.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0831F71ECEF00D925F5 /* UserProfileSetNickname.proto.swift */; };
-		FA5AA12D1F71ED4800D925F5 /* UserProfileSetSelfRemove.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0841F71ECEF00D925F5 /* UserProfileSetSelfRemove.proto.swift */; };
-		FA5AA12E1F71ED4800D925F5 /* UserProfileUpdateUsername.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0851F71ECEF00D925F5 /* UserProfileUpdateUsername.proto.swift */; };
-		FA5AA12F1F71ED4800D925F5 /* UserRegister.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0861F71ECEF00D925F5 /* UserRegister.proto.swift */; };
-		FA5AA1301F71ED4800D925F5 /* UserSessionGetActiveList.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0871F71ECEF00D925F5 /* UserSessionGetActiveList.proto.swift */; };
-		FA5AA1311F71ED4800D925F5 /* UserSessionLogout.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0881F71ECEF00D925F5 /* UserSessionLogout.proto.swift */; };
-		FA5AA1321F71ED4800D925F5 /* UserSessionTerminate.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0891F71ECEF00D925F5 /* UserSessionTerminate.proto.swift */; };
-		FA5AA1331F71ED4800D925F5 /* UserTwoStepVerificationChangeHint.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08A1F71ECEF00D925F5 /* UserTwoStepVerificationChangeHint.proto.swift */; };
-		FA5AA1341F71ED4800D925F5 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08B1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift */; };
-		FA5AA1351F71ED4800D925F5 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08C1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift */; };
-		FA5AA1361F71ED4800D925F5 /* UserTwoStepVerificationCheckPassword.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08D1F71ECEF00D925F5 /* UserTwoStepVerificationCheckPassword.proto.swift */; };
-		FA5AA1371F71ED4800D925F5 /* UserTwoStepVerificationGetPasswordDetail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08E1F71ECEF00D925F5 /* UserTwoStepVerificationGetPasswordDetail.proto.swift */; };
-		FA5AA1381F71ED4800D925F5 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA08F1F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift */; };
-		FA5AA1391F71ED4800D925F5 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0901F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift */; };
-		FA5AA13A1F71ED4800D925F5 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0911F71ECEF00D925F5 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift */; };
-		FA5AA13B1F71ED4800D925F5 /* UserTwoStepVerificationResendVerifyEmail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0921F71ECEF00D925F5 /* UserTwoStepVerificationResendVerifyEmail.proto.swift */; };
-		FA5AA13C1F71ED4800D925F5 /* UserTwoStepVerificationSetPassword.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0931F71ECEF00D925F5 /* UserTwoStepVerificationSetPassword.proto.swift */; };
-		FA5AA13D1F71ED4800D925F5 /* UserTwoStepVerificationUnsetPassword.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0941F71ECEF00D925F5 /* UserTwoStepVerificationUnsetPassword.proto.swift */; };
-		FA5AA13E1F71ED4800D925F5 /* UserTwoStepVerificationVerifyPassword.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0951F71ECEF00D925F5 /* UserTwoStepVerificationVerifyPassword.proto.swift */; };
-		FA5AA13F1F71ED4800D925F5 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0961F71ECEF00D925F5 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift */; };
-		FA5AA1401F71ED4800D925F5 /* UserUpdateStatus.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0971F71ECEF00D925F5 /* UserUpdateStatus.proto.swift */; };
-		FA5AA1411F71ED4800D925F5 /* UserUsernameToId.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0981F71ECEF00D925F5 /* UserUsernameToId.proto.swift */; };
-		FA5AA1421F71ED4800D925F5 /* UserVerify.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA0991F71ECEF00D925F5 /* UserVerify.proto.swift */; };
-		FA5AA1431F71ED4800D925F5 /* UserVerifyNewDevice.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5AA09A1F71ECEF00D925F5 /* UserVerifyNewDevice.proto.swift */; };
 		FA76382E1E2FFD5E00C24391 /* IGProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FA7638361E2FFFD200C24391 /* ProtocolBuffers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA7638351E2FFFD200C24391 /* ProtocolBuffers.framework */; };
+		FAF5D23D1F8D66DB00A26EE1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5D23C1F8D66CE00A26EE1 /* SwiftProtobuf.framework */; };
+		FAF5D23F1F8D6AF100A26EE1 /* ChannelAddAdmin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FE1F8D665300A26EE1 /* ChannelAddAdmin.pb.swift */; };
+		FAF5D2401F8D6C2000A26EE1 /* ChannelAddMember.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2071F8D665600A26EE1 /* ChannelAddMember.pb.swift */; };
+		FAF5D2411F8D6C2000A26EE1 /* ChannelAddMessageReaction.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21A1F8D665C00A26EE1 /* ChannelAddMessageReaction.pb.swift */; };
+		FAF5D2421F8D6C2000A26EE1 /* ChannelAddModerator.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E61F8D664B00A26EE1 /* ChannelAddModerator.pb.swift */; };
+		FAF5D2431F8D6C2000A26EE1 /* ChannelAvatarAdd.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2001F8D665400A26EE1 /* ChannelAvatarAdd.pb.swift */; };
+		FAF5D2441F8D6C2000A26EE1 /* ChannelAvatarDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F31F8D664F00A26EE1 /* ChannelAvatarDelete.pb.swift */; };
+		FAF5D2451F8D6C2000A26EE1 /* ChannelAvatarGetList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2391F8D666400A26EE1 /* ChannelAvatarGetList.pb.swift */; };
+		FAF5D2461F8D6C2000A26EE1 /* ChannelCheckUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2261F8D665F00A26EE1 /* ChannelCheckUsername.pb.swift */; };
+		FAF5D2471F8D6C2000A26EE1 /* ChannelCreate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D81F8D664700A26EE1 /* ChannelCreate.pb.swift */; };
+		FAF5D2481F8D6C2000A26EE1 /* ChannelDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A51F8D663900A26EE1 /* ChannelDelete.pb.swift */; };
+		FAF5D2491F8D6C2000A26EE1 /* ChannelDeleteMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D91F8D664700A26EE1 /* ChannelDeleteMessage.pb.swift */; };
+		FAF5D24A1F8D6C2000A26EE1 /* ChannelEdit.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2271F8D666000A26EE1 /* ChannelEdit.pb.swift */; };
+		FAF5D24B1F8D6C2000A26EE1 /* ChannelEditMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DA1F8D664700A26EE1 /* ChannelEditMessage.pb.swift */; };
+		FAF5D24C1F8D6C2000A26EE1 /* ChannelGetDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2361F8D666300A26EE1 /* ChannelGetDraft.pb.swift */; };
+		FAF5D24D1F8D6C2000A26EE1 /* ChannelGetMemberList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C21F8D664000A26EE1 /* ChannelGetMemberList.pb.swift */; };
+		FAF5D24E1F8D6C2000A26EE1 /* ChannelGetMessagesStats.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CA1F8D664200A26EE1 /* ChannelGetMessagesStats.pb.swift */; };
+		FAF5D24F1F8D6C2000A26EE1 /* ChannelKickAdmin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1EE1F8D664E00A26EE1 /* ChannelKickAdmin.pb.swift */; };
+		FAF5D2501F8D6C2000A26EE1 /* ChannelKickMember.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A41F8D663900A26EE1 /* ChannelKickMember.pb.swift */; };
+		FAF5D2511F8D6C2000A26EE1 /* ChannelKickModerator.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E81F8D664C00A26EE1 /* ChannelKickModerator.pb.swift */; };
+		FAF5D2521F8D6C2000A26EE1 /* ChannelLeft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B01F8D663B00A26EE1 /* ChannelLeft.pb.swift */; };
+		FAF5D2531F8D6C2000A26EE1 /* ChannelRemoveUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A31F8D663800A26EE1 /* ChannelRemoveUsername.pb.swift */; };
+		FAF5D2541F8D6C2000A26EE1 /* ChannelRevokeLink.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19C1F8D663800A26EE1 /* ChannelRevokeLink.pb.swift */; };
+		FAF5D2551F8D6C2000A26EE1 /* ChannelSendMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2351F8D666300A26EE1 /* ChannelSendMessage.pb.swift */; };
+		FAF5D2561F8D6C2000A26EE1 /* ChannelSetAction.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BA1F8D663E00A26EE1 /* ChannelSetAction.pb.swift */; };
+		FAF5D2571F8D6C2000A26EE1 /* ChannelUpdateDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2111F8D665900A26EE1 /* ChannelUpdateDraft.pb.swift */; };
+		FAF5D2581F8D6C2000A26EE1 /* ChannelUpdateSignature.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CB1F8D664200A26EE1 /* ChannelUpdateSignature.pb.swift */; };
+		FAF5D2591F8D6C2000A26EE1 /* ChannelUpdateUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D41F8D664500A26EE1 /* ChannelUpdateUsername.pb.swift */; };
+		FAF5D25A1F8D6C2000A26EE1 /* ChatClearMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20E1F8D665800A26EE1 /* ChatClearMessage.pb.swift */; };
+		FAF5D25B1F8D6C2000A26EE1 /* ChatConvertToGroup.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2081F8D665600A26EE1 /* ChatConvertToGroup.pb.swift */; };
+		FAF5D25C1F8D6C2000A26EE1 /* ChatDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C81F8D664100A26EE1 /* ChatDelete.pb.swift */; };
+		FAF5D25D1F8D6C2000A26EE1 /* ChatDeleteMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2031F8D665400A26EE1 /* ChatDeleteMessage.pb.swift */; };
+		FAF5D25E1F8D6C2000A26EE1 /* ChatEditMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E71F8D664B00A26EE1 /* ChatEditMessage.pb.swift */; };
+		FAF5D25F1F8D6C2000A26EE1 /* ChatGetDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AD1F8D663B00A26EE1 /* ChatGetDraft.pb.swift */; };
+		FAF5D2601F8D6C2000A26EE1 /* ChatGetRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2121F8D665900A26EE1 /* ChatGetRoom.pb.swift */; };
+		FAF5D2611F8D6C2000A26EE1 /* ChatSendMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AA1F8D663A00A26EE1 /* ChatSendMessage.pb.swift */; };
+		FAF5D2621F8D6C2000A26EE1 /* ChatSetAction.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21D1F8D665D00A26EE1 /* ChatSetAction.pb.swift */; };
+		FAF5D2631F8D6C2000A26EE1 /* ChatUpdateDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B91F8D663E00A26EE1 /* ChatUpdateDraft.pb.swift */; };
+		FAF5D2641F8D6C2000A26EE1 /* ChatUpdateStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B51F8D663D00A26EE1 /* ChatUpdateStatus.pb.swift */; };
+		FAF5D2651F8D6C2000A26EE1 /* ClientCheckInviteLink.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CC1F8D664300A26EE1 /* ClientCheckInviteLink.pb.swift */; };
+		FAF5D2661F8D6C2000A26EE1 /* ClientCondition.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FC1F8D665300A26EE1 /* ClientCondition.pb.swift */; };
+		FAF5D2671F8D6C2000A26EE1 /* ClientCountRoomHistory.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20B1F8D665700A26EE1 /* ClientCountRoomHistory.pb.swift */; };
+		FAF5D2681F8D6C2000A26EE1 /* ClientGetRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1EA1F8D664C00A26EE1 /* ClientGetRoom.pb.swift */; };
+		FAF5D2691F8D6C2000A26EE1 /* ClientGetRoomHistory.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D11F8D664400A26EE1 /* ClientGetRoomHistory.pb.swift */; };
+		FAF5D26A1F8D6C2000A26EE1 /* ClientGetRoomList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2011F8D665400A26EE1 /* ClientGetRoomList.pb.swift */; };
+		FAF5D26B1F8D6C2000A26EE1 /* ClientGetRoomMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1981F8D663800A26EE1 /* ClientGetRoomMessage.pb.swift */; };
+		FAF5D26C1F8D6C2000A26EE1 /* ClientJoinByInviteLink.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E21F8D664A00A26EE1 /* ClientJoinByInviteLink.pb.swift */; };
+		FAF5D26D1F8D6C2000A26EE1 /* ClientJoinByUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BD1F8D663F00A26EE1 /* ClientJoinByUsername.pb.swift */; };
+		FAF5D26E1F8D6C2000A26EE1 /* ClientResolveUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F51F8D665000A26EE1 /* ClientResolveUsername.pb.swift */; };
+		FAF5D26F1F8D6C2000A26EE1 /* ClientSearchRoomHistory.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CE1F8D664300A26EE1 /* ClientSearchRoomHistory.pb.swift */; };
+		FAF5D2701F8D6C2000A26EE1 /* ClientSearchUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A61F8D663900A26EE1 /* ClientSearchUsername.pb.swift */; };
+		FAF5D2711F8D6C2000A26EE1 /* ClientSubscribeToRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2371F8D666400A26EE1 /* ClientSubscribeToRoom.pb.swift */; };
+		FAF5D2721F8D6C2000A26EE1 /* ClientUnsubscribeFromRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19D1F8D663800A26EE1 /* ClientUnsubscribeFromRoom.pb.swift */; };
+		FAF5D2731F8D6C2000A26EE1 /* ConnectionSecuring.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DF1F8D664900A26EE1 /* ConnectionSecuring.pb.swift */; };
+		FAF5D2741F8D6C2000A26EE1 /* Error.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F91F8D665100A26EE1 /* Error.pb.swift */; };
+		FAF5D2751F8D6C2000A26EE1 /* FileDownload.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2311F8D666200A26EE1 /* FileDownload.pb.swift */; };
+		FAF5D2761F8D6C2000A26EE1 /* FileInfo.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FB1F8D665200A26EE1 /* FileInfo.pb.swift */; };
+		FAF5D2771F8D6C2000A26EE1 /* FileUpload.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BB1F8D663F00A26EE1 /* FileUpload.pb.swift */; };
+		FAF5D2781F8D6C2000A26EE1 /* FileUploadInit.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2091F8D665600A26EE1 /* FileUploadInit.pb.swift */; };
+		FAF5D2791F8D6C2000A26EE1 /* FileUploadOption.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DD1F8D664800A26EE1 /* FileUploadOption.pb.swift */; };
+		FAF5D27A1F8D6C2000A26EE1 /* FileUploadStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19F1F8D663800A26EE1 /* FileUploadStatus.pb.swift */; };
+		FAF5D27B1F8D6C2000A26EE1 /* GeoGetComment.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FD1F8D665300A26EE1 /* GeoGetComment.pb.swift */; };
+		FAF5D27C1F8D6C2000A26EE1 /* GeoGetConfiguration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D23A1F8D666500A26EE1 /* GeoGetConfiguration.pb.swift */; };
+		FAF5D27D1F8D6C2000A26EE1 /* GeoGetNearbyCoordinate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E91F8D664C00A26EE1 /* GeoGetNearbyCoordinate.pb.swift */; };
+		FAF5D27E1F8D6C2000A26EE1 /* GeoGetNearbyDistance.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AC1F8D663A00A26EE1 /* GeoGetNearbyDistance.pb.swift */; };
+		FAF5D27F1F8D6C2000A26EE1 /* GeoGetRegisterStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D31F8D664500A26EE1 /* GeoGetRegisterStatus.pb.swift */; };
+		FAF5D2801F8D6C2000A26EE1 /* GeoRegister.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B11F8D663C00A26EE1 /* GeoRegister.pb.swift */; };
+		FAF5D2811F8D6C2000A26EE1 /* GeoUpdateComment.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19E1F8D663800A26EE1 /* GeoUpdateComment.pb.swift */; };
+		FAF5D2821F8D6C2000A26EE1 /* GeoUpdatePosition.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DB1F8D664700A26EE1 /* GeoUpdatePosition.pb.swift */; };
+		FAF5D2831F8D6C2000A26EE1 /* Global.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20C1F8D665700A26EE1 /* Global.pb.swift */; };
+		FAF5D2841F8D6C2000A26EE1 /* GroupAddAdmin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1961F8D663800A26EE1 /* GroupAddAdmin.pb.swift */; };
+		FAF5D2851F8D6C2000A26EE1 /* GroupAddMember.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2301F8D666200A26EE1 /* GroupAddMember.pb.swift */; };
+		FAF5D2861F8D6C2000A26EE1 /* GroupAddModerator.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1971F8D663800A26EE1 /* GroupAddModerator.pb.swift */; };
+		FAF5D2871F8D6C2000A26EE1 /* GroupAvatarAdd.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2281F8D666000A26EE1 /* GroupAvatarAdd.pb.swift */; };
+		FAF5D2881F8D6C2000A26EE1 /* GroupAvatarDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DE1F8D664900A26EE1 /* GroupAvatarDelete.pb.swift */; };
+		FAF5D2891F8D6C2000A26EE1 /* GroupAvatarGetList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1DC1F8D664800A26EE1 /* GroupAvatarGetList.pb.swift */; };
+		FAF5D28A1F8D6C2000A26EE1 /* GroupCheckUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C91F8D664200A26EE1 /* GroupCheckUsername.pb.swift */; };
+		FAF5D28B1F8D6C2000A26EE1 /* GroupClearMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BE1F8D663F00A26EE1 /* GroupClearMessage.pb.swift */; };
+		FAF5D28C1F8D6C2000A26EE1 /* GroupCreate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A21F8D663800A26EE1 /* GroupCreate.pb.swift */; };
+		FAF5D28D1F8D6C2000A26EE1 /* GroupDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20D1F8D665800A26EE1 /* GroupDelete.pb.swift */; };
+		FAF5D28E1F8D6C2000A26EE1 /* GroupDeleteMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19B1F8D663800A26EE1 /* GroupDeleteMessage.pb.swift */; };
+		FAF5D28F1F8D6C2000A26EE1 /* GroupEdit.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CD1F8D664300A26EE1 /* GroupEdit.pb.swift */; };
+		FAF5D2901F8D6C2000A26EE1 /* GroupEditMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22D1F8D666100A26EE1 /* GroupEditMessage.pb.swift */; };
+		FAF5D2911F8D6C2000A26EE1 /* GroupGetDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2041F8D665500A26EE1 /* GroupGetDraft.pb.swift */; };
+		FAF5D2921F8D6C2000A26EE1 /* GroupGetMemberList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D19A1F8D663800A26EE1 /* GroupGetMemberList.pb.swift */; };
+		FAF5D2931F8D6C2000A26EE1 /* GroupKickAdmin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AB1F8D663A00A26EE1 /* GroupKickAdmin.pb.swift */; };
+		FAF5D2941F8D6C2000A26EE1 /* GroupKickMember.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2321F8D666200A26EE1 /* GroupKickMember.pb.swift */; };
+		FAF5D2951F8D6C2000A26EE1 /* GroupKickModerator.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22F1F8D666200A26EE1 /* GroupKickModerator.pb.swift */; };
+		FAF5D2961F8D6C2000A26EE1 /* GroupLeft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D51F8D664600A26EE1 /* GroupLeft.pb.swift */; };
+		FAF5D2971F8D6C2000A26EE1 /* GroupRemoveUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F11F8D664F00A26EE1 /* GroupRemoveUsername.pb.swift */; };
+		FAF5D2981F8D6C2000A26EE1 /* GroupRevokeLink.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FA1F8D665200A26EE1 /* GroupRevokeLink.pb.swift */; };
+		FAF5D2991F8D6C2000A26EE1 /* GroupSendMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D21F8D664500A26EE1 /* GroupSendMessage.pb.swift */; };
+		FAF5D29A1F8D6C2000A26EE1 /* GroupSetAction.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22B1F8D666000A26EE1 /* GroupSetAction.pb.swift */; };
+		FAF5D29B1F8D6C2000A26EE1 /* GroupUpdateDraft.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D61F8D664600A26EE1 /* GroupUpdateDraft.pb.swift */; };
+		FAF5D29C1F8D6C2000A26EE1 /* GroupUpdateStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20F1F8D665800A26EE1 /* GroupUpdateStatus.pb.swift */; };
+		FAF5D29D1F8D6C2000A26EE1 /* GroupUpdateUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A71F8D663900A26EE1 /* GroupUpdateUsername.pb.swift */; };
+		FAF5D29E1F8D6C2000A26EE1 /* Heartbeat.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D20A1F8D665600A26EE1 /* Heartbeat.pb.swift */; };
+		FAF5D29F1F8D6C2000A26EE1 /* InfoCountry.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22E1F8D666100A26EE1 /* InfoCountry.pb.swift */; };
+		FAF5D2A01F8D6C2000A26EE1 /* InfoLocation.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D23B1F8D666500A26EE1 /* InfoLocation.pb.swift */; };
+		FAF5D2A11F8D6C2000A26EE1 /* InfoPage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E41F8D664A00A26EE1 /* InfoPage.pb.swift */; };
+		FAF5D2A21F8D6C2000A26EE1 /* InfoTime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BC1F8D663F00A26EE1 /* InfoTime.pb.swift */; };
+		FAF5D2A31F8D6C2000A26EE1 /* InfoWallpaper.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F41F8D665000A26EE1 /* InfoWallpaper.pb.swift */; };
+		FAF5D2A41F8D6C2000A26EE1 /* PushLoginToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C31F8D664100A26EE1 /* PushLoginToken.pb.swift */; };
+		FAF5D2A51F8D6C2000A26EE1 /* PushRateSignaling.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1BF1F8D664000A26EE1 /* PushRateSignaling.pb.swift */; };
+		FAF5D2A61F8D6C2000A26EE1 /* PushTwoStepVerification.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21C1F8D665D00A26EE1 /* PushTwoStepVerification.pb.swift */; };
+		FAF5D2A71F8D6C2000A26EE1 /* PushUserInfoExpired.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2331F8D666200A26EE1 /* PushUserInfoExpired.pb.swift */; };
+		FAF5D2A81F8D6C2000A26EE1 /* QrCodeAddContact.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1951F8D663800A26EE1 /* QrCodeAddContact.pb.swift */; };
+		FAF5D2A91F8D6C2000A26EE1 /* QrCodeAddMe.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2131F8D665A00A26EE1 /* QrCodeAddMe.pb.swift */; };
+		FAF5D2AA1F8D6C2000A26EE1 /* QrCodeJoin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A01F8D663800A26EE1 /* QrCodeJoin.pb.swift */; };
+		FAF5D2AB1F8D6C2000A26EE1 /* QrCodeNewDevice.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2181F8D665B00A26EE1 /* QrCodeNewDevice.pb.swift */; };
+		FAF5D2AC1F8D6C2000A26EE1 /* QrCodeResolve.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F61F8D665100A26EE1 /* QrCodeResolve.pb.swift */; };
+		FAF5D2AD1F8D6C2000A26EE1 /* SignalingAccept.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2141F8D665A00A26EE1 /* SignalingAccept.pb.swift */; };
+		FAF5D2AE1F8D6C2000A26EE1 /* SignalingCandidate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A81F8D663900A26EE1 /* SignalingCandidate.pb.swift */; };
+		FAF5D2AF1F8D6C2000A26EE1 /* SignalingClearLog.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2251F8D665F00A26EE1 /* SignalingClearLog.pb.swift */; };
+		FAF5D2B01F8D6C2000A26EE1 /* SignalingGetConfiguration.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2341F8D666300A26EE1 /* SignalingGetConfiguration.pb.swift */; };
+		FAF5D2B11F8D6C2000A26EE1 /* SignalingGetLog.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A91F8D663A00A26EE1 /* SignalingGetLog.pb.swift */; };
+		FAF5D2B21F8D6C2000A26EE1 /* SignalingLeave.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2061F8D665500A26EE1 /* SignalingLeave.pb.swift */; };
+		FAF5D2B31F8D6C2000A26EE1 /* SignalingOffer.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2381F8D666400A26EE1 /* SignalingOffer.pb.swift */; };
+		FAF5D2B41F8D6C2000A26EE1 /* SignalingRate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2021F8D665400A26EE1 /* SignalingRate.pb.swift */; };
+		FAF5D2B51F8D6C2000A26EE1 /* SignalingRinging.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F21F8D664F00A26EE1 /* SignalingRinging.pb.swift */; };
+		FAF5D2B61F8D6C2000A26EE1 /* SignalingSessionHold.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2201F8D665E00A26EE1 /* SignalingSessionHold.pb.swift */; };
+		FAF5D2B71F8D6C2000A26EE1 /* UserAvatarAdd.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2161F8D665B00A26EE1 /* UserAvatarAdd.pb.swift */; };
+		FAF5D2B81F8D6C2000A26EE1 /* UserAvatarDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F71F8D665100A26EE1 /* UserAvatarDelete.pb.swift */; };
+		FAF5D2B91F8D6C2000A26EE1 /* UserAvatarGetList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C01F8D664000A26EE1 /* UserAvatarGetList.pb.swift */; };
+		FAF5D2BA1F8D6C2000A26EE1 /* UserContactsBlock.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D71F8D664700A26EE1 /* UserContactsBlock.pb.swift */; };
+		FAF5D2BB1F8D6C2000A26EE1 /* UserContactsDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21E1F8D665D00A26EE1 /* UserContactsDelete.pb.swift */; };
+		FAF5D2BC1F8D6C2000A26EE1 /* UserContactsEdit.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2051F8D665500A26EE1 /* UserContactsEdit.pb.swift */; };
+		FAF5D2BD1F8D6C2000A26EE1 /* UserContactsGetBlockedList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B21F8D663C00A26EE1 /* UserContactsGetBlockedList.pb.swift */; };
+		FAF5D2BE1F8D6C2000A26EE1 /* UserContactsGetList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1EF1F8D664E00A26EE1 /* UserContactsGetList.pb.swift */; };
+		FAF5D2BF1F8D6C2000A26EE1 /* UserContactsImport.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C41F8D664100A26EE1 /* UserContactsImport.pb.swift */; };
+		FAF5D2C01F8D6C2000A26EE1 /* UserContactsUnblock.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B71F8D663D00A26EE1 /* UserContactsUnblock.pb.swift */; };
+		FAF5D2C11F8D6C2000A26EE1 /* UserDelete.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2291F8D666000A26EE1 /* UserDelete.pb.swift */; };
+		FAF5D2C21F8D6C2000A26EE1 /* UserGetDeleteToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2191F8D665C00A26EE1 /* UserGetDeleteToken.pb.swift */; };
+		FAF5D2C31F8D6C2000A26EE1 /* UserInfo.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2211F8D665E00A26EE1 /* UserInfo.pb.swift */; };
+		FAF5D2C41F8D6C2000A26EE1 /* UserLogin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C61F8D664100A26EE1 /* UserLogin.pb.swift */; };
+		FAF5D2C51F8D6C2000A26EE1 /* UserPrivacyGetRule.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1CF1F8D664400A26EE1 /* UserPrivacyGetRule.pb.swift */; };
+		FAF5D2C61F8D6C2000A26EE1 /* UserPrivacySetRule.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E01F8D664900A26EE1 /* UserPrivacySetRule.pb.swift */; };
+		FAF5D2C71F8D6C2000A26EE1 /* UserProfileCheckUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2101F8D665900A26EE1 /* UserProfileCheckUsername.pb.swift */; };
+		FAF5D2C81F8D6C2000A26EE1 /* UserProfileGetEmail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C51F8D664100A26EE1 /* UserProfileGetEmail.pb.swift */; };
+		FAF5D2C91F8D6C2000A26EE1 /* UserProfileGetGender.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1EB1F8D664D00A26EE1 /* UserProfileGetGender.pb.swift */; };
+		FAF5D2CA1F8D6C2000A26EE1 /* UserProfileGetNickname.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E31F8D664A00A26EE1 /* UserProfileGetNickname.pb.swift */; };
+		FAF5D2CB1F8D6C2000A26EE1 /* UserProfileGetSelfRemove.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C11F8D664000A26EE1 /* UserProfileGetSelfRemove.pb.swift */; };
+		FAF5D2CC1F8D6C2000A26EE1 /* UserProfileSetEmail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F81F8D665100A26EE1 /* UserProfileSetEmail.pb.swift */; };
+		FAF5D2CD1F8D6C2000A26EE1 /* UserProfileSetGender.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B31F8D663C00A26EE1 /* UserProfileSetGender.pb.swift */; };
+		FAF5D2CE1F8D6C2000A26EE1 /* UserProfileSetNickname.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AE1F8D663B00A26EE1 /* UserProfileSetNickname.pb.swift */; };
+		FAF5D2CF1F8D6C2000A26EE1 /* UserProfileSetSelfRemove.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B61F8D663D00A26EE1 /* UserProfileSetSelfRemove.pb.swift */; };
+		FAF5D2D01F8D6C2000A26EE1 /* UserProfileUpdateUsername.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1AF1F8D663B00A26EE1 /* UserProfileUpdateUsername.pb.swift */; };
+		FAF5D2D11F8D6C2000A26EE1 /* UserRegister.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1991F8D663800A26EE1 /* UserRegister.pb.swift */; };
+		FAF5D2D21F8D6C2000A26EE1 /* UserSessionGetActiveList.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E11F8D664900A26EE1 /* UserSessionGetActiveList.pb.swift */; };
+		FAF5D2D31F8D6C2000A26EE1 /* UserSessionLogout.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1EC1F8D664D00A26EE1 /* UserSessionLogout.pb.swift */; };
+		FAF5D2D41F8D6C2000A26EE1 /* UserSessionTerminate.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2231F8D665E00A26EE1 /* UserSessionTerminate.pb.swift */; };
+		FAF5D2D51F8D6C2000A26EE1 /* UserTwoStepVerificationChangeHint.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2221F8D665E00A26EE1 /* UserTwoStepVerificationChangeHint.pb.swift */; };
+		FAF5D2D61F8D6C2000A26EE1 /* UserTwoStepVerificationChangeRecoveryEmail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FF1F8D665300A26EE1 /* UserTwoStepVerificationChangeRecoveryEmail.pb.swift */; };
+		FAF5D2D71F8D6C2000A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22C1F8D666100A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift */; };
+		FAF5D2D81F8D6C2000A26EE1 /* UserTwoStepVerificationCheckPassword.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1A11F8D663800A26EE1 /* UserTwoStepVerificationCheckPassword.pb.swift */; };
+		FAF5D2D91F8D6C2000A26EE1 /* UserTwoStepVerificationGetPasswordDetail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1C71F8D664100A26EE1 /* UserTwoStepVerificationGetPasswordDetail.pb.swift */; };
+		FAF5D2DA1F8D6C2000A26EE1 /* UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B41F8D663D00A26EE1 /* UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift */; };
+		FAF5D2DB1F8D6C2000A26EE1 /* UserTwoStepVerificationRecoverPasswordByToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1F01F8D664E00A26EE1 /* UserTwoStepVerificationRecoverPasswordByToken.pb.swift */; };
+		FAF5D2DC1F8D6C2000A26EE1 /* UserTwoStepVerificationRequestRecoveryToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21B1F8D665C00A26EE1 /* UserTwoStepVerificationRequestRecoveryToken.pb.swift */; };
+		FAF5D2DD1F8D6C2000A26EE1 /* UserTwoStepVerificationResendVerifyEmail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1ED1F8D664E00A26EE1 /* UserTwoStepVerificationResendVerifyEmail.pb.swift */; };
+		FAF5D2DE1F8D6C2000A26EE1 /* UserTwoStepVerificationSetPassword.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2241F8D665F00A26EE1 /* UserTwoStepVerificationSetPassword.pb.swift */; };
+		FAF5D2DF1F8D6C2000A26EE1 /* UserTwoStepVerificationUnsetPassword.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D21F1F8D665D00A26EE1 /* UserTwoStepVerificationUnsetPassword.pb.swift */; };
+		FAF5D2E01F8D6C2000A26EE1 /* UserTwoStepVerificationVerifyPassword.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D22A1F8D666000A26EE1 /* UserTwoStepVerificationVerifyPassword.pb.swift */; };
+		FAF5D2E11F8D6C2000A26EE1 /* UserTwoStepVerificationVerifyRecoveryEmail.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1B81F8D663E00A26EE1 /* UserTwoStepVerificationVerifyRecoveryEmail.pb.swift */; };
+		FAF5D2E21F8D6C2000A26EE1 /* UserUpdateStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2151F8D665A00A26EE1 /* UserUpdateStatus.pb.swift */; };
+		FAF5D2E31F8D6C2000A26EE1 /* UserUsernameToId.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2171F8D665B00A26EE1 /* UserUsernameToId.pb.swift */; };
+		FAF5D2E41F8D6C2000A26EE1 /* UserVerify.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1D01F8D664400A26EE1 /* UserVerify.pb.swift */; };
+		FAF5D2E51F8D6C2000A26EE1 /* UserVerifyNewDevice.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1E51F8D664B00A26EE1 /* UserVerifyNewDevice.pb.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA5A9FF21F71ECEF00D925F5 /* ChannelAddAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddAdmin.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF31F71ECEF00D925F5 /* ChannelAddMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddMember.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF41F71ECEF00D925F5 /* ChannelAddMessageReaction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddMessageReaction.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF51F71ECEF00D925F5 /* ChannelAddModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddModerator.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF61F71ECEF00D925F5 /* ChannelAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarAdd.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF71F71ECEF00D925F5 /* ChannelAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarDelete.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF81F71ECEF00D925F5 /* ChannelAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarGetList.proto.swift; sourceTree = "<group>"; };
-		FA5A9FF91F71ECEF00D925F5 /* ChannelCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCheckUsername.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFA1F71ECEF00D925F5 /* ChannelCreate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCreate.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFB1F71ECEF00D925F5 /* ChannelDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDelete.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFC1F71ECEF00D925F5 /* ChannelDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDeleteMessage.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFD1F71ECEF00D925F5 /* ChannelEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEdit.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFE1F71ECEF00D925F5 /* ChannelEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEditMessage.proto.swift; sourceTree = "<group>"; };
-		FA5A9FFF1F71ECEF00D925F5 /* ChannelGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA0001F71ECEF00D925F5 /* ChannelGetMemberList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetMemberList.proto.swift; sourceTree = "<group>"; };
-		FA5AA0011F71ECEF00D925F5 /* ChannelGetMessagesStats.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetMessagesStats.proto.swift; sourceTree = "<group>"; };
-		FA5AA0021F71ECEF00D925F5 /* ChannelKickAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickAdmin.proto.swift; sourceTree = "<group>"; };
-		FA5AA0031F71ECEF00D925F5 /* ChannelKickMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickMember.proto.swift; sourceTree = "<group>"; };
-		FA5AA0041F71ECEF00D925F5 /* ChannelKickModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickModerator.proto.swift; sourceTree = "<group>"; };
-		FA5AA0051F71ECEF00D925F5 /* ChannelLeft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelLeft.proto.swift; sourceTree = "<group>"; };
-		FA5AA0061F71ECEF00D925F5 /* ChannelRemoveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRemoveUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0071F71ECEF00D925F5 /* ChannelRevokeLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRevokeLink.proto.swift; sourceTree = "<group>"; };
-		FA5AA0081F71ECEF00D925F5 /* ChannelSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSendMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0091F71ECEF00D925F5 /* ChannelSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSetAction.proto.swift; sourceTree = "<group>"; };
-		FA5AA00A1F71ECEF00D925F5 /* ChannelUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA00B1F71ECEF00D925F5 /* ChannelUpdateSignature.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateSignature.proto.swift; sourceTree = "<group>"; };
-		FA5AA00C1F71ECEF00D925F5 /* ChannelUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA00D1F71ECEF00D925F5 /* ChatClearMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClearMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA00E1F71ECEF00D925F5 /* ChatConvertToGroup.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConvertToGroup.proto.swift; sourceTree = "<group>"; };
-		FA5AA00F1F71ECEF00D925F5 /* ChatDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA0101F71ECEF00D925F5 /* ChatDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDeleteMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0111F71ECEF00D925F5 /* ChatEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEditMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0121F71ECEF00D925F5 /* ChatGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGetDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA0131F71ECEF00D925F5 /* ChatGetRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGetRoom.proto.swift; sourceTree = "<group>"; };
-		FA5AA0141F71ECEF00D925F5 /* ChatSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSendMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0151F71ECEF00D925F5 /* ChatSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSetAction.proto.swift; sourceTree = "<group>"; };
-		FA5AA0161F71ECEF00D925F5 /* ChatUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUpdateDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA0171F71ECEF00D925F5 /* ChatUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUpdateStatus.proto.swift; sourceTree = "<group>"; };
-		FA5AA0181F71ECEF00D925F5 /* ClientCheckInviteLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCheckInviteLink.proto.swift; sourceTree = "<group>"; };
-		FA5AA0191F71ECEF00D925F5 /* ClientCondition.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCondition.proto.swift; sourceTree = "<group>"; };
-		FA5AA01A1F71ECEF00D925F5 /* ClientCountRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCountRoomHistory.proto.swift; sourceTree = "<group>"; };
-		FA5AA01B1F71ECEF00D925F5 /* ClientGetRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoom.proto.swift; sourceTree = "<group>"; };
-		FA5AA01C1F71ECEF00D925F5 /* ClientGetRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomHistory.proto.swift; sourceTree = "<group>"; };
-		FA5AA01D1F71ECEF00D925F5 /* ClientGetRoomList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomList.proto.swift; sourceTree = "<group>"; };
-		FA5AA01E1F71ECEF00D925F5 /* ClientGetRoomMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA01F1F71ECEF00D925F5 /* ClientJoinByInviteLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientJoinByInviteLink.proto.swift; sourceTree = "<group>"; };
-		FA5AA0201F71ECEF00D925F5 /* ClientJoinByUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientJoinByUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0211F71ECEF00D925F5 /* ClientResolveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientResolveUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0221F71ECEF00D925F5 /* ClientSearchRoomHistory.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSearchRoomHistory.proto.swift; sourceTree = "<group>"; };
-		FA5AA0231F71ECEF00D925F5 /* ClientSearchUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSearchUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0241F71ECEF00D925F5 /* ClientSubscribeToRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSubscribeToRoom.proto.swift; sourceTree = "<group>"; };
-		FA5AA0251F71ECEF00D925F5 /* ClientUnsubscribeFromRoom.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientUnsubscribeFromRoom.proto.swift; sourceTree = "<group>"; };
-		FA5AA0261F71ECEF00D925F5 /* ConnectionSecuring.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSecuring.proto.swift; sourceTree = "<group>"; };
-		FA5AA0271F71ECEF00D925F5 /* Error.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.proto.swift; sourceTree = "<group>"; };
-		FA5AA0281F71ECEF00D925F5 /* FileDownload.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownload.proto.swift; sourceTree = "<group>"; };
-		FA5AA0291F71ECEF00D925F5 /* FileInfo.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.proto.swift; sourceTree = "<group>"; };
-		FA5AA02A1F71ECEF00D925F5 /* FileUpload.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUpload.proto.swift; sourceTree = "<group>"; };
-		FA5AA02B1F71ECEF00D925F5 /* FileUploadInit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadInit.proto.swift; sourceTree = "<group>"; };
-		FA5AA02C1F71ECEF00D925F5 /* FileUploadOption.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadOption.proto.swift; sourceTree = "<group>"; };
-		FA5AA02D1F71ECEF00D925F5 /* FileUploadStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadStatus.proto.swift; sourceTree = "<group>"; };
-		FA5AA02E1F71ECEF00D925F5 /* GeoGetComment.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetComment.proto.swift; sourceTree = "<group>"; };
-		FA5AA02F1F71ECEF00D925F5 /* GeoGetConfiguration.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetConfiguration.proto.swift; sourceTree = "<group>"; };
-		FA5AA0301F71ECEF00D925F5 /* GeoGetNearbyCoordinate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetNearbyCoordinate.proto.swift; sourceTree = "<group>"; };
-		FA5AA0311F71ECEF00D925F5 /* GeoGetNearbyDistance.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetNearbyDistance.proto.swift; sourceTree = "<group>"; };
-		FA5AA0321F71ECEF00D925F5 /* GeoGetRegisterStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetRegisterStatus.proto.swift; sourceTree = "<group>"; };
-		FA5AA0331F71ECEF00D925F5 /* GeoRegister.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoRegister.proto.swift; sourceTree = "<group>"; };
-		FA5AA0341F71ECEF00D925F5 /* GeoUpdateComment.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUpdateComment.proto.swift; sourceTree = "<group>"; };
-		FA5AA0351F71ECEF00D925F5 /* GeoUpdatePosition.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUpdatePosition.proto.swift; sourceTree = "<group>"; };
-		FA5AA0361F71ECEF00D925F5 /* Global.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.proto.swift; sourceTree = "<group>"; };
-		FA5AA0371F71ECEF00D925F5 /* GroupAddAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddAdmin.proto.swift; sourceTree = "<group>"; };
-		FA5AA0381F71ECEF00D925F5 /* GroupAddMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddMember.proto.swift; sourceTree = "<group>"; };
-		FA5AA0391F71ECEF00D925F5 /* GroupAddModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddModerator.proto.swift; sourceTree = "<group>"; };
-		FA5AA03A1F71ECEF00D925F5 /* GroupAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarAdd.proto.swift; sourceTree = "<group>"; };
-		FA5AA03B1F71ECEF00D925F5 /* GroupAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA03C1F71ECEF00D925F5 /* GroupAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarGetList.proto.swift; sourceTree = "<group>"; };
-		FA5AA03D1F71ECEF00D925F5 /* GroupCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCheckUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA03E1F71ECEF00D925F5 /* GroupClearMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClearMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA03F1F71ECEF00D925F5 /* GroupCreate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCreate.proto.swift; sourceTree = "<group>"; };
-		FA5AA0401F71ECEF00D925F5 /* GroupDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA0411F71ECEF00D925F5 /* GroupDeleteMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDeleteMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0421F71ECEF00D925F5 /* GroupEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEdit.proto.swift; sourceTree = "<group>"; };
-		FA5AA0431F71ECEF00D925F5 /* GroupEditMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0441F71ECEF00D925F5 /* GroupGetDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGetDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA0451F71ECEF00D925F5 /* GroupGetMemberList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGetMemberList.proto.swift; sourceTree = "<group>"; };
-		FA5AA0461F71ECEF00D925F5 /* GroupKickAdmin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickAdmin.proto.swift; sourceTree = "<group>"; };
-		FA5AA0471F71ECEF00D925F5 /* GroupKickMember.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickMember.proto.swift; sourceTree = "<group>"; };
-		FA5AA0481F71ECEF00D925F5 /* GroupKickModerator.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickModerator.proto.swift; sourceTree = "<group>"; };
-		FA5AA0491F71ECEF00D925F5 /* GroupLeft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLeft.proto.swift; sourceTree = "<group>"; };
-		FA5AA04A1F71ECEF00D925F5 /* GroupRemoveUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRemoveUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA04B1F71ECEF00D925F5 /* GroupRevokeLink.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRevokeLink.proto.swift; sourceTree = "<group>"; };
-		FA5AA04C1F71ECEF00D925F5 /* GroupSendMessage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSendMessage.proto.swift; sourceTree = "<group>"; };
-		FA5AA04D1F71ECEF00D925F5 /* GroupSetAction.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSetAction.proto.swift; sourceTree = "<group>"; };
-		FA5AA04E1F71ECEF00D925F5 /* GroupUpdateDraft.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateDraft.proto.swift; sourceTree = "<group>"; };
-		FA5AA04F1F71ECEF00D925F5 /* GroupUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateStatus.proto.swift; sourceTree = "<group>"; };
-		FA5AA0501F71ECEF00D925F5 /* GroupUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0511F71ECEF00D925F5 /* Heartbeat.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heartbeat.proto.swift; sourceTree = "<group>"; };
-		FA5AA0521F71ECEF00D925F5 /* InfoCountry.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCountry.proto.swift; sourceTree = "<group>"; };
-		FA5AA0531F71ECEF00D925F5 /* InfoLocation.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLocation.proto.swift; sourceTree = "<group>"; };
-		FA5AA0541F71ECEF00D925F5 /* InfoPage.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.proto.swift; sourceTree = "<group>"; };
-		FA5AA0551F71ECEF00D925F5 /* InfoTime.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTime.proto.swift; sourceTree = "<group>"; };
-		FA5AA0561F71ECEF00D925F5 /* InfoWallpaper.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWallpaper.proto.swift; sourceTree = "<group>"; };
-		FA5AA0571F71ECEF00D925F5 /* PushLoginToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushLoginToken.proto.swift; sourceTree = "<group>"; };
-		FA5AA0581F71ECEF00D925F5 /* PushRateSignaling.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRateSignaling.proto.swift; sourceTree = "<group>"; };
-		FA5AA0591F71ECEF00D925F5 /* PushTwoStepVerification.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTwoStepVerification.proto.swift; sourceTree = "<group>"; };
-		FA5AA05A1F71ECEF00D925F5 /* PushUserInfoExpired.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUserInfoExpired.proto.swift; sourceTree = "<group>"; };
-		FA5AA05B1F71ECEF00D925F5 /* QrCodeAddContact.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeAddContact.proto.swift; sourceTree = "<group>"; };
-		FA5AA05C1F71ECEF00D925F5 /* QrCodeAddMe.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeAddMe.proto.swift; sourceTree = "<group>"; };
-		FA5AA05D1F71ECEF00D925F5 /* QrCodeJoin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeJoin.proto.swift; sourceTree = "<group>"; };
-		FA5AA05E1F71ECEF00D925F5 /* QrCodeNewDevice.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeNewDevice.proto.swift; sourceTree = "<group>"; };
-		FA5AA05F1F71ECEF00D925F5 /* QrCodeResolve.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeResolve.proto.swift; sourceTree = "<group>"; };
-		FA5AA0621F71ECEF00D925F5 /* SignalingAccept.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingAccept.proto.swift; sourceTree = "<group>"; };
-		FA5AA0631F71ECEF00D925F5 /* SignalingCandidate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingCandidate.proto.swift; sourceTree = "<group>"; };
-		FA5AA0641F71ECEF00D925F5 /* SignalingClearLog.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClearLog.proto.swift; sourceTree = "<group>"; };
-		FA5AA0651F71ECEF00D925F5 /* SignalingGetConfiguration.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingGetConfiguration.proto.swift; sourceTree = "<group>"; };
-		FA5AA0661F71ECEF00D925F5 /* SignalingGetLog.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingGetLog.proto.swift; sourceTree = "<group>"; };
-		FA5AA0671F71ECEF00D925F5 /* SignalingLeave.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingLeave.proto.swift; sourceTree = "<group>"; };
-		FA5AA0681F71ECEF00D925F5 /* SignalingOffer.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingOffer.proto.swift; sourceTree = "<group>"; };
-		FA5AA0691F71ECEF00D925F5 /* SignalingRate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingRate.proto.swift; sourceTree = "<group>"; };
-		FA5AA06A1F71ECEF00D925F5 /* SignalingRinging.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingRinging.proto.swift; sourceTree = "<group>"; };
-		FA5AA06B1F71ECEF00D925F5 /* SignalingSessionHold.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingSessionHold.proto.swift; sourceTree = "<group>"; };
-		FA5AA06C1F71ECEF00D925F5 /* UserAvatarAdd.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarAdd.proto.swift; sourceTree = "<group>"; };
-		FA5AA06D1F71ECEF00D925F5 /* UserAvatarDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA06E1F71ECEF00D925F5 /* UserAvatarGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarGetList.proto.swift; sourceTree = "<group>"; };
-		FA5AA06F1F71ECEF00D925F5 /* UserContactsBlock.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsBlock.proto.swift; sourceTree = "<group>"; };
-		FA5AA0701F71ECEF00D925F5 /* UserContactsDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA0711F71ECEF00D925F5 /* UserContactsEdit.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsEdit.proto.swift; sourceTree = "<group>"; };
-		FA5AA0721F71ECEF00D925F5 /* UserContactsGetBlockedList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsGetBlockedList.proto.swift; sourceTree = "<group>"; };
-		FA5AA0731F71ECEF00D925F5 /* UserContactsGetList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsGetList.proto.swift; sourceTree = "<group>"; };
-		FA5AA0741F71ECEF00D925F5 /* UserContactsImport.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsImport.proto.swift; sourceTree = "<group>"; };
-		FA5AA0751F71ECEF00D925F5 /* UserContactsUnblock.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsUnblock.proto.swift; sourceTree = "<group>"; };
-		FA5AA0761F71ECEF00D925F5 /* UserDelete.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDelete.proto.swift; sourceTree = "<group>"; };
-		FA5AA0771F71ECEF00D925F5 /* UserGetDeleteToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetDeleteToken.proto.swift; sourceTree = "<group>"; };
-		FA5AA0781F71ECEF00D925F5 /* UserInfo.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.proto.swift; sourceTree = "<group>"; };
-		FA5AA0791F71ECEF00D925F5 /* UserLogin.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.proto.swift; sourceTree = "<group>"; };
-		FA5AA07A1F71ECEF00D925F5 /* UserPrivacyGetRule.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrivacyGetRule.proto.swift; sourceTree = "<group>"; };
-		FA5AA07B1F71ECEF00D925F5 /* UserPrivacySetRule.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrivacySetRule.proto.swift; sourceTree = "<group>"; };
-		FA5AA07C1F71ECEF00D925F5 /* UserProfileCheckUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCheckUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA07D1F71ECEF00D925F5 /* UserProfileGetEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetEmail.proto.swift; sourceTree = "<group>"; };
-		FA5AA07E1F71ECEF00D925F5 /* UserProfileGetGender.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetGender.proto.swift; sourceTree = "<group>"; };
-		FA5AA07F1F71ECEF00D925F5 /* UserProfileGetNickname.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetNickname.proto.swift; sourceTree = "<group>"; };
-		FA5AA0801F71ECEF00D925F5 /* UserProfileGetSelfRemove.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetSelfRemove.proto.swift; sourceTree = "<group>"; };
-		FA5AA0811F71ECEF00D925F5 /* UserProfileSetEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetEmail.proto.swift; sourceTree = "<group>"; };
-		FA5AA0821F71ECEF00D925F5 /* UserProfileSetGender.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetGender.proto.swift; sourceTree = "<group>"; };
-		FA5AA0831F71ECEF00D925F5 /* UserProfileSetNickname.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetNickname.proto.swift; sourceTree = "<group>"; };
-		FA5AA0841F71ECEF00D925F5 /* UserProfileSetSelfRemove.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetSelfRemove.proto.swift; sourceTree = "<group>"; };
-		FA5AA0851F71ECEF00D925F5 /* UserProfileUpdateUsername.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileUpdateUsername.proto.swift; sourceTree = "<group>"; };
-		FA5AA0861F71ECEF00D925F5 /* UserRegister.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.proto.swift; sourceTree = "<group>"; };
-		FA5AA0871F71ECEF00D925F5 /* UserSessionGetActiveList.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionGetActiveList.proto.swift; sourceTree = "<group>"; };
-		FA5AA0881F71ECEF00D925F5 /* UserSessionLogout.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionLogout.proto.swift; sourceTree = "<group>"; };
-		FA5AA0891F71ECEF00D925F5 /* UserSessionTerminate.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionTerminate.proto.swift; sourceTree = "<group>"; };
-		FA5AA08A1F71ECEF00D925F5 /* UserTwoStepVerificationChangeHint.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeHint.proto.swift; sourceTree = "<group>"; };
-		FA5AA08B1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeRecoveryEmail.proto.swift; sourceTree = "<group>"; };
-		FA5AA08C1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeRecoveryQuestion.proto.swift; sourceTree = "<group>"; };
-		FA5AA08D1F71ECEF00D925F5 /* UserTwoStepVerificationCheckPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationCheckPassword.proto.swift; sourceTree = "<group>"; };
-		FA5AA08E1F71ECEF00D925F5 /* UserTwoStepVerificationGetPasswordDetail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationGetPasswordDetail.proto.swift; sourceTree = "<group>"; };
-		FA5AA08F1F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift; sourceTree = "<group>"; };
-		FA5AA0901F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRecoverPasswordByToken.proto.swift; sourceTree = "<group>"; };
-		FA5AA0911F71ECEF00D925F5 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRequestRecoveryToken.proto.swift; sourceTree = "<group>"; };
-		FA5AA0921F71ECEF00D925F5 /* UserTwoStepVerificationResendVerifyEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationResendVerifyEmail.proto.swift; sourceTree = "<group>"; };
-		FA5AA0931F71ECEF00D925F5 /* UserTwoStepVerificationSetPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationSetPassword.proto.swift; sourceTree = "<group>"; };
-		FA5AA0941F71ECEF00D925F5 /* UserTwoStepVerificationUnsetPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationUnsetPassword.proto.swift; sourceTree = "<group>"; };
-		FA5AA0951F71ECEF00D925F5 /* UserTwoStepVerificationVerifyPassword.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationVerifyPassword.proto.swift; sourceTree = "<group>"; };
-		FA5AA0961F71ECEF00D925F5 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationVerifyRecoveryEmail.proto.swift; sourceTree = "<group>"; };
-		FA5AA0971F71ECEF00D925F5 /* UserUpdateStatus.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateStatus.proto.swift; sourceTree = "<group>"; };
-		FA5AA0981F71ECEF00D925F5 /* UserUsernameToId.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsernameToId.proto.swift; sourceTree = "<group>"; };
-		FA5AA0991F71ECEF00D925F5 /* UserVerify.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerify.proto.swift; sourceTree = "<group>"; };
-		FA5AA09A1F71ECEF00D925F5 /* UserVerifyNewDevice.proto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerifyNewDevice.proto.swift; sourceTree = "<group>"; };
 		FA7638291E2FFD5E00C24391 /* IGProtoBuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGProtoBuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGProtoBuff.h; sourceTree = "<group>"; };
 		FA76382D1E2FFD5E00C24391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA7638351E2FFFD200C24391 /* ProtocolBuffers.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProtocolBuffers.framework; path = Carthage/Build/iOS/ProtocolBuffers.framework; sourceTree = "<group>"; };
+		FAF5D1951F8D663800A26EE1 /* QrCodeAddContact.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeAddContact.pb.swift; sourceTree = "<group>"; };
+		FAF5D1961F8D663800A26EE1 /* GroupAddAdmin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddAdmin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1971F8D663800A26EE1 /* GroupAddModerator.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddModerator.pb.swift; sourceTree = "<group>"; };
+		FAF5D1981F8D663800A26EE1 /* ClientGetRoomMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1991F8D663800A26EE1 /* UserRegister.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegister.pb.swift; sourceTree = "<group>"; };
+		FAF5D19A1F8D663800A26EE1 /* GroupGetMemberList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGetMemberList.pb.swift; sourceTree = "<group>"; };
+		FAF5D19B1F8D663800A26EE1 /* GroupDeleteMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDeleteMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D19C1F8D663800A26EE1 /* ChannelRevokeLink.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRevokeLink.pb.swift; sourceTree = "<group>"; };
+		FAF5D19D1F8D663800A26EE1 /* ClientUnsubscribeFromRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientUnsubscribeFromRoom.pb.swift; sourceTree = "<group>"; };
+		FAF5D19E1F8D663800A26EE1 /* GeoUpdateComment.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUpdateComment.pb.swift; sourceTree = "<group>"; };
+		FAF5D19F1F8D663800A26EE1 /* FileUploadStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadStatus.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A01F8D663800A26EE1 /* QrCodeJoin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeJoin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A11F8D663800A26EE1 /* UserTwoStepVerificationCheckPassword.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationCheckPassword.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A21F8D663800A26EE1 /* GroupCreate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCreate.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A31F8D663800A26EE1 /* ChannelRemoveUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRemoveUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A41F8D663900A26EE1 /* ChannelKickMember.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickMember.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A51F8D663900A26EE1 /* ChannelDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A61F8D663900A26EE1 /* ClientSearchUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSearchUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A71F8D663900A26EE1 /* GroupUpdateUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A81F8D663900A26EE1 /* SignalingCandidate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingCandidate.pb.swift; sourceTree = "<group>"; };
+		FAF5D1A91F8D663A00A26EE1 /* SignalingGetLog.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingGetLog.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AA1F8D663A00A26EE1 /* ChatSendMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSendMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AB1F8D663A00A26EE1 /* GroupKickAdmin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickAdmin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AC1F8D663A00A26EE1 /* GeoGetNearbyDistance.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetNearbyDistance.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AD1F8D663B00A26EE1 /* ChatGetDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGetDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AE1F8D663B00A26EE1 /* UserProfileSetNickname.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetNickname.pb.swift; sourceTree = "<group>"; };
+		FAF5D1AF1F8D663B00A26EE1 /* UserProfileUpdateUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileUpdateUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B01F8D663B00A26EE1 /* ChannelLeft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelLeft.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B11F8D663C00A26EE1 /* GeoRegister.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoRegister.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B21F8D663C00A26EE1 /* UserContactsGetBlockedList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsGetBlockedList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B31F8D663C00A26EE1 /* UserProfileSetGender.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetGender.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B41F8D663D00A26EE1 /* UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B51F8D663D00A26EE1 /* ChatUpdateStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUpdateStatus.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B61F8D663D00A26EE1 /* UserProfileSetSelfRemove.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetSelfRemove.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B71F8D663D00A26EE1 /* UserContactsUnblock.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsUnblock.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B81F8D663E00A26EE1 /* UserTwoStepVerificationVerifyRecoveryEmail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationVerifyRecoveryEmail.pb.swift; sourceTree = "<group>"; };
+		FAF5D1B91F8D663E00A26EE1 /* ChatUpdateDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUpdateDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BA1F8D663E00A26EE1 /* ChannelSetAction.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSetAction.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BB1F8D663F00A26EE1 /* FileUpload.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUpload.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BC1F8D663F00A26EE1 /* InfoTime.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTime.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BD1F8D663F00A26EE1 /* ClientJoinByUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientJoinByUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BE1F8D663F00A26EE1 /* GroupClearMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupClearMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1BF1F8D664000A26EE1 /* PushRateSignaling.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushRateSignaling.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C01F8D664000A26EE1 /* UserAvatarGetList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarGetList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C11F8D664000A26EE1 /* UserProfileGetSelfRemove.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetSelfRemove.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C21F8D664000A26EE1 /* ChannelGetMemberList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetMemberList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C31F8D664100A26EE1 /* PushLoginToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushLoginToken.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C41F8D664100A26EE1 /* UserContactsImport.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsImport.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C51F8D664100A26EE1 /* UserProfileGetEmail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetEmail.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C61F8D664100A26EE1 /* UserLogin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C71F8D664100A26EE1 /* UserTwoStepVerificationGetPasswordDetail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationGetPasswordDetail.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C81F8D664100A26EE1 /* ChatDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D1C91F8D664200A26EE1 /* GroupCheckUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCheckUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CA1F8D664200A26EE1 /* ChannelGetMessagesStats.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetMessagesStats.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CB1F8D664200A26EE1 /* ChannelUpdateSignature.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateSignature.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CC1F8D664300A26EE1 /* ClientCheckInviteLink.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCheckInviteLink.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CD1F8D664300A26EE1 /* GroupEdit.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEdit.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CE1F8D664300A26EE1 /* ClientSearchRoomHistory.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSearchRoomHistory.pb.swift; sourceTree = "<group>"; };
+		FAF5D1CF1F8D664400A26EE1 /* UserPrivacyGetRule.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrivacyGetRule.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D01F8D664400A26EE1 /* UserVerify.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerify.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D11F8D664400A26EE1 /* ClientGetRoomHistory.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomHistory.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D21F8D664500A26EE1 /* GroupSendMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSendMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D31F8D664500A26EE1 /* GeoGetRegisterStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetRegisterStatus.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D41F8D664500A26EE1 /* ChannelUpdateUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D51F8D664600A26EE1 /* GroupLeft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupLeft.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D61F8D664600A26EE1 /* GroupUpdateDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D71F8D664700A26EE1 /* UserContactsBlock.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsBlock.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D81F8D664700A26EE1 /* ChannelCreate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCreate.pb.swift; sourceTree = "<group>"; };
+		FAF5D1D91F8D664700A26EE1 /* ChannelDeleteMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDeleteMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DA1F8D664700A26EE1 /* ChannelEditMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEditMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DB1F8D664700A26EE1 /* GeoUpdatePosition.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoUpdatePosition.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DC1F8D664800A26EE1 /* GroupAvatarGetList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarGetList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DD1F8D664800A26EE1 /* FileUploadOption.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadOption.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DE1F8D664900A26EE1 /* GroupAvatarDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D1DF1F8D664900A26EE1 /* ConnectionSecuring.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionSecuring.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E01F8D664900A26EE1 /* UserPrivacySetRule.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPrivacySetRule.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E11F8D664900A26EE1 /* UserSessionGetActiveList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionGetActiveList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E21F8D664A00A26EE1 /* ClientJoinByInviteLink.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientJoinByInviteLink.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E31F8D664A00A26EE1 /* UserProfileGetNickname.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetNickname.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E41F8D664A00A26EE1 /* InfoPage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E51F8D664B00A26EE1 /* UserVerifyNewDevice.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVerifyNewDevice.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E61F8D664B00A26EE1 /* ChannelAddModerator.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddModerator.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E71F8D664B00A26EE1 /* ChatEditMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEditMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E81F8D664C00A26EE1 /* ChannelKickModerator.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickModerator.pb.swift; sourceTree = "<group>"; };
+		FAF5D1E91F8D664C00A26EE1 /* GeoGetNearbyCoordinate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetNearbyCoordinate.pb.swift; sourceTree = "<group>"; };
+		FAF5D1EA1F8D664C00A26EE1 /* ClientGetRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoom.pb.swift; sourceTree = "<group>"; };
+		FAF5D1EB1F8D664D00A26EE1 /* UserProfileGetGender.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetGender.pb.swift; sourceTree = "<group>"; };
+		FAF5D1EC1F8D664D00A26EE1 /* UserSessionLogout.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionLogout.pb.swift; sourceTree = "<group>"; };
+		FAF5D1ED1F8D664E00A26EE1 /* UserTwoStepVerificationResendVerifyEmail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationResendVerifyEmail.pb.swift; sourceTree = "<group>"; };
+		FAF5D1EE1F8D664E00A26EE1 /* ChannelKickAdmin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelKickAdmin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1EF1F8D664E00A26EE1 /* UserContactsGetList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsGetList.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F01F8D664E00A26EE1 /* UserTwoStepVerificationRecoverPasswordByToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRecoverPasswordByToken.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F11F8D664F00A26EE1 /* GroupRemoveUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRemoveUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F21F8D664F00A26EE1 /* SignalingRinging.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingRinging.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F31F8D664F00A26EE1 /* ChannelAvatarDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F41F8D665000A26EE1 /* InfoWallpaper.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWallpaper.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F51F8D665000A26EE1 /* ClientResolveUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientResolveUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F61F8D665100A26EE1 /* QrCodeResolve.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeResolve.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F71F8D665100A26EE1 /* UserAvatarDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F81F8D665100A26EE1 /* UserProfileSetEmail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetEmail.pb.swift; sourceTree = "<group>"; };
+		FAF5D1F91F8D665100A26EE1 /* Error.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FA1F8D665200A26EE1 /* GroupRevokeLink.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupRevokeLink.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FB1F8D665200A26EE1 /* FileInfo.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FC1F8D665300A26EE1 /* ClientCondition.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCondition.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FD1F8D665300A26EE1 /* GeoGetComment.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetComment.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FE1F8D665300A26EE1 /* ChannelAddAdmin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddAdmin.pb.swift; sourceTree = "<group>"; };
+		FAF5D1FF1F8D665300A26EE1 /* UserTwoStepVerificationChangeRecoveryEmail.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeRecoveryEmail.pb.swift; sourceTree = "<group>"; };
+		FAF5D2001F8D665400A26EE1 /* ChannelAvatarAdd.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarAdd.pb.swift; sourceTree = "<group>"; };
+		FAF5D2011F8D665400A26EE1 /* ClientGetRoomList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGetRoomList.pb.swift; sourceTree = "<group>"; };
+		FAF5D2021F8D665400A26EE1 /* SignalingRate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingRate.pb.swift; sourceTree = "<group>"; };
+		FAF5D2031F8D665400A26EE1 /* ChatDeleteMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDeleteMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D2041F8D665500A26EE1 /* GroupGetDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupGetDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D2051F8D665500A26EE1 /* UserContactsEdit.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsEdit.pb.swift; sourceTree = "<group>"; };
+		FAF5D2061F8D665500A26EE1 /* SignalingLeave.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingLeave.pb.swift; sourceTree = "<group>"; };
+		FAF5D2071F8D665600A26EE1 /* ChannelAddMember.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddMember.pb.swift; sourceTree = "<group>"; };
+		FAF5D2081F8D665600A26EE1 /* ChatConvertToGroup.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatConvertToGroup.pb.swift; sourceTree = "<group>"; };
+		FAF5D2091F8D665600A26EE1 /* FileUploadInit.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploadInit.pb.swift; sourceTree = "<group>"; };
+		FAF5D20A1F8D665600A26EE1 /* Heartbeat.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heartbeat.pb.swift; sourceTree = "<group>"; };
+		FAF5D20B1F8D665700A26EE1 /* ClientCountRoomHistory.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientCountRoomHistory.pb.swift; sourceTree = "<group>"; };
+		FAF5D20C1F8D665700A26EE1 /* Global.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.pb.swift; sourceTree = "<group>"; };
+		FAF5D20D1F8D665800A26EE1 /* GroupDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D20E1F8D665800A26EE1 /* ChatClearMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClearMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D20F1F8D665800A26EE1 /* GroupUpdateStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupUpdateStatus.pb.swift; sourceTree = "<group>"; };
+		FAF5D2101F8D665900A26EE1 /* UserProfileCheckUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileCheckUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D2111F8D665900A26EE1 /* ChannelUpdateDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D2121F8D665900A26EE1 /* ChatGetRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGetRoom.pb.swift; sourceTree = "<group>"; };
+		FAF5D2131F8D665A00A26EE1 /* QrCodeAddMe.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeAddMe.pb.swift; sourceTree = "<group>"; };
+		FAF5D2141F8D665A00A26EE1 /* SignalingAccept.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingAccept.pb.swift; sourceTree = "<group>"; };
+		FAF5D2151F8D665A00A26EE1 /* UserUpdateStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateStatus.pb.swift; sourceTree = "<group>"; };
+		FAF5D2161F8D665B00A26EE1 /* UserAvatarAdd.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarAdd.pb.swift; sourceTree = "<group>"; };
+		FAF5D2171F8D665B00A26EE1 /* UserUsernameToId.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUsernameToId.pb.swift; sourceTree = "<group>"; };
+		FAF5D2181F8D665B00A26EE1 /* QrCodeNewDevice.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeNewDevice.pb.swift; sourceTree = "<group>"; };
+		FAF5D2191F8D665C00A26EE1 /* UserGetDeleteToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGetDeleteToken.pb.swift; sourceTree = "<group>"; };
+		FAF5D21A1F8D665C00A26EE1 /* ChannelAddMessageReaction.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAddMessageReaction.pb.swift; sourceTree = "<group>"; };
+		FAF5D21B1F8D665C00A26EE1 /* UserTwoStepVerificationRequestRecoveryToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationRequestRecoveryToken.pb.swift; sourceTree = "<group>"; };
+		FAF5D21C1F8D665D00A26EE1 /* PushTwoStepVerification.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTwoStepVerification.pb.swift; sourceTree = "<group>"; };
+		FAF5D21D1F8D665D00A26EE1 /* ChatSetAction.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSetAction.pb.swift; sourceTree = "<group>"; };
+		FAF5D21E1F8D665D00A26EE1 /* UserContactsDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContactsDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D21F1F8D665D00A26EE1 /* UserTwoStepVerificationUnsetPassword.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationUnsetPassword.pb.swift; sourceTree = "<group>"; };
+		FAF5D2201F8D665E00A26EE1 /* SignalingSessionHold.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingSessionHold.pb.swift; sourceTree = "<group>"; };
+		FAF5D2211F8D665E00A26EE1 /* UserInfo.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.pb.swift; sourceTree = "<group>"; };
+		FAF5D2221F8D665E00A26EE1 /* UserTwoStepVerificationChangeHint.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeHint.pb.swift; sourceTree = "<group>"; };
+		FAF5D2231F8D665E00A26EE1 /* UserSessionTerminate.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionTerminate.pb.swift; sourceTree = "<group>"; };
+		FAF5D2241F8D665F00A26EE1 /* UserTwoStepVerificationSetPassword.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationSetPassword.pb.swift; sourceTree = "<group>"; };
+		FAF5D2251F8D665F00A26EE1 /* SignalingClearLog.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingClearLog.pb.swift; sourceTree = "<group>"; };
+		FAF5D2261F8D665F00A26EE1 /* ChannelCheckUsername.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCheckUsername.pb.swift; sourceTree = "<group>"; };
+		FAF5D2271F8D666000A26EE1 /* ChannelEdit.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEdit.pb.swift; sourceTree = "<group>"; };
+		FAF5D2281F8D666000A26EE1 /* GroupAvatarAdd.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAvatarAdd.pb.swift; sourceTree = "<group>"; };
+		FAF5D2291F8D666000A26EE1 /* UserDelete.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDelete.pb.swift; sourceTree = "<group>"; };
+		FAF5D22A1F8D666000A26EE1 /* UserTwoStepVerificationVerifyPassword.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationVerifyPassword.pb.swift; sourceTree = "<group>"; };
+		FAF5D22B1F8D666000A26EE1 /* GroupSetAction.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSetAction.pb.swift; sourceTree = "<group>"; };
+		FAF5D22C1F8D666100A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTwoStepVerificationChangeRecoveryQuestion.pb.swift; sourceTree = "<group>"; };
+		FAF5D22D1F8D666100A26EE1 /* GroupEditMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEditMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D22E1F8D666100A26EE1 /* InfoCountry.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCountry.pb.swift; sourceTree = "<group>"; };
+		FAF5D22F1F8D666200A26EE1 /* GroupKickModerator.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickModerator.pb.swift; sourceTree = "<group>"; };
+		FAF5D2301F8D666200A26EE1 /* GroupAddMember.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddMember.pb.swift; sourceTree = "<group>"; };
+		FAF5D2311F8D666200A26EE1 /* FileDownload.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDownload.pb.swift; sourceTree = "<group>"; };
+		FAF5D2321F8D666200A26EE1 /* GroupKickMember.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupKickMember.pb.swift; sourceTree = "<group>"; };
+		FAF5D2331F8D666200A26EE1 /* PushUserInfoExpired.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushUserInfoExpired.pb.swift; sourceTree = "<group>"; };
+		FAF5D2341F8D666300A26EE1 /* SignalingGetConfiguration.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingGetConfiguration.pb.swift; sourceTree = "<group>"; };
+		FAF5D2351F8D666300A26EE1 /* ChannelSendMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelSendMessage.pb.swift; sourceTree = "<group>"; };
+		FAF5D2361F8D666300A26EE1 /* ChannelGetDraft.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelGetDraft.pb.swift; sourceTree = "<group>"; };
+		FAF5D2371F8D666400A26EE1 /* ClientSubscribeToRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSubscribeToRoom.pb.swift; sourceTree = "<group>"; };
+		FAF5D2381F8D666400A26EE1 /* SignalingOffer.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalingOffer.pb.swift; sourceTree = "<group>"; };
+		FAF5D2391F8D666400A26EE1 /* ChannelAvatarGetList.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelAvatarGetList.pb.swift; sourceTree = "<group>"; };
+		FAF5D23A1F8D666500A26EE1 /* GeoGetConfiguration.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoGetConfiguration.pb.swift; sourceTree = "<group>"; };
+		FAF5D23B1F8D666500A26EE1 /* InfoLocation.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoLocation.pb.swift; sourceTree = "<group>"; };
+		FAF5D23C1F8D66CE00A26EE1 /* SwiftProtobuf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftProtobuf.framework; path = Carthage/Build/iOS/SwiftProtobuf.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,7 +357,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA7638361E2FFFD200C24391 /* ProtocolBuffers.framework in Frameworks */,
+				FAF5D23D1F8D66DB00A26EE1 /* SwiftProtobuf.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,173 +367,173 @@
 		FA5A9FF11F71ECEF00D925F5 /* ProtoBuffs */ = {
 			isa = PBXGroup;
 			children = (
-				FA5A9FF21F71ECEF00D925F5 /* ChannelAddAdmin.proto.swift */,
-				FA5A9FF31F71ECEF00D925F5 /* ChannelAddMember.proto.swift */,
-				FA5A9FF41F71ECEF00D925F5 /* ChannelAddMessageReaction.proto.swift */,
-				FA5A9FF51F71ECEF00D925F5 /* ChannelAddModerator.proto.swift */,
-				FA5A9FF61F71ECEF00D925F5 /* ChannelAvatarAdd.proto.swift */,
-				FA5A9FF71F71ECEF00D925F5 /* ChannelAvatarDelete.proto.swift */,
-				FA5A9FF81F71ECEF00D925F5 /* ChannelAvatarGetList.proto.swift */,
-				FA5A9FF91F71ECEF00D925F5 /* ChannelCheckUsername.proto.swift */,
-				FA5A9FFA1F71ECEF00D925F5 /* ChannelCreate.proto.swift */,
-				FA5A9FFB1F71ECEF00D925F5 /* ChannelDelete.proto.swift */,
-				FA5A9FFC1F71ECEF00D925F5 /* ChannelDeleteMessage.proto.swift */,
-				FA5A9FFD1F71ECEF00D925F5 /* ChannelEdit.proto.swift */,
-				FA5A9FFE1F71ECEF00D925F5 /* ChannelEditMessage.proto.swift */,
-				FA5A9FFF1F71ECEF00D925F5 /* ChannelGetDraft.proto.swift */,
-				FA5AA0001F71ECEF00D925F5 /* ChannelGetMemberList.proto.swift */,
-				FA5AA0011F71ECEF00D925F5 /* ChannelGetMessagesStats.proto.swift */,
-				FA5AA0021F71ECEF00D925F5 /* ChannelKickAdmin.proto.swift */,
-				FA5AA0031F71ECEF00D925F5 /* ChannelKickMember.proto.swift */,
-				FA5AA0041F71ECEF00D925F5 /* ChannelKickModerator.proto.swift */,
-				FA5AA0051F71ECEF00D925F5 /* ChannelLeft.proto.swift */,
-				FA5AA0061F71ECEF00D925F5 /* ChannelRemoveUsername.proto.swift */,
-				FA5AA0071F71ECEF00D925F5 /* ChannelRevokeLink.proto.swift */,
-				FA5AA0081F71ECEF00D925F5 /* ChannelSendMessage.proto.swift */,
-				FA5AA0091F71ECEF00D925F5 /* ChannelSetAction.proto.swift */,
-				FA5AA00A1F71ECEF00D925F5 /* ChannelUpdateDraft.proto.swift */,
-				FA5AA00B1F71ECEF00D925F5 /* ChannelUpdateSignature.proto.swift */,
-				FA5AA00C1F71ECEF00D925F5 /* ChannelUpdateUsername.proto.swift */,
-				FA5AA00D1F71ECEF00D925F5 /* ChatClearMessage.proto.swift */,
-				FA5AA00E1F71ECEF00D925F5 /* ChatConvertToGroup.proto.swift */,
-				FA5AA00F1F71ECEF00D925F5 /* ChatDelete.proto.swift */,
-				FA5AA0101F71ECEF00D925F5 /* ChatDeleteMessage.proto.swift */,
-				FA5AA0111F71ECEF00D925F5 /* ChatEditMessage.proto.swift */,
-				FA5AA0121F71ECEF00D925F5 /* ChatGetDraft.proto.swift */,
-				FA5AA0131F71ECEF00D925F5 /* ChatGetRoom.proto.swift */,
-				FA5AA0141F71ECEF00D925F5 /* ChatSendMessage.proto.swift */,
-				FA5AA0151F71ECEF00D925F5 /* ChatSetAction.proto.swift */,
-				FA5AA0161F71ECEF00D925F5 /* ChatUpdateDraft.proto.swift */,
-				FA5AA0171F71ECEF00D925F5 /* ChatUpdateStatus.proto.swift */,
-				FA5AA0181F71ECEF00D925F5 /* ClientCheckInviteLink.proto.swift */,
-				FA5AA0191F71ECEF00D925F5 /* ClientCondition.proto.swift */,
-				FA5AA01A1F71ECEF00D925F5 /* ClientCountRoomHistory.proto.swift */,
-				FA5AA01B1F71ECEF00D925F5 /* ClientGetRoom.proto.swift */,
-				FA5AA01C1F71ECEF00D925F5 /* ClientGetRoomHistory.proto.swift */,
-				FA5AA01D1F71ECEF00D925F5 /* ClientGetRoomList.proto.swift */,
-				FA5AA01E1F71ECEF00D925F5 /* ClientGetRoomMessage.proto.swift */,
-				FA5AA01F1F71ECEF00D925F5 /* ClientJoinByInviteLink.proto.swift */,
-				FA5AA0201F71ECEF00D925F5 /* ClientJoinByUsername.proto.swift */,
-				FA5AA0211F71ECEF00D925F5 /* ClientResolveUsername.proto.swift */,
-				FA5AA0221F71ECEF00D925F5 /* ClientSearchRoomHistory.proto.swift */,
-				FA5AA0231F71ECEF00D925F5 /* ClientSearchUsername.proto.swift */,
-				FA5AA0241F71ECEF00D925F5 /* ClientSubscribeToRoom.proto.swift */,
-				FA5AA0251F71ECEF00D925F5 /* ClientUnsubscribeFromRoom.proto.swift */,
-				FA5AA0261F71ECEF00D925F5 /* ConnectionSecuring.proto.swift */,
-				FA5AA0271F71ECEF00D925F5 /* Error.proto.swift */,
-				FA5AA0281F71ECEF00D925F5 /* FileDownload.proto.swift */,
-				FA5AA0291F71ECEF00D925F5 /* FileInfo.proto.swift */,
-				FA5AA02A1F71ECEF00D925F5 /* FileUpload.proto.swift */,
-				FA5AA02B1F71ECEF00D925F5 /* FileUploadInit.proto.swift */,
-				FA5AA02C1F71ECEF00D925F5 /* FileUploadOption.proto.swift */,
-				FA5AA02D1F71ECEF00D925F5 /* FileUploadStatus.proto.swift */,
-				FA5AA02E1F71ECEF00D925F5 /* GeoGetComment.proto.swift */,
-				FA5AA02F1F71ECEF00D925F5 /* GeoGetConfiguration.proto.swift */,
-				FA5AA0301F71ECEF00D925F5 /* GeoGetNearbyCoordinate.proto.swift */,
-				FA5AA0311F71ECEF00D925F5 /* GeoGetNearbyDistance.proto.swift */,
-				FA5AA0321F71ECEF00D925F5 /* GeoGetRegisterStatus.proto.swift */,
-				FA5AA0331F71ECEF00D925F5 /* GeoRegister.proto.swift */,
-				FA5AA0341F71ECEF00D925F5 /* GeoUpdateComment.proto.swift */,
-				FA5AA0351F71ECEF00D925F5 /* GeoUpdatePosition.proto.swift */,
-				FA5AA0361F71ECEF00D925F5 /* Global.proto.swift */,
-				FA5AA0371F71ECEF00D925F5 /* GroupAddAdmin.proto.swift */,
-				FA5AA0381F71ECEF00D925F5 /* GroupAddMember.proto.swift */,
-				FA5AA0391F71ECEF00D925F5 /* GroupAddModerator.proto.swift */,
-				FA5AA03A1F71ECEF00D925F5 /* GroupAvatarAdd.proto.swift */,
-				FA5AA03B1F71ECEF00D925F5 /* GroupAvatarDelete.proto.swift */,
-				FA5AA03C1F71ECEF00D925F5 /* GroupAvatarGetList.proto.swift */,
-				FA5AA03D1F71ECEF00D925F5 /* GroupCheckUsername.proto.swift */,
-				FA5AA03E1F71ECEF00D925F5 /* GroupClearMessage.proto.swift */,
-				FA5AA03F1F71ECEF00D925F5 /* GroupCreate.proto.swift */,
-				FA5AA0401F71ECEF00D925F5 /* GroupDelete.proto.swift */,
-				FA5AA0411F71ECEF00D925F5 /* GroupDeleteMessage.proto.swift */,
-				FA5AA0421F71ECEF00D925F5 /* GroupEdit.proto.swift */,
-				FA5AA0431F71ECEF00D925F5 /* GroupEditMessage.proto.swift */,
-				FA5AA0441F71ECEF00D925F5 /* GroupGetDraft.proto.swift */,
-				FA5AA0451F71ECEF00D925F5 /* GroupGetMemberList.proto.swift */,
-				FA5AA0461F71ECEF00D925F5 /* GroupKickAdmin.proto.swift */,
-				FA5AA0471F71ECEF00D925F5 /* GroupKickMember.proto.swift */,
-				FA5AA0481F71ECEF00D925F5 /* GroupKickModerator.proto.swift */,
-				FA5AA0491F71ECEF00D925F5 /* GroupLeft.proto.swift */,
-				FA5AA04A1F71ECEF00D925F5 /* GroupRemoveUsername.proto.swift */,
-				FA5AA04B1F71ECEF00D925F5 /* GroupRevokeLink.proto.swift */,
-				FA5AA04C1F71ECEF00D925F5 /* GroupSendMessage.proto.swift */,
-				FA5AA04D1F71ECEF00D925F5 /* GroupSetAction.proto.swift */,
-				FA5AA04E1F71ECEF00D925F5 /* GroupUpdateDraft.proto.swift */,
-				FA5AA04F1F71ECEF00D925F5 /* GroupUpdateStatus.proto.swift */,
-				FA5AA0501F71ECEF00D925F5 /* GroupUpdateUsername.proto.swift */,
-				FA5AA0511F71ECEF00D925F5 /* Heartbeat.proto.swift */,
-				FA5AA0521F71ECEF00D925F5 /* InfoCountry.proto.swift */,
-				FA5AA0531F71ECEF00D925F5 /* InfoLocation.proto.swift */,
-				FA5AA0541F71ECEF00D925F5 /* InfoPage.proto.swift */,
-				FA5AA0551F71ECEF00D925F5 /* InfoTime.proto.swift */,
-				FA5AA0561F71ECEF00D925F5 /* InfoWallpaper.proto.swift */,
-				FA5AA0571F71ECEF00D925F5 /* PushLoginToken.proto.swift */,
-				FA5AA0581F71ECEF00D925F5 /* PushRateSignaling.proto.swift */,
-				FA5AA0591F71ECEF00D925F5 /* PushTwoStepVerification.proto.swift */,
-				FA5AA05A1F71ECEF00D925F5 /* PushUserInfoExpired.proto.swift */,
-				FA5AA05B1F71ECEF00D925F5 /* QrCodeAddContact.proto.swift */,
-				FA5AA05C1F71ECEF00D925F5 /* QrCodeAddMe.proto.swift */,
-				FA5AA05D1F71ECEF00D925F5 /* QrCodeJoin.proto.swift */,
-				FA5AA05E1F71ECEF00D925F5 /* QrCodeNewDevice.proto.swift */,
-				FA5AA05F1F71ECEF00D925F5 /* QrCodeResolve.proto.swift */,
-				FA5AA0621F71ECEF00D925F5 /* SignalingAccept.proto.swift */,
-				FA5AA0631F71ECEF00D925F5 /* SignalingCandidate.proto.swift */,
-				FA5AA0641F71ECEF00D925F5 /* SignalingClearLog.proto.swift */,
-				FA5AA0651F71ECEF00D925F5 /* SignalingGetConfiguration.proto.swift */,
-				FA5AA0661F71ECEF00D925F5 /* SignalingGetLog.proto.swift */,
-				FA5AA0671F71ECEF00D925F5 /* SignalingLeave.proto.swift */,
-				FA5AA0681F71ECEF00D925F5 /* SignalingOffer.proto.swift */,
-				FA5AA0691F71ECEF00D925F5 /* SignalingRate.proto.swift */,
-				FA5AA06A1F71ECEF00D925F5 /* SignalingRinging.proto.swift */,
-				FA5AA06B1F71ECEF00D925F5 /* SignalingSessionHold.proto.swift */,
-				FA5AA06C1F71ECEF00D925F5 /* UserAvatarAdd.proto.swift */,
-				FA5AA06D1F71ECEF00D925F5 /* UserAvatarDelete.proto.swift */,
-				FA5AA06E1F71ECEF00D925F5 /* UserAvatarGetList.proto.swift */,
-				FA5AA06F1F71ECEF00D925F5 /* UserContactsBlock.proto.swift */,
-				FA5AA0701F71ECEF00D925F5 /* UserContactsDelete.proto.swift */,
-				FA5AA0711F71ECEF00D925F5 /* UserContactsEdit.proto.swift */,
-				FA5AA0721F71ECEF00D925F5 /* UserContactsGetBlockedList.proto.swift */,
-				FA5AA0731F71ECEF00D925F5 /* UserContactsGetList.proto.swift */,
-				FA5AA0741F71ECEF00D925F5 /* UserContactsImport.proto.swift */,
-				FA5AA0751F71ECEF00D925F5 /* UserContactsUnblock.proto.swift */,
-				FA5AA0761F71ECEF00D925F5 /* UserDelete.proto.swift */,
-				FA5AA0771F71ECEF00D925F5 /* UserGetDeleteToken.proto.swift */,
-				FA5AA0781F71ECEF00D925F5 /* UserInfo.proto.swift */,
-				FA5AA0791F71ECEF00D925F5 /* UserLogin.proto.swift */,
-				FA5AA07A1F71ECEF00D925F5 /* UserPrivacyGetRule.proto.swift */,
-				FA5AA07B1F71ECEF00D925F5 /* UserPrivacySetRule.proto.swift */,
-				FA5AA07C1F71ECEF00D925F5 /* UserProfileCheckUsername.proto.swift */,
-				FA5AA07D1F71ECEF00D925F5 /* UserProfileGetEmail.proto.swift */,
-				FA5AA07E1F71ECEF00D925F5 /* UserProfileGetGender.proto.swift */,
-				FA5AA07F1F71ECEF00D925F5 /* UserProfileGetNickname.proto.swift */,
-				FA5AA0801F71ECEF00D925F5 /* UserProfileGetSelfRemove.proto.swift */,
-				FA5AA0811F71ECEF00D925F5 /* UserProfileSetEmail.proto.swift */,
-				FA5AA0821F71ECEF00D925F5 /* UserProfileSetGender.proto.swift */,
-				FA5AA0831F71ECEF00D925F5 /* UserProfileSetNickname.proto.swift */,
-				FA5AA0841F71ECEF00D925F5 /* UserProfileSetSelfRemove.proto.swift */,
-				FA5AA0851F71ECEF00D925F5 /* UserProfileUpdateUsername.proto.swift */,
-				FA5AA0861F71ECEF00D925F5 /* UserRegister.proto.swift */,
-				FA5AA0871F71ECEF00D925F5 /* UserSessionGetActiveList.proto.swift */,
-				FA5AA0881F71ECEF00D925F5 /* UserSessionLogout.proto.swift */,
-				FA5AA0891F71ECEF00D925F5 /* UserSessionTerminate.proto.swift */,
-				FA5AA08A1F71ECEF00D925F5 /* UserTwoStepVerificationChangeHint.proto.swift */,
-				FA5AA08B1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift */,
-				FA5AA08C1F71ECEF00D925F5 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift */,
-				FA5AA08D1F71ECEF00D925F5 /* UserTwoStepVerificationCheckPassword.proto.swift */,
-				FA5AA08E1F71ECEF00D925F5 /* UserTwoStepVerificationGetPasswordDetail.proto.swift */,
-				FA5AA08F1F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift */,
-				FA5AA0901F71ECEF00D925F5 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift */,
-				FA5AA0911F71ECEF00D925F5 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift */,
-				FA5AA0921F71ECEF00D925F5 /* UserTwoStepVerificationResendVerifyEmail.proto.swift */,
-				FA5AA0931F71ECEF00D925F5 /* UserTwoStepVerificationSetPassword.proto.swift */,
-				FA5AA0941F71ECEF00D925F5 /* UserTwoStepVerificationUnsetPassword.proto.swift */,
-				FA5AA0951F71ECEF00D925F5 /* UserTwoStepVerificationVerifyPassword.proto.swift */,
-				FA5AA0961F71ECEF00D925F5 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift */,
-				FA5AA0971F71ECEF00D925F5 /* UserUpdateStatus.proto.swift */,
-				FA5AA0981F71ECEF00D925F5 /* UserUsernameToId.proto.swift */,
-				FA5AA0991F71ECEF00D925F5 /* UserVerify.proto.swift */,
-				FA5AA09A1F71ECEF00D925F5 /* UserVerifyNewDevice.proto.swift */,
+				FAF5D1FE1F8D665300A26EE1 /* ChannelAddAdmin.pb.swift */,
+				FAF5D2071F8D665600A26EE1 /* ChannelAddMember.pb.swift */,
+				FAF5D21A1F8D665C00A26EE1 /* ChannelAddMessageReaction.pb.swift */,
+				FAF5D1E61F8D664B00A26EE1 /* ChannelAddModerator.pb.swift */,
+				FAF5D2001F8D665400A26EE1 /* ChannelAvatarAdd.pb.swift */,
+				FAF5D1F31F8D664F00A26EE1 /* ChannelAvatarDelete.pb.swift */,
+				FAF5D2391F8D666400A26EE1 /* ChannelAvatarGetList.pb.swift */,
+				FAF5D2261F8D665F00A26EE1 /* ChannelCheckUsername.pb.swift */,
+				FAF5D1D81F8D664700A26EE1 /* ChannelCreate.pb.swift */,
+				FAF5D1A51F8D663900A26EE1 /* ChannelDelete.pb.swift */,
+				FAF5D1D91F8D664700A26EE1 /* ChannelDeleteMessage.pb.swift */,
+				FAF5D2271F8D666000A26EE1 /* ChannelEdit.pb.swift */,
+				FAF5D1DA1F8D664700A26EE1 /* ChannelEditMessage.pb.swift */,
+				FAF5D2361F8D666300A26EE1 /* ChannelGetDraft.pb.swift */,
+				FAF5D1C21F8D664000A26EE1 /* ChannelGetMemberList.pb.swift */,
+				FAF5D1CA1F8D664200A26EE1 /* ChannelGetMessagesStats.pb.swift */,
+				FAF5D1EE1F8D664E00A26EE1 /* ChannelKickAdmin.pb.swift */,
+				FAF5D1A41F8D663900A26EE1 /* ChannelKickMember.pb.swift */,
+				FAF5D1E81F8D664C00A26EE1 /* ChannelKickModerator.pb.swift */,
+				FAF5D1B01F8D663B00A26EE1 /* ChannelLeft.pb.swift */,
+				FAF5D1A31F8D663800A26EE1 /* ChannelRemoveUsername.pb.swift */,
+				FAF5D19C1F8D663800A26EE1 /* ChannelRevokeLink.pb.swift */,
+				FAF5D2351F8D666300A26EE1 /* ChannelSendMessage.pb.swift */,
+				FAF5D1BA1F8D663E00A26EE1 /* ChannelSetAction.pb.swift */,
+				FAF5D2111F8D665900A26EE1 /* ChannelUpdateDraft.pb.swift */,
+				FAF5D1CB1F8D664200A26EE1 /* ChannelUpdateSignature.pb.swift */,
+				FAF5D1D41F8D664500A26EE1 /* ChannelUpdateUsername.pb.swift */,
+				FAF5D20E1F8D665800A26EE1 /* ChatClearMessage.pb.swift */,
+				FAF5D2081F8D665600A26EE1 /* ChatConvertToGroup.pb.swift */,
+				FAF5D1C81F8D664100A26EE1 /* ChatDelete.pb.swift */,
+				FAF5D2031F8D665400A26EE1 /* ChatDeleteMessage.pb.swift */,
+				FAF5D1E71F8D664B00A26EE1 /* ChatEditMessage.pb.swift */,
+				FAF5D1AD1F8D663B00A26EE1 /* ChatGetDraft.pb.swift */,
+				FAF5D2121F8D665900A26EE1 /* ChatGetRoom.pb.swift */,
+				FAF5D1AA1F8D663A00A26EE1 /* ChatSendMessage.pb.swift */,
+				FAF5D21D1F8D665D00A26EE1 /* ChatSetAction.pb.swift */,
+				FAF5D1B91F8D663E00A26EE1 /* ChatUpdateDraft.pb.swift */,
+				FAF5D1B51F8D663D00A26EE1 /* ChatUpdateStatus.pb.swift */,
+				FAF5D1CC1F8D664300A26EE1 /* ClientCheckInviteLink.pb.swift */,
+				FAF5D1FC1F8D665300A26EE1 /* ClientCondition.pb.swift */,
+				FAF5D20B1F8D665700A26EE1 /* ClientCountRoomHistory.pb.swift */,
+				FAF5D1EA1F8D664C00A26EE1 /* ClientGetRoom.pb.swift */,
+				FAF5D1D11F8D664400A26EE1 /* ClientGetRoomHistory.pb.swift */,
+				FAF5D2011F8D665400A26EE1 /* ClientGetRoomList.pb.swift */,
+				FAF5D1981F8D663800A26EE1 /* ClientGetRoomMessage.pb.swift */,
+				FAF5D1E21F8D664A00A26EE1 /* ClientJoinByInviteLink.pb.swift */,
+				FAF5D1BD1F8D663F00A26EE1 /* ClientJoinByUsername.pb.swift */,
+				FAF5D1F51F8D665000A26EE1 /* ClientResolveUsername.pb.swift */,
+				FAF5D1CE1F8D664300A26EE1 /* ClientSearchRoomHistory.pb.swift */,
+				FAF5D1A61F8D663900A26EE1 /* ClientSearchUsername.pb.swift */,
+				FAF5D2371F8D666400A26EE1 /* ClientSubscribeToRoom.pb.swift */,
+				FAF5D19D1F8D663800A26EE1 /* ClientUnsubscribeFromRoom.pb.swift */,
+				FAF5D1DF1F8D664900A26EE1 /* ConnectionSecuring.pb.swift */,
+				FAF5D1F91F8D665100A26EE1 /* Error.pb.swift */,
+				FAF5D2311F8D666200A26EE1 /* FileDownload.pb.swift */,
+				FAF5D1FB1F8D665200A26EE1 /* FileInfo.pb.swift */,
+				FAF5D1BB1F8D663F00A26EE1 /* FileUpload.pb.swift */,
+				FAF5D2091F8D665600A26EE1 /* FileUploadInit.pb.swift */,
+				FAF5D1DD1F8D664800A26EE1 /* FileUploadOption.pb.swift */,
+				FAF5D19F1F8D663800A26EE1 /* FileUploadStatus.pb.swift */,
+				FAF5D1FD1F8D665300A26EE1 /* GeoGetComment.pb.swift */,
+				FAF5D23A1F8D666500A26EE1 /* GeoGetConfiguration.pb.swift */,
+				FAF5D1E91F8D664C00A26EE1 /* GeoGetNearbyCoordinate.pb.swift */,
+				FAF5D1AC1F8D663A00A26EE1 /* GeoGetNearbyDistance.pb.swift */,
+				FAF5D1D31F8D664500A26EE1 /* GeoGetRegisterStatus.pb.swift */,
+				FAF5D1B11F8D663C00A26EE1 /* GeoRegister.pb.swift */,
+				FAF5D19E1F8D663800A26EE1 /* GeoUpdateComment.pb.swift */,
+				FAF5D1DB1F8D664700A26EE1 /* GeoUpdatePosition.pb.swift */,
+				FAF5D20C1F8D665700A26EE1 /* Global.pb.swift */,
+				FAF5D1961F8D663800A26EE1 /* GroupAddAdmin.pb.swift */,
+				FAF5D2301F8D666200A26EE1 /* GroupAddMember.pb.swift */,
+				FAF5D1971F8D663800A26EE1 /* GroupAddModerator.pb.swift */,
+				FAF5D2281F8D666000A26EE1 /* GroupAvatarAdd.pb.swift */,
+				FAF5D1DE1F8D664900A26EE1 /* GroupAvatarDelete.pb.swift */,
+				FAF5D1DC1F8D664800A26EE1 /* GroupAvatarGetList.pb.swift */,
+				FAF5D1C91F8D664200A26EE1 /* GroupCheckUsername.pb.swift */,
+				FAF5D1BE1F8D663F00A26EE1 /* GroupClearMessage.pb.swift */,
+				FAF5D1A21F8D663800A26EE1 /* GroupCreate.pb.swift */,
+				FAF5D20D1F8D665800A26EE1 /* GroupDelete.pb.swift */,
+				FAF5D19B1F8D663800A26EE1 /* GroupDeleteMessage.pb.swift */,
+				FAF5D1CD1F8D664300A26EE1 /* GroupEdit.pb.swift */,
+				FAF5D22D1F8D666100A26EE1 /* GroupEditMessage.pb.swift */,
+				FAF5D2041F8D665500A26EE1 /* GroupGetDraft.pb.swift */,
+				FAF5D19A1F8D663800A26EE1 /* GroupGetMemberList.pb.swift */,
+				FAF5D1AB1F8D663A00A26EE1 /* GroupKickAdmin.pb.swift */,
+				FAF5D2321F8D666200A26EE1 /* GroupKickMember.pb.swift */,
+				FAF5D22F1F8D666200A26EE1 /* GroupKickModerator.pb.swift */,
+				FAF5D1D51F8D664600A26EE1 /* GroupLeft.pb.swift */,
+				FAF5D1F11F8D664F00A26EE1 /* GroupRemoveUsername.pb.swift */,
+				FAF5D1FA1F8D665200A26EE1 /* GroupRevokeLink.pb.swift */,
+				FAF5D1D21F8D664500A26EE1 /* GroupSendMessage.pb.swift */,
+				FAF5D22B1F8D666000A26EE1 /* GroupSetAction.pb.swift */,
+				FAF5D1D61F8D664600A26EE1 /* GroupUpdateDraft.pb.swift */,
+				FAF5D20F1F8D665800A26EE1 /* GroupUpdateStatus.pb.swift */,
+				FAF5D1A71F8D663900A26EE1 /* GroupUpdateUsername.pb.swift */,
+				FAF5D20A1F8D665600A26EE1 /* Heartbeat.pb.swift */,
+				FAF5D22E1F8D666100A26EE1 /* InfoCountry.pb.swift */,
+				FAF5D23B1F8D666500A26EE1 /* InfoLocation.pb.swift */,
+				FAF5D1E41F8D664A00A26EE1 /* InfoPage.pb.swift */,
+				FAF5D1BC1F8D663F00A26EE1 /* InfoTime.pb.swift */,
+				FAF5D1F41F8D665000A26EE1 /* InfoWallpaper.pb.swift */,
+				FAF5D1C31F8D664100A26EE1 /* PushLoginToken.pb.swift */,
+				FAF5D1BF1F8D664000A26EE1 /* PushRateSignaling.pb.swift */,
+				FAF5D21C1F8D665D00A26EE1 /* PushTwoStepVerification.pb.swift */,
+				FAF5D2331F8D666200A26EE1 /* PushUserInfoExpired.pb.swift */,
+				FAF5D1951F8D663800A26EE1 /* QrCodeAddContact.pb.swift */,
+				FAF5D2131F8D665A00A26EE1 /* QrCodeAddMe.pb.swift */,
+				FAF5D1A01F8D663800A26EE1 /* QrCodeJoin.pb.swift */,
+				FAF5D2181F8D665B00A26EE1 /* QrCodeNewDevice.pb.swift */,
+				FAF5D1F61F8D665100A26EE1 /* QrCodeResolve.pb.swift */,
+				FAF5D2141F8D665A00A26EE1 /* SignalingAccept.pb.swift */,
+				FAF5D1A81F8D663900A26EE1 /* SignalingCandidate.pb.swift */,
+				FAF5D2251F8D665F00A26EE1 /* SignalingClearLog.pb.swift */,
+				FAF5D2341F8D666300A26EE1 /* SignalingGetConfiguration.pb.swift */,
+				FAF5D1A91F8D663A00A26EE1 /* SignalingGetLog.pb.swift */,
+				FAF5D2061F8D665500A26EE1 /* SignalingLeave.pb.swift */,
+				FAF5D2381F8D666400A26EE1 /* SignalingOffer.pb.swift */,
+				FAF5D2021F8D665400A26EE1 /* SignalingRate.pb.swift */,
+				FAF5D1F21F8D664F00A26EE1 /* SignalingRinging.pb.swift */,
+				FAF5D2201F8D665E00A26EE1 /* SignalingSessionHold.pb.swift */,
+				FAF5D2161F8D665B00A26EE1 /* UserAvatarAdd.pb.swift */,
+				FAF5D1F71F8D665100A26EE1 /* UserAvatarDelete.pb.swift */,
+				FAF5D1C01F8D664000A26EE1 /* UserAvatarGetList.pb.swift */,
+				FAF5D1D71F8D664700A26EE1 /* UserContactsBlock.pb.swift */,
+				FAF5D21E1F8D665D00A26EE1 /* UserContactsDelete.pb.swift */,
+				FAF5D2051F8D665500A26EE1 /* UserContactsEdit.pb.swift */,
+				FAF5D1B21F8D663C00A26EE1 /* UserContactsGetBlockedList.pb.swift */,
+				FAF5D1EF1F8D664E00A26EE1 /* UserContactsGetList.pb.swift */,
+				FAF5D1C41F8D664100A26EE1 /* UserContactsImport.pb.swift */,
+				FAF5D1B71F8D663D00A26EE1 /* UserContactsUnblock.pb.swift */,
+				FAF5D2291F8D666000A26EE1 /* UserDelete.pb.swift */,
+				FAF5D2191F8D665C00A26EE1 /* UserGetDeleteToken.pb.swift */,
+				FAF5D2211F8D665E00A26EE1 /* UserInfo.pb.swift */,
+				FAF5D1C61F8D664100A26EE1 /* UserLogin.pb.swift */,
+				FAF5D1CF1F8D664400A26EE1 /* UserPrivacyGetRule.pb.swift */,
+				FAF5D1E01F8D664900A26EE1 /* UserPrivacySetRule.pb.swift */,
+				FAF5D2101F8D665900A26EE1 /* UserProfileCheckUsername.pb.swift */,
+				FAF5D1C51F8D664100A26EE1 /* UserProfileGetEmail.pb.swift */,
+				FAF5D1EB1F8D664D00A26EE1 /* UserProfileGetGender.pb.swift */,
+				FAF5D1E31F8D664A00A26EE1 /* UserProfileGetNickname.pb.swift */,
+				FAF5D1C11F8D664000A26EE1 /* UserProfileGetSelfRemove.pb.swift */,
+				FAF5D1F81F8D665100A26EE1 /* UserProfileSetEmail.pb.swift */,
+				FAF5D1B31F8D663C00A26EE1 /* UserProfileSetGender.pb.swift */,
+				FAF5D1AE1F8D663B00A26EE1 /* UserProfileSetNickname.pb.swift */,
+				FAF5D1B61F8D663D00A26EE1 /* UserProfileSetSelfRemove.pb.swift */,
+				FAF5D1AF1F8D663B00A26EE1 /* UserProfileUpdateUsername.pb.swift */,
+				FAF5D1991F8D663800A26EE1 /* UserRegister.pb.swift */,
+				FAF5D1E11F8D664900A26EE1 /* UserSessionGetActiveList.pb.swift */,
+				FAF5D1EC1F8D664D00A26EE1 /* UserSessionLogout.pb.swift */,
+				FAF5D2231F8D665E00A26EE1 /* UserSessionTerminate.pb.swift */,
+				FAF5D2221F8D665E00A26EE1 /* UserTwoStepVerificationChangeHint.pb.swift */,
+				FAF5D1FF1F8D665300A26EE1 /* UserTwoStepVerificationChangeRecoveryEmail.pb.swift */,
+				FAF5D22C1F8D666100A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift */,
+				FAF5D1A11F8D663800A26EE1 /* UserTwoStepVerificationCheckPassword.pb.swift */,
+				FAF5D1C71F8D664100A26EE1 /* UserTwoStepVerificationGetPasswordDetail.pb.swift */,
+				FAF5D1B41F8D663D00A26EE1 /* UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift */,
+				FAF5D1F01F8D664E00A26EE1 /* UserTwoStepVerificationRecoverPasswordByToken.pb.swift */,
+				FAF5D21B1F8D665C00A26EE1 /* UserTwoStepVerificationRequestRecoveryToken.pb.swift */,
+				FAF5D1ED1F8D664E00A26EE1 /* UserTwoStepVerificationResendVerifyEmail.pb.swift */,
+				FAF5D2241F8D665F00A26EE1 /* UserTwoStepVerificationSetPassword.pb.swift */,
+				FAF5D21F1F8D665D00A26EE1 /* UserTwoStepVerificationUnsetPassword.pb.swift */,
+				FAF5D22A1F8D666000A26EE1 /* UserTwoStepVerificationVerifyPassword.pb.swift */,
+				FAF5D1B81F8D663E00A26EE1 /* UserTwoStepVerificationVerifyRecoveryEmail.pb.swift */,
+				FAF5D2151F8D665A00A26EE1 /* UserUpdateStatus.pb.swift */,
+				FAF5D2171F8D665B00A26EE1 /* UserUsernameToId.pb.swift */,
+				FAF5D1D01F8D664400A26EE1 /* UserVerify.pb.swift */,
+				FAF5D1E51F8D664B00A26EE1 /* UserVerifyNewDevice.pb.swift */,
 			);
 			path = ProtoBuffs;
 			sourceTree = "<group>";
@@ -568,7 +568,7 @@
 		FA7638341E2FFFD200C24391 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FA7638351E2FFFD200C24391 /* ProtocolBuffers.framework */,
+				FAF5D23C1F8D66CE00A26EE1 /* SwiftProtobuf.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -616,6 +616,7 @@
 				TargetAttributes = {
 					FA7638281E2FFD5E00C24391 = {
 						CreatedOnToolsVersion = 8.2;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -652,173 +653,173 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA5AA12A1F71ED4800D925F5 /* UserProfileSetEmail.proto.swift in Sources */,
-				FA5AA0AA1F71ED4800D925F5 /* ChannelGetMessagesStats.proto.swift in Sources */,
-				FA5AA0B11F71ED4800D925F5 /* ChannelSendMessage.proto.swift in Sources */,
-				FA5AA0FA1F71ED4800D925F5 /* Heartbeat.proto.swift in Sources */,
-				FA5AA0A81F71ED4800D925F5 /* ChannelGetDraft.proto.swift in Sources */,
-				FA5AA13A1F71ED4800D925F5 /* UserTwoStepVerificationRequestRecoveryToken.proto.swift in Sources */,
-				FA5AA0F51F71ED4800D925F5 /* GroupSendMessage.proto.swift in Sources */,
-				FA5AA0F71F71ED4800D925F5 /* GroupUpdateDraft.proto.swift in Sources */,
-				FA5AA0E51F71ED4800D925F5 /* GroupAvatarGetList.proto.swift in Sources */,
-				FA5AA0BA1F71ED4800D925F5 /* ChatEditMessage.proto.swift in Sources */,
-				FA5AA11E1F71ED4800D925F5 /* UserContactsUnblock.proto.swift in Sources */,
-				FA5AA1231F71ED4800D925F5 /* UserPrivacyGetRule.proto.swift in Sources */,
-				FA5AA0FD1F71ED4800D925F5 /* InfoPage.proto.swift in Sources */,
-				FA5AA1021F71ED4800D925F5 /* PushTwoStepVerification.proto.swift in Sources */,
-				FA5AA0DC1F71ED4800D925F5 /* GeoRegister.proto.swift in Sources */,
-				FA5AA1111F71ED4800D925F5 /* SignalingOffer.proto.swift in Sources */,
-				FA5AA0BE1F71ED4800D925F5 /* ChatSetAction.proto.swift in Sources */,
-				FA5AA0A21F71ED4800D925F5 /* ChannelCheckUsername.proto.swift in Sources */,
-				FA5AA0B21F71ED4800D925F5 /* ChannelSetAction.proto.swift in Sources */,
-				FA5AA1321F71ED4800D925F5 /* UserSessionTerminate.proto.swift in Sources */,
-				FA5AA10E1F71ED4800D925F5 /* SignalingGetConfiguration.proto.swift in Sources */,
-				FA5AA0A51F71ED4800D925F5 /* ChannelDeleteMessage.proto.swift in Sources */,
-				FA5AA1311F71ED4800D925F5 /* UserSessionLogout.proto.swift in Sources */,
-				FA5AA0DA1F71ED4800D925F5 /* GeoGetNearbyDistance.proto.swift in Sources */,
-				FA5AA0B81F71ED4800D925F5 /* ChatDelete.proto.swift in Sources */,
-				FA5AA0BD1F71ED4800D925F5 /* ChatSendMessage.proto.swift in Sources */,
-				FA5AA09D1F71ED4800D925F5 /* ChannelAddMessageReaction.proto.swift in Sources */,
-				FA5AA0A11F71ED4800D925F5 /* ChannelAvatarGetList.proto.swift in Sources */,
-				FA5AA0EB1F71ED4800D925F5 /* GroupEdit.proto.swift in Sources */,
-				FA5AA0CC1F71ED4800D925F5 /* ClientSearchUsername.proto.swift in Sources */,
-				FA5AA0EA1F71ED4800D925F5 /* GroupDeleteMessage.proto.swift in Sources */,
-				FA5AA1331F71ED4800D925F5 /* UserTwoStepVerificationChangeHint.proto.swift in Sources */,
-				FA5AA0F31F71ED4800D925F5 /* GroupRemoveUsername.proto.swift in Sources */,
-				FA5AA0E71F71ED4800D925F5 /* GroupClearMessage.proto.swift in Sources */,
-				FA5AA0FB1F71ED4800D925F5 /* InfoCountry.proto.swift in Sources */,
-				FA5AA10D1F71ED4800D925F5 /* SignalingClearLog.proto.swift in Sources */,
-				FA5AA1001F71ED4800D925F5 /* PushLoginToken.proto.swift in Sources */,
-				FA5AA1171F71ED4800D925F5 /* UserAvatarGetList.proto.swift in Sources */,
-				FA5AA1191F71ED4800D925F5 /* UserContactsDelete.proto.swift in Sources */,
-				FA5AA0F81F71ED4800D925F5 /* GroupUpdateStatus.proto.swift in Sources */,
-				FA5AA0E31F71ED4800D925F5 /* GroupAvatarAdd.proto.swift in Sources */,
-				FA5AA13F1F71ED4800D925F5 /* UserTwoStepVerificationVerifyRecoveryEmail.proto.swift in Sources */,
-				FA5AA0C41F71ED4800D925F5 /* ClientGetRoom.proto.swift in Sources */,
-				FA5AA0FF1F71ED4800D925F5 /* InfoWallpaper.proto.swift in Sources */,
-				FA5AA12D1F71ED4800D925F5 /* UserProfileSetSelfRemove.proto.swift in Sources */,
-				FA5AA1031F71ED4800D925F5 /* PushUserInfoExpired.proto.swift in Sources */,
-				FA5AA1371F71ED4800D925F5 /* UserTwoStepVerificationGetPasswordDetail.proto.swift in Sources */,
-				FA5AA0AD1F71ED4800D925F5 /* ChannelKickModerator.proto.swift in Sources */,
-				FA5AA12C1F71ED4800D925F5 /* UserProfileSetNickname.proto.swift in Sources */,
-				FA5AA0F11F71ED4800D925F5 /* GroupKickModerator.proto.swift in Sources */,
-				FA5AA0CE1F71ED4800D925F5 /* ClientUnsubscribeFromRoom.proto.swift in Sources */,
-				FA5AA1181F71ED4800D925F5 /* UserContactsBlock.proto.swift in Sources */,
-				FA5AA12B1F71ED4800D925F5 /* UserProfileSetGender.proto.swift in Sources */,
-				FA5AA0C81F71ED4800D925F5 /* ClientJoinByInviteLink.proto.swift in Sources */,
-				FA5AA0B71F71ED4800D925F5 /* ChatConvertToGroup.proto.swift in Sources */,
-				FA5AA1281F71ED4800D925F5 /* UserProfileGetNickname.proto.swift in Sources */,
-				FA5AA1391F71ED4800D925F5 /* UserTwoStepVerificationRecoverPasswordByToken.proto.swift in Sources */,
-				FA5AA0D51F71ED4800D925F5 /* FileUploadOption.proto.swift in Sources */,
-				FA5AA0E21F71ED4800D925F5 /* GroupAddModerator.proto.swift in Sources */,
-				FA5AA11D1F71ED4800D925F5 /* UserContactsImport.proto.swift in Sources */,
-				FA5AA0E81F71ED4800D925F5 /* GroupCreate.proto.swift in Sources */,
-				FA5AA0AB1F71ED4800D925F5 /* ChannelKickAdmin.proto.swift in Sources */,
-				FA5AA0A01F71ED4800D925F5 /* ChannelAvatarDelete.proto.swift in Sources */,
-				FA5AA0A41F71ED4800D925F5 /* ChannelDelete.proto.swift in Sources */,
-				FA5AA0BF1F71ED4800D925F5 /* ChatUpdateDraft.proto.swift in Sources */,
-				FA5AA0DE1F71ED4800D925F5 /* GeoUpdatePosition.proto.swift in Sources */,
-				FA5AA0F21F71ED4800D925F5 /* GroupLeft.proto.swift in Sources */,
-				FA5AA10F1F71ED4800D925F5 /* SignalingGetLog.proto.swift in Sources */,
-				FA5AA1161F71ED4800D925F5 /* UserAvatarDelete.proto.swift in Sources */,
-				FA5AA0B51F71ED4800D925F5 /* ChannelUpdateUsername.proto.swift in Sources */,
-				FA5AA0CB1F71ED4800D925F5 /* ClientSearchRoomHistory.proto.swift in Sources */,
-				FA5AA1301F71ED4800D925F5 /* UserSessionGetActiveList.proto.swift in Sources */,
-				FA5AA10B1F71ED4800D925F5 /* SignalingAccept.proto.swift in Sources */,
-				FA5AA09F1F71ED4800D925F5 /* ChannelAvatarAdd.proto.swift in Sources */,
-				FA5AA0F41F71ED4800D925F5 /* GroupRevokeLink.proto.swift in Sources */,
-				FA5AA0B31F71ED4800D925F5 /* ChannelUpdateDraft.proto.swift in Sources */,
-				FA5AA11B1F71ED4800D925F5 /* UserContactsGetBlockedList.proto.swift in Sources */,
-				FA5AA0EC1F71ED4800D925F5 /* GroupEditMessage.proto.swift in Sources */,
-				FA5AA11A1F71ED4800D925F5 /* UserContactsEdit.proto.swift in Sources */,
-				FA5AA1081F71ED4800D925F5 /* QrCodeResolve.proto.swift in Sources */,
-				FA5AA1221F71ED4800D925F5 /* UserLogin.proto.swift in Sources */,
-				FA5AA0E11F71ED4800D925F5 /* GroupAddMember.proto.swift in Sources */,
-				FA5AA0D41F71ED4800D925F5 /* FileUploadInit.proto.swift in Sources */,
-				FA5AA0CA1F71ED4800D925F5 /* ClientResolveUsername.proto.swift in Sources */,
-				FA5AA1431F71ED4800D925F5 /* UserVerifyNewDevice.proto.swift in Sources */,
-				FA5AA0A61F71ED4800D925F5 /* ChannelEdit.proto.swift in Sources */,
-				FA5AA13C1F71ED4800D925F5 /* UserTwoStepVerificationSetPassword.proto.swift in Sources */,
-				FA5AA1241F71ED4800D925F5 /* UserPrivacySetRule.proto.swift in Sources */,
-				FA5AA1361F71ED4800D925F5 /* UserTwoStepVerificationCheckPassword.proto.swift in Sources */,
-				FA5AA1121F71ED4800D925F5 /* SignalingRate.proto.swift in Sources */,
-				FA5AA0BC1F71ED4800D925F5 /* ChatGetRoom.proto.swift in Sources */,
-				FA5AA1271F71ED4800D925F5 /* UserProfileGetGender.proto.swift in Sources */,
-				FA5AA13E1F71ED4800D925F5 /* UserTwoStepVerificationVerifyPassword.proto.swift in Sources */,
-				FA5AA0E41F71ED4800D925F5 /* GroupAvatarDelete.proto.swift in Sources */,
-				FA5AA0AE1F71ED4800D925F5 /* ChannelLeft.proto.swift in Sources */,
-				FA5AA1141F71ED4800D925F5 /* SignalingSessionHold.proto.swift in Sources */,
-				FA5AA1401F71ED4800D925F5 /* UserUpdateStatus.proto.swift in Sources */,
-				FA5AA0D71F71ED4800D925F5 /* GeoGetComment.proto.swift in Sources */,
-				FA5AA0EF1F71ED4800D925F5 /* GroupKickAdmin.proto.swift in Sources */,
-				FA5AA0B61F71ED4800D925F5 /* ChatClearMessage.proto.swift in Sources */,
-				FA5AA09B1F71ED4800D925F5 /* ChannelAddAdmin.proto.swift in Sources */,
-				FA5AA0B91F71ED4800D925F5 /* ChatDeleteMessage.proto.swift in Sources */,
-				FA5AA1261F71ED4800D925F5 /* UserProfileGetEmail.proto.swift in Sources */,
-				FA5AA0AF1F71ED4800D925F5 /* ChannelRemoveUsername.proto.swift in Sources */,
-				FA5AA09C1F71ED4800D925F5 /* ChannelAddMember.proto.swift in Sources */,
-				FA5AA09E1F71ED4800D925F5 /* ChannelAddModerator.proto.swift in Sources */,
-				FA5AA1251F71ED4800D925F5 /* UserProfileCheckUsername.proto.swift in Sources */,
-				FA5AA1291F71ED4800D925F5 /* UserProfileGetSelfRemove.proto.swift in Sources */,
-				FA5AA0DB1F71ED4800D925F5 /* GeoGetRegisterStatus.proto.swift in Sources */,
-				FA5AA12E1F71ED4800D925F5 /* UserProfileUpdateUsername.proto.swift in Sources */,
-				FA5AA0C21F71ED4800D925F5 /* ClientCondition.proto.swift in Sources */,
-				FA5AA11C1F71ED4800D925F5 /* UserContactsGetList.proto.swift in Sources */,
-				FA5AA1061F71ED4800D925F5 /* QrCodeJoin.proto.swift in Sources */,
-				FA5AA0B01F71ED4800D925F5 /* ChannelRevokeLink.proto.swift in Sources */,
-				FA5AA0E91F71ED4800D925F5 /* GroupDelete.proto.swift in Sources */,
-				FA5AA0D81F71ED4800D925F5 /* GeoGetConfiguration.proto.swift in Sources */,
-				FA5AA0D91F71ED4800D925F5 /* GeoGetNearbyCoordinate.proto.swift in Sources */,
-				FA5AA0C91F71ED4800D925F5 /* ClientJoinByUsername.proto.swift in Sources */,
-				FA5AA0BB1F71ED4800D925F5 /* ChatGetDraft.proto.swift in Sources */,
-				FA5AA1211F71ED4800D925F5 /* UserInfo.proto.swift in Sources */,
-				FA5AA12F1F71ED4800D925F5 /* UserRegister.proto.swift in Sources */,
-				FA5AA0DF1F71ED4800D925F5 /* Global.proto.swift in Sources */,
-				FA5AA1131F71ED4800D925F5 /* SignalingRinging.proto.swift in Sources */,
-				FA5AA0D01F71ED4800D925F5 /* Error.proto.swift in Sources */,
-				FA5AA0F01F71ED4800D925F5 /* GroupKickMember.proto.swift in Sources */,
-				FA5AA0C61F71ED4800D925F5 /* ClientGetRoomList.proto.swift in Sources */,
-				FA5AA0F91F71ED4800D925F5 /* GroupUpdateUsername.proto.swift in Sources */,
-				FA5AA1381F71ED4800D925F5 /* UserTwoStepVerificationRecoverPasswordByAnswers.proto.swift in Sources */,
-				FA5AA0A71F71ED4800D925F5 /* ChannelEditMessage.proto.swift in Sources */,
-				FA5AA0ED1F71ED4800D925F5 /* GroupGetDraft.proto.swift in Sources */,
-				FA5AA0C51F71ED4800D925F5 /* ClientGetRoomHistory.proto.swift in Sources */,
-				FA5AA1051F71ED4800D925F5 /* QrCodeAddMe.proto.swift in Sources */,
-				FA5AA0AC1F71ED4800D925F5 /* ChannelKickMember.proto.swift in Sources */,
-				FA5AA0FE1F71ED4800D925F5 /* InfoTime.proto.swift in Sources */,
-				FA5AA0C01F71ED4800D925F5 /* ChatUpdateStatus.proto.swift in Sources */,
-				FA5AA0FC1F71ED4800D925F5 /* InfoLocation.proto.swift in Sources */,
-				FA5AA0EE1F71ED4800D925F5 /* GroupGetMemberList.proto.swift in Sources */,
-				FA5AA0C11F71ED4800D925F5 /* ClientCheckInviteLink.proto.swift in Sources */,
-				FA5AA0E61F71ED4800D925F5 /* GroupCheckUsername.proto.swift in Sources */,
-				FA5AA0B41F71ED4800D925F5 /* ChannelUpdateSignature.proto.swift in Sources */,
-				FA5AA0D61F71ED4800D925F5 /* FileUploadStatus.proto.swift in Sources */,
-				FA5AA1351F71ED4800D925F5 /* UserTwoStepVerificationChangeRecoveryQuestion.proto.swift in Sources */,
-				FA5AA1421F71ED4800D925F5 /* UserVerify.proto.swift in Sources */,
-				FA5AA0DD1F71ED4800D925F5 /* GeoUpdateComment.proto.swift in Sources */,
-				FA5AA0A91F71ED4800D925F5 /* ChannelGetMemberList.proto.swift in Sources */,
-				FA5AA1041F71ED4800D925F5 /* QrCodeAddContact.proto.swift in Sources */,
-				FA5AA0A31F71ED4800D925F5 /* ChannelCreate.proto.swift in Sources */,
-				FA5AA13B1F71ED4800D925F5 /* UserTwoStepVerificationResendVerifyEmail.proto.swift in Sources */,
-				FA5AA1011F71ED4800D925F5 /* PushRateSignaling.proto.swift in Sources */,
-				FA5AA1341F71ED4800D925F5 /* UserTwoStepVerificationChangeRecoveryEmail.proto.swift in Sources */,
-				FA5AA0D11F71ED4800D925F5 /* FileDownload.proto.swift in Sources */,
-				FA5AA1201F71ED4800D925F5 /* UserGetDeleteToken.proto.swift in Sources */,
-				FA5AA0E01F71ED4800D925F5 /* GroupAddAdmin.proto.swift in Sources */,
-				FA5AA1101F71ED4800D925F5 /* SignalingLeave.proto.swift in Sources */,
-				FA5AA0CF1F71ED4800D925F5 /* ConnectionSecuring.proto.swift in Sources */,
-				FA5AA1071F71ED4800D925F5 /* QrCodeNewDevice.proto.swift in Sources */,
-				FA5AA0C31F71ED4800D925F5 /* ClientCountRoomHistory.proto.swift in Sources */,
-				FA5AA0D21F71ED4800D925F5 /* FileInfo.proto.swift in Sources */,
-				FA5AA11F1F71ED4800D925F5 /* UserDelete.proto.swift in Sources */,
-				FA5AA0C71F71ED4800D925F5 /* ClientGetRoomMessage.proto.swift in Sources */,
-				FA5AA1151F71ED4800D925F5 /* UserAvatarAdd.proto.swift in Sources */,
-				FA5AA0D31F71ED4800D925F5 /* FileUpload.proto.swift in Sources */,
-				FA5AA0F61F71ED4800D925F5 /* GroupSetAction.proto.swift in Sources */,
-				FA5AA13D1F71ED4800D925F5 /* UserTwoStepVerificationUnsetPassword.proto.swift in Sources */,
-				FA5AA10C1F71ED4800D925F5 /* SignalingCandidate.proto.swift in Sources */,
-				FA5AA1411F71ED4800D925F5 /* UserUsernameToId.proto.swift in Sources */,
-				FA5AA0CD1F71ED4800D925F5 /* ClientSubscribeToRoom.proto.swift in Sources */,
+				FAF5D2861F8D6C2000A26EE1 /* GroupAddModerator.pb.swift in Sources */,
+				FAF5D25D1F8D6C2000A26EE1 /* ChatDeleteMessage.pb.swift in Sources */,
+				FAF5D28F1F8D6C2000A26EE1 /* GroupEdit.pb.swift in Sources */,
+				FAF5D2791F8D6C2000A26EE1 /* FileUploadOption.pb.swift in Sources */,
+				FAF5D2691F8D6C2000A26EE1 /* ClientGetRoomHistory.pb.swift in Sources */,
+				FAF5D2551F8D6C2000A26EE1 /* ChannelSendMessage.pb.swift in Sources */,
+				FAF5D2D01F8D6C2000A26EE1 /* UserProfileUpdateUsername.pb.swift in Sources */,
+				FAF5D24D1F8D6C2000A26EE1 /* ChannelGetMemberList.pb.swift in Sources */,
+				FAF5D2B21F8D6C2000A26EE1 /* SignalingLeave.pb.swift in Sources */,
+				FAF5D2881F8D6C2000A26EE1 /* GroupAvatarDelete.pb.swift in Sources */,
+				FAF5D2431F8D6C2000A26EE1 /* ChannelAvatarAdd.pb.swift in Sources */,
+				FAF5D2D61F8D6C2000A26EE1 /* UserTwoStepVerificationChangeRecoveryEmail.pb.swift in Sources */,
+				FAF5D2DC1F8D6C2000A26EE1 /* UserTwoStepVerificationRequestRecoveryToken.pb.swift in Sources */,
+				FAF5D29A1F8D6C2000A26EE1 /* GroupSetAction.pb.swift in Sources */,
+				FAF5D2501F8D6C2000A26EE1 /* ChannelKickMember.pb.swift in Sources */,
+				FAF5D27D1F8D6C2000A26EE1 /* GeoGetNearbyCoordinate.pb.swift in Sources */,
+				FAF5D2C51F8D6C2000A26EE1 /* UserPrivacyGetRule.pb.swift in Sources */,
+				FAF5D2AA1F8D6C2000A26EE1 /* QrCodeJoin.pb.swift in Sources */,
+				FAF5D2921F8D6C2000A26EE1 /* GroupGetMemberList.pb.swift in Sources */,
+				FAF5D2DB1F8D6C2000A26EE1 /* UserTwoStepVerificationRecoverPasswordByToken.pb.swift in Sources */,
+				FAF5D2D11F8D6C2000A26EE1 /* UserRegister.pb.swift in Sources */,
+				FAF5D2521F8D6C2000A26EE1 /* ChannelLeft.pb.swift in Sources */,
+				FAF5D2AE1F8D6C2000A26EE1 /* SignalingCandidate.pb.swift in Sources */,
+				FAF5D2BE1F8D6C2000A26EE1 /* UserContactsGetList.pb.swift in Sources */,
+				FAF5D2401F8D6C2000A26EE1 /* ChannelAddMember.pb.swift in Sources */,
+				FAF5D2A81F8D6C2000A26EE1 /* QrCodeAddContact.pb.swift in Sources */,
+				FAF5D2E51F8D6C2000A26EE1 /* UserVerifyNewDevice.pb.swift in Sources */,
+				FAF5D29C1F8D6C2000A26EE1 /* GroupUpdateStatus.pb.swift in Sources */,
+				FAF5D2C41F8D6C2000A26EE1 /* UserLogin.pb.swift in Sources */,
+				FAF5D2C61F8D6C2000A26EE1 /* UserPrivacySetRule.pb.swift in Sources */,
+				FAF5D2DE1F8D6C2000A26EE1 /* UserTwoStepVerificationSetPassword.pb.swift in Sources */,
+				FAF5D2941F8D6C2000A26EE1 /* GroupKickMember.pb.swift in Sources */,
+				FAF5D2BF1F8D6C2000A26EE1 /* UserContactsImport.pb.swift in Sources */,
+				FAF5D2761F8D6C2000A26EE1 /* FileInfo.pb.swift in Sources */,
+				FAF5D2BA1F8D6C2000A26EE1 /* UserContactsBlock.pb.swift in Sources */,
+				FAF5D2CA1F8D6C2000A26EE1 /* UserProfileGetNickname.pb.swift in Sources */,
+				FAF5D2AB1F8D6C2000A26EE1 /* QrCodeNewDevice.pb.swift in Sources */,
+				FAF5D28A1F8D6C2000A26EE1 /* GroupCheckUsername.pb.swift in Sources */,
+				FAF5D2631F8D6C2000A26EE1 /* ChatUpdateDraft.pb.swift in Sources */,
+				FAF5D2B41F8D6C2000A26EE1 /* SignalingRate.pb.swift in Sources */,
+				FAF5D2621F8D6C2000A26EE1 /* ChatSetAction.pb.swift in Sources */,
+				FAF5D24A1F8D6C2000A26EE1 /* ChannelEdit.pb.swift in Sources */,
+				FAF5D2A11F8D6C2000A26EE1 /* InfoPage.pb.swift in Sources */,
+				FAF5D2B71F8D6C2000A26EE1 /* UserAvatarAdd.pb.swift in Sources */,
+				FAF5D2701F8D6C2000A26EE1 /* ClientSearchUsername.pb.swift in Sources */,
+				FAF5D2A61F8D6C2000A26EE1 /* PushTwoStepVerification.pb.swift in Sources */,
+				FAF5D2E31F8D6C2000A26EE1 /* UserUsernameToId.pb.swift in Sources */,
+				FAF5D25F1F8D6C2000A26EE1 /* ChatGetDraft.pb.swift in Sources */,
+				FAF5D2541F8D6C2000A26EE1 /* ChannelRevokeLink.pb.swift in Sources */,
+				FAF5D26A1F8D6C2000A26EE1 /* ClientGetRoomList.pb.swift in Sources */,
+				FAF5D2511F8D6C2000A26EE1 /* ChannelKickModerator.pb.swift in Sources */,
+				FAF5D25B1F8D6C2000A26EE1 /* ChatConvertToGroup.pb.swift in Sources */,
+				FAF5D2B81F8D6C2000A26EE1 /* UserAvatarDelete.pb.swift in Sources */,
+				FAF5D2851F8D6C2000A26EE1 /* GroupAddMember.pb.swift in Sources */,
+				FAF5D2CF1F8D6C2000A26EE1 /* UserProfileSetSelfRemove.pb.swift in Sources */,
+				FAF5D2D71F8D6C2000A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift in Sources */,
+				FAF5D28B1F8D6C2000A26EE1 /* GroupClearMessage.pb.swift in Sources */,
+				FAF5D2991F8D6C2000A26EE1 /* GroupSendMessage.pb.swift in Sources */,
+				FAF5D2DD1F8D6C2000A26EE1 /* UserTwoStepVerificationResendVerifyEmail.pb.swift in Sources */,
+				FAF5D2B61F8D6C2000A26EE1 /* SignalingSessionHold.pb.swift in Sources */,
+				FAF5D2C21F8D6C2000A26EE1 /* UserGetDeleteToken.pb.swift in Sources */,
+				FAF5D2441F8D6C2000A26EE1 /* ChannelAvatarDelete.pb.swift in Sources */,
+				FAF5D2CB1F8D6C2000A26EE1 /* UserProfileGetSelfRemove.pb.swift in Sources */,
+				FAF5D2B51F8D6C2000A26EE1 /* SignalingRinging.pb.swift in Sources */,
+				FAF5D2DA1F8D6C2000A26EE1 /* UserTwoStepVerificationRecoverPasswordByAnswers.pb.swift in Sources */,
+				FAF5D2801F8D6C2000A26EE1 /* GeoRegister.pb.swift in Sources */,
+				FAF5D2901F8D6C2000A26EE1 /* GroupEditMessage.pb.swift in Sources */,
+				FAF5D2A21F8D6C2000A26EE1 /* InfoTime.pb.swift in Sources */,
+				FAF5D2841F8D6C2000A26EE1 /* GroupAddAdmin.pb.swift in Sources */,
+				FAF5D2E01F8D6C2000A26EE1 /* UserTwoStepVerificationVerifyPassword.pb.swift in Sources */,
+				FAF5D2911F8D6C2000A26EE1 /* GroupGetDraft.pb.swift in Sources */,
+				FAF5D2531F8D6C2000A26EE1 /* ChannelRemoveUsername.pb.swift in Sources */,
+				FAF5D2481F8D6C2000A26EE1 /* ChannelDelete.pb.swift in Sources */,
+				FAF5D2651F8D6C2000A26EE1 /* ClientCheckInviteLink.pb.swift in Sources */,
+				FAF5D2AD1F8D6C2000A26EE1 /* SignalingAccept.pb.swift in Sources */,
+				FAF5D24E1F8D6C2000A26EE1 /* ChannelGetMessagesStats.pb.swift in Sources */,
+				FAF5D2E21F8D6C2000A26EE1 /* UserUpdateStatus.pb.swift in Sources */,
+				FAF5D2491F8D6C2000A26EE1 /* ChannelDeleteMessage.pb.swift in Sources */,
+				FAF5D2411F8D6C2000A26EE1 /* ChannelAddMessageReaction.pb.swift in Sources */,
+				FAF5D2BD1F8D6C2000A26EE1 /* UserContactsGetBlockedList.pb.swift in Sources */,
+				FAF5D2781F8D6C2000A26EE1 /* FileUploadInit.pb.swift in Sources */,
+				FAF5D2BC1F8D6C2000A26EE1 /* UserContactsEdit.pb.swift in Sources */,
+				FAF5D2471F8D6C2000A26EE1 /* ChannelCreate.pb.swift in Sources */,
+				FAF5D2421F8D6C2000A26EE1 /* ChannelAddModerator.pb.swift in Sources */,
+				FAF5D24C1F8D6C2000A26EE1 /* ChannelGetDraft.pb.swift in Sources */,
+				FAF5D2971F8D6C2000A26EE1 /* GroupRemoveUsername.pb.swift in Sources */,
+				FAF5D2A91F8D6C2000A26EE1 /* QrCodeAddMe.pb.swift in Sources */,
+				FAF5D27F1F8D6C2000A26EE1 /* GeoGetRegisterStatus.pb.swift in Sources */,
+				FAF5D2741F8D6C2000A26EE1 /* Error.pb.swift in Sources */,
+				FAF5D2D31F8D6C2000A26EE1 /* UserSessionLogout.pb.swift in Sources */,
+				FAF5D2961F8D6C2000A26EE1 /* GroupLeft.pb.swift in Sources */,
+				FAF5D28C1F8D6C2000A26EE1 /* GroupCreate.pb.swift in Sources */,
+				FAF5D2CC1F8D6C2000A26EE1 /* UserProfileSetEmail.pb.swift in Sources */,
+				FAF5D2C11F8D6C2000A26EE1 /* UserDelete.pb.swift in Sources */,
+				FAF5D26F1F8D6C2000A26EE1 /* ClientSearchRoomHistory.pb.swift in Sources */,
+				FAF5D2B91F8D6C2000A26EE1 /* UserAvatarGetList.pb.swift in Sources */,
+				FAF5D25C1F8D6C2000A26EE1 /* ChatDelete.pb.swift in Sources */,
+				FAF5D2831F8D6C2000A26EE1 /* Global.pb.swift in Sources */,
+				FAF5D2671F8D6C2000A26EE1 /* ClientCountRoomHistory.pb.swift in Sources */,
+				FAF5D2661F8D6C2000A26EE1 /* ClientCondition.pb.swift in Sources */,
+				FAF5D2601F8D6C2000A26EE1 /* ChatGetRoom.pb.swift in Sources */,
+				FAF5D2581F8D6C2000A26EE1 /* ChannelUpdateSignature.pb.swift in Sources */,
+				FAF5D2711F8D6C2000A26EE1 /* ClientSubscribeToRoom.pb.swift in Sources */,
+				FAF5D2D51F8D6C2000A26EE1 /* UserTwoStepVerificationChangeHint.pb.swift in Sources */,
+				FAF5D2591F8D6C2000A26EE1 /* ChannelUpdateUsername.pb.swift in Sources */,
+				FAF5D2AC1F8D6C2000A26EE1 /* QrCodeResolve.pb.swift in Sources */,
+				FAF5D2CD1F8D6C2000A26EE1 /* UserProfileSetGender.pb.swift in Sources */,
+				FAF5D2951F8D6C2000A26EE1 /* GroupKickModerator.pb.swift in Sources */,
+				FAF5D26B1F8D6C2000A26EE1 /* ClientGetRoomMessage.pb.swift in Sources */,
+				FAF5D29D1F8D6C2000A26EE1 /* GroupUpdateUsername.pb.swift in Sources */,
+				FAF5D2D21F8D6C2000A26EE1 /* UserSessionGetActiveList.pb.swift in Sources */,
+				FAF5D2641F8D6C2000A26EE1 /* ChatUpdateStatus.pb.swift in Sources */,
+				FAF5D2A51F8D6C2000A26EE1 /* PushRateSignaling.pb.swift in Sources */,
+				FAF5D2E11F8D6C2000A26EE1 /* UserTwoStepVerificationVerifyRecoveryEmail.pb.swift in Sources */,
+				FAF5D2B31F8D6C2000A26EE1 /* SignalingOffer.pb.swift in Sources */,
+				FAF5D2681F8D6C2000A26EE1 /* ClientGetRoom.pb.swift in Sources */,
+				FAF5D2C31F8D6C2000A26EE1 /* UserInfo.pb.swift in Sources */,
+				FAF5D26C1F8D6C2000A26EE1 /* ClientJoinByInviteLink.pb.swift in Sources */,
+				FAF5D2B01F8D6C2000A26EE1 /* SignalingGetConfiguration.pb.swift in Sources */,
+				FAF5D2C81F8D6C2000A26EE1 /* UserProfileGetEmail.pb.swift in Sources */,
+				FAF5D24F1F8D6C2000A26EE1 /* ChannelKickAdmin.pb.swift in Sources */,
+				FAF5D2451F8D6C2000A26EE1 /* ChannelAvatarGetList.pb.swift in Sources */,
+				FAF5D27A1F8D6C2000A26EE1 /* FileUploadStatus.pb.swift in Sources */,
+				FAF5D2D41F8D6C2000A26EE1 /* UserSessionTerminate.pb.swift in Sources */,
+				FAF5D2751F8D6C2000A26EE1 /* FileDownload.pb.swift in Sources */,
+				FAF5D2E41F8D6C2000A26EE1 /* UserVerify.pb.swift in Sources */,
+				FAF5D2931F8D6C2000A26EE1 /* GroupKickAdmin.pb.swift in Sources */,
+				FAF5D23F1F8D6AF100A26EE1 /* ChannelAddAdmin.pb.swift in Sources */,
+				FAF5D2C01F8D6C2000A26EE1 /* UserContactsUnblock.pb.swift in Sources */,
+				FAF5D2571F8D6C2000A26EE1 /* ChannelUpdateDraft.pb.swift in Sources */,
+				FAF5D2821F8D6C2000A26EE1 /* GeoUpdatePosition.pb.swift in Sources */,
+				FAF5D26E1F8D6C2000A26EE1 /* ClientResolveUsername.pb.swift in Sources */,
+				FAF5D2C91F8D6C2000A26EE1 /* UserProfileGetGender.pb.swift in Sources */,
+				FAF5D2611F8D6C2000A26EE1 /* ChatSendMessage.pb.swift in Sources */,
+				FAF5D2771F8D6C2000A26EE1 /* FileUpload.pb.swift in Sources */,
+				FAF5D2C71F8D6C2000A26EE1 /* UserProfileCheckUsername.pb.swift in Sources */,
+				FAF5D2871F8D6C2000A26EE1 /* GroupAvatarAdd.pb.swift in Sources */,
+				FAF5D2A41F8D6C2000A26EE1 /* PushLoginToken.pb.swift in Sources */,
+				FAF5D25A1F8D6C2000A26EE1 /* ChatClearMessage.pb.swift in Sources */,
+				FAF5D2811F8D6C2000A26EE1 /* GeoUpdateComment.pb.swift in Sources */,
+				FAF5D2D91F8D6C2000A26EE1 /* UserTwoStepVerificationGetPasswordDetail.pb.swift in Sources */,
+				FAF5D2891F8D6C2000A26EE1 /* GroupAvatarGetList.pb.swift in Sources */,
+				FAF5D27B1F8D6C2000A26EE1 /* GeoGetComment.pb.swift in Sources */,
+				FAF5D2A31F8D6C2000A26EE1 /* InfoWallpaper.pb.swift in Sources */,
+				FAF5D29B1F8D6C2000A26EE1 /* GroupUpdateDraft.pb.swift in Sources */,
+				FAF5D2CE1F8D6C2000A26EE1 /* UserProfileSetNickname.pb.swift in Sources */,
+				FAF5D28D1F8D6C2000A26EE1 /* GroupDelete.pb.swift in Sources */,
+				FAF5D2461F8D6C2000A26EE1 /* ChannelCheckUsername.pb.swift in Sources */,
+				FAF5D2BB1F8D6C2000A26EE1 /* UserContactsDelete.pb.swift in Sources */,
+				FAF5D2981F8D6C2000A26EE1 /* GroupRevokeLink.pb.swift in Sources */,
+				FAF5D2DF1F8D6C2000A26EE1 /* UserTwoStepVerificationUnsetPassword.pb.swift in Sources */,
+				FAF5D26D1F8D6C2000A26EE1 /* ClientJoinByUsername.pb.swift in Sources */,
+				FAF5D2A01F8D6C2000A26EE1 /* InfoLocation.pb.swift in Sources */,
+				FAF5D27C1F8D6C2000A26EE1 /* GeoGetConfiguration.pb.swift in Sources */,
+				FAF5D24B1F8D6C2000A26EE1 /* ChannelEditMessage.pb.swift in Sources */,
+				FAF5D25E1F8D6C2000A26EE1 /* ChatEditMessage.pb.swift in Sources */,
+				FAF5D28E1F8D6C2000A26EE1 /* GroupDeleteMessage.pb.swift in Sources */,
+				FAF5D2B11F8D6C2000A26EE1 /* SignalingGetLog.pb.swift in Sources */,
+				FAF5D2D81F8D6C2000A26EE1 /* UserTwoStepVerificationCheckPassword.pb.swift in Sources */,
+				FAF5D2721F8D6C2000A26EE1 /* ClientUnsubscribeFromRoom.pb.swift in Sources */,
+				FAF5D2AF1F8D6C2000A26EE1 /* SignalingClearLog.pb.swift in Sources */,
+				FAF5D2731F8D6C2000A26EE1 /* ConnectionSecuring.pb.swift in Sources */,
+				FAF5D29E1F8D6C2000A26EE1 /* Heartbeat.pb.swift in Sources */,
+				FAF5D2561F8D6C2000A26EE1 /* ChannelSetAction.pb.swift in Sources */,
+				FAF5D2A71F8D6C2000A26EE1 /* PushUserInfoExpired.pb.swift in Sources */,
+				FAF5D27E1F8D6C2000A26EE1 /* GeoGetNearbyDistance.pb.swift in Sources */,
+				FAF5D29F1F8D6C2000A26EE1 /* InfoCountry.pb.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -927,6 +928,7 @@
 		FA7638321E2FFD5E00C24391 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -954,6 +956,7 @@
 		FA7638331E2FFD5E00C24391 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
