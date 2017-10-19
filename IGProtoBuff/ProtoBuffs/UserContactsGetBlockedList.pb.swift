@@ -91,6 +91,8 @@ public struct IGPUserContactsGetBlockedListResponse: SwiftProtobuf.ResponseMessa
 
     public var igpUserID: Int64 = 0
 
+    public var igpCacheID: String = String()
+
     public var unknownFields = SwiftProtobuf.UnknownStorage()
 
     public init() {}
@@ -103,6 +105,7 @@ public struct IGPUserContactsGetBlockedListResponse: SwiftProtobuf.ResponseMessa
       while let fieldNumber = try decoder.nextFieldNumber() {
         switch fieldNumber {
         case 1: try decoder.decodeSingularInt64Field(value: &self.igpUserID)
+        case 2: try decoder.decodeSingularStringField(value: &self.igpCacheID)
         default: break
         }
       }
@@ -115,6 +118,9 @@ public struct IGPUserContactsGetBlockedListResponse: SwiftProtobuf.ResponseMessa
     public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
       if self.igpUserID != 0 {
         try visitor.visitSingularInt64Field(value: self.igpUserID, fieldNumber: 1)
+      }
+      if !self.igpCacheID.isEmpty {
+        try visitor.visitSingularStringField(value: self.igpCacheID, fieldNumber: 2)
       }
       try unknownFields.traverse(visitor: &visitor)
     }
@@ -245,10 +251,12 @@ extension IGPUserContactsGetBlockedListResponse: SwiftProtobuf._MessageImplement
 extension IGPUserContactsGetBlockedListResponse.IGPUser: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_user_id"),
+    2: .standard(proto: "IGP_cache_id"),
   ]
 
   public func _protobuf_generated_isEqualTo(other: IGPUserContactsGetBlockedListResponse.IGPUser) -> Bool {
     if self.igpUserID != other.igpUserID {return false}
+    if self.igpCacheID != other.igpCacheID {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }

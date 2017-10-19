@@ -357,6 +357,34 @@ public enum IGPClientAction: SwiftProtobuf.Enum {
 
 }
 
+public enum IGPRoomMute: SwiftProtobuf.Enum {
+  public typealias RawValue = Int
+  case unmute // = 0
+  case mute // = 1
+  case UNRECOGNIZED(Int)
+
+  public init() {
+    self = .unmute
+  }
+
+  public init?(rawValue: Int) {
+    switch rawValue {
+    case 0: self = .unmute
+    case 1: self = .mute
+    default: self = .UNRECOGNIZED(rawValue)
+    }
+  }
+
+  public var rawValue: Int {
+    switch self {
+    case .unmute: return 0
+    case .mute: return 1
+    case .UNRECOGNIZED(let i): return i
+    }
+  }
+
+}
+
 public enum IGPPrivacyType: SwiftProtobuf.Enum {
   public typealias RawValue = Int
   case userStatus // = 0
@@ -846,6 +874,11 @@ public struct IGPRegisteredUser: SwiftProtobuf.Message {
     set {_uniqueStorage()._igpCacheID = newValue}
   }
 
+  public var igpBio: String {
+    get {return _storage._igpBio}
+    set {_uniqueStorage()._igpBio = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public enum IGPStatus: SwiftProtobuf.Enum {
@@ -920,6 +953,7 @@ public struct IGPRegisteredUser: SwiftProtobuf.Message {
         case 13: try decoder.decodeSingularBoolField(value: &_storage._igpMutual)
         case 14: try decoder.decodeSingularBoolField(value: &_storage._igpDeleted)
         case 15: try decoder.decodeSingularStringField(value: &_storage._igpCacheID)
+        case 16: try decoder.decodeSingularStringField(value: &_storage._igpBio)
         default: break
         }
       }
@@ -976,6 +1010,9 @@ public struct IGPRegisteredUser: SwiftProtobuf.Message {
       }
       if !_storage._igpCacheID.isEmpty {
         try visitor.visitSingularStringField(value: _storage._igpCacheID, fieldNumber: 15)
+      }
+      if !_storage._igpBio.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpBio, fieldNumber: 16)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -1622,6 +1659,16 @@ public struct IGPRoom: SwiftProtobuf.Message {
   /// Clears the value of `igpFirstUnreadMessage`. Subsequent reads from it will return its default value.
   public mutating func clearIgpFirstUnreadMessage() {_storage._igpFirstUnreadMessage = nil}
 
+  public var igpRoomMute: IGPRoomMute {
+    get {return _storage._igpRoomMute}
+    set {_uniqueStorage()._igpRoomMute = newValue}
+  }
+
+  public var igpPinID: Int64 {
+    get {return _storage._igpPinID}
+    set {_uniqueStorage()._igpPinID = newValue}
+  }
+
   public var igpChatRoomExtra: IGPChatRoom {
     get {return _storage._igpChatRoomExtra ?? IGPChatRoom()}
     set {_uniqueStorage()._igpChatRoomExtra = newValue}
@@ -1707,6 +1754,8 @@ public struct IGPRoom: SwiftProtobuf.Message {
         case 12: try decoder.decodeSingularMessageField(value: &_storage._igpGroupRoomExtra)
         case 13: try decoder.decodeSingularMessageField(value: &_storage._igpChannelRoomExtra)
         case 14: try decoder.decodeSingularMessageField(value: &_storage._igpFirstUnreadMessage)
+        case 15: try decoder.decodeSingularEnumField(value: &_storage._igpRoomMute)
+        case 16: try decoder.decodeSingularInt64Field(value: &_storage._igpPinID)
         default: break
         }
       }
@@ -1760,6 +1809,12 @@ public struct IGPRoom: SwiftProtobuf.Message {
       }
       if let v = _storage._igpFirstUnreadMessage {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 14)
+      }
+      if _storage._igpRoomMute != .unmute {
+        try visitor.visitSingularEnumField(value: _storage._igpRoomMute, fieldNumber: 15)
+      }
+      if _storage._igpPinID != 0 {
+        try visitor.visitSingularInt64Field(value: _storage._igpPinID, fieldNumber: 16)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -2391,6 +2446,10 @@ public struct IGPThumbnail: SwiftProtobuf.Message {
 
   public var igpCacheID: String = String()
 
+  public var igpName: String = String()
+
+  public var igpMime: String = String()
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -2406,6 +2465,8 @@ public struct IGPThumbnail: SwiftProtobuf.Message {
       case 2: try decoder.decodeSingularInt32Field(value: &self.igpWidth)
       case 3: try decoder.decodeSingularInt32Field(value: &self.igpHeight)
       case 4: try decoder.decodeSingularStringField(value: &self.igpCacheID)
+      case 5: try decoder.decodeSingularStringField(value: &self.igpName)
+      case 6: try decoder.decodeSingularStringField(value: &self.igpMime)
       default: break
       }
     }
@@ -2427,6 +2488,12 @@ public struct IGPThumbnail: SwiftProtobuf.Message {
     }
     if !self.igpCacheID.isEmpty {
       try visitor.visitSingularStringField(value: self.igpCacheID, fieldNumber: 4)
+    }
+    if !self.igpName.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpName, fieldNumber: 5)
+    }
+    if !self.igpMime.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpMime, fieldNumber: 6)
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2497,6 +2564,11 @@ public struct IGPFile: SwiftProtobuf.Message {
     set {_uniqueStorage()._igpCacheID = newValue}
   }
 
+  public var igpMime: String {
+    get {return _storage._igpMime}
+    set {_uniqueStorage()._igpMime = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -2520,6 +2592,7 @@ public struct IGPFile: SwiftProtobuf.Message {
         case 8: try decoder.decodeSingularInt32Field(value: &_storage._igpHeight)
         case 9: try decoder.decodeSingularDoubleField(value: &_storage._igpDuration)
         case 10: try decoder.decodeSingularStringField(value: &_storage._igpCacheID)
+        case 11: try decoder.decodeSingularStringField(value: &_storage._igpMime)
         default: break
         }
       }
@@ -2561,6 +2634,9 @@ public struct IGPFile: SwiftProtobuf.Message {
       }
       if !_storage._igpCacheID.isEmpty {
         try visitor.visitSingularStringField(value: _storage._igpCacheID, fieldNumber: 10)
+      }
+      if !_storage._igpMime.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpMime, fieldNumber: 11)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -2762,6 +2838,13 @@ extension IGPClientAction: SwiftProtobuf._ProtoNameProviding {
   ]
 }
 
+extension IGPRoomMute: SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "UNMUTE"),
+    1: .same(proto: "MUTE"),
+  ]
+}
+
 extension IGPPrivacyType: SwiftProtobuf._ProtoNameProviding {
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     0: .same(proto: "USER_STATUS"),
@@ -2933,6 +3016,7 @@ extension IGPRegisteredUser: SwiftProtobuf._MessageImplementationBase, SwiftProt
     13: .standard(proto: "IGP_mutual"),
     14: .standard(proto: "IGP_deleted"),
     15: .standard(proto: "IGP_cache_id"),
+    16: .standard(proto: "IGP_bio"),
   ]
 
   fileprivate class _StorageClass {
@@ -2951,6 +3035,7 @@ extension IGPRegisteredUser: SwiftProtobuf._MessageImplementationBase, SwiftProt
     var _igpMutual: Bool = false
     var _igpDeleted: Bool = false
     var _igpCacheID: String = String()
+    var _igpBio: String = String()
 
     static let defaultInstance = _StorageClass()
 
@@ -2972,6 +3057,7 @@ extension IGPRegisteredUser: SwiftProtobuf._MessageImplementationBase, SwiftProt
       _igpMutual = source._igpMutual
       _igpDeleted = source._igpDeleted
       _igpCacheID = source._igpCacheID
+      _igpBio = source._igpBio
     }
   }
 
@@ -3002,6 +3088,7 @@ extension IGPRegisteredUser: SwiftProtobuf._MessageImplementationBase, SwiftProt
         if _storage._igpMutual != other_storage._igpMutual {return false}
         if _storage._igpDeleted != other_storage._igpDeleted {return false}
         if _storage._igpCacheID != other_storage._igpCacheID {return false}
+        if _storage._igpBio != other_storage._igpBio {return false}
         return true
       }
       if !storagesAreEqual {return false}
@@ -3307,6 +3394,8 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     9: .standard(proto: "IGP_is_participant"),
     10: .standard(proto: "IGP_draft"),
     14: .standard(proto: "IGP_first_unread_message"),
+    15: .standard(proto: "IGP_room_mute"),
+    16: .standard(proto: "IGP_pin_id"),
     11: .standard(proto: "IGP_chat_room_extra"),
     12: .standard(proto: "IGP_group_room_extra"),
     13: .standard(proto: "IGP_channel_room_extra"),
@@ -3324,6 +3413,8 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     var _igpIsParticipant: Bool = false
     var _igpDraft: IGPRoomDraft? = nil
     var _igpFirstUnreadMessage: IGPRoomMessage? = nil
+    var _igpRoomMute: IGPRoomMute = .unmute
+    var _igpPinID: Int64 = 0
     var _igpChatRoomExtra: IGPChatRoom? = nil
     var _igpGroupRoomExtra: IGPGroupRoom? = nil
     var _igpChannelRoomExtra: IGPChannelRoom? = nil
@@ -3344,6 +3435,8 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
       _igpIsParticipant = source._igpIsParticipant
       _igpDraft = source._igpDraft
       _igpFirstUnreadMessage = source._igpFirstUnreadMessage
+      _igpRoomMute = source._igpRoomMute
+      _igpPinID = source._igpPinID
       _igpChatRoomExtra = source._igpChatRoomExtra
       _igpGroupRoomExtra = source._igpGroupRoomExtra
       _igpChannelRoomExtra = source._igpChannelRoomExtra
@@ -3373,6 +3466,8 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
         if _storage._igpIsParticipant != other_storage._igpIsParticipant {return false}
         if _storage._igpDraft != other_storage._igpDraft {return false}
         if _storage._igpFirstUnreadMessage != other_storage._igpFirstUnreadMessage {return false}
+        if _storage._igpRoomMute != other_storage._igpRoomMute {return false}
+        if _storage._igpPinID != other_storage._igpPinID {return false}
         if _storage._igpChatRoomExtra != other_storage._igpChatRoomExtra {return false}
         if _storage._igpGroupRoomExtra != other_storage._igpGroupRoomExtra {return false}
         if _storage._igpChannelRoomExtra != other_storage._igpChannelRoomExtra {return false}
@@ -3680,6 +3775,8 @@ extension IGPThumbnail: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf.
     2: .standard(proto: "IGP_width"),
     3: .standard(proto: "IGP_height"),
     4: .standard(proto: "IGP_cache_id"),
+    5: .standard(proto: "IGP_name"),
+    6: .standard(proto: "IGP_mime"),
   ]
 
   public func _protobuf_generated_isEqualTo(other: IGPThumbnail) -> Bool {
@@ -3687,6 +3784,8 @@ extension IGPThumbnail: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf.
     if self.igpWidth != other.igpWidth {return false}
     if self.igpHeight != other.igpHeight {return false}
     if self.igpCacheID != other.igpCacheID {return false}
+    if self.igpName != other.igpName {return false}
+    if self.igpMime != other.igpMime {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }
@@ -3704,6 +3803,7 @@ extension IGPFile: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     8: .standard(proto: "IGP_height"),
     9: .standard(proto: "IGP_duration"),
     10: .standard(proto: "IGP_cache_id"),
+    11: .standard(proto: "IGP_mime"),
   ]
 
   fileprivate class _StorageClass {
@@ -3717,6 +3817,7 @@ extension IGPFile: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     var _igpHeight: Int32 = 0
     var _igpDuration: Double = 0
     var _igpCacheID: String = String()
+    var _igpMime: String = String()
 
     static let defaultInstance = _StorageClass()
 
@@ -3733,6 +3834,7 @@ extension IGPFile: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
       _igpHeight = source._igpHeight
       _igpDuration = source._igpDuration
       _igpCacheID = source._igpCacheID
+      _igpMime = source._igpMime
     }
   }
 
@@ -3758,6 +3860,7 @@ extension IGPFile: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
         if _storage._igpHeight != other_storage._igpHeight {return false}
         if _storage._igpDuration != other_storage._igpDuration {return false}
         if _storage._igpCacheID != other_storage._igpCacheID {return false}
+        if _storage._igpMime != other_storage._igpMime {return false}
         return true
       }
       if !storagesAreEqual {return false}
