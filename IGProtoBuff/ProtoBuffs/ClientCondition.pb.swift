@@ -49,7 +49,8 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
 
     public var igpDeleteVersion: Int64 = 0
 
-    public var igpOfflineDeleted: [Int64] = []
+    ///DEPRECATED
+    public var igpOfflineDeletedDeprecated: [Int64] = []
 
     public var igpOfflineEdited: [IGPClientCondition.IGPRoom.IGPOfflineEdited] = []
 
@@ -64,6 +65,8 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
     public var igpOfflineMute: IGPClientCondition.IGPRoom.IGPOfflineMute = .unchanged
 
     public var igpOfflineListened: [Int64] = []
+
+    public var igpOfflineDeleted: [IGPClientCondition.IGPRoom.IGPOfflineDeleted] = []
 
     public var unknownFields = SwiftProtobuf.UnknownStorage()
 
@@ -138,6 +141,46 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
       }
     }
 
+    public struct IGPOfflineDeleted: SwiftProtobuf.Message {
+      public static let protoMessageName: String = IGPClientCondition.IGPRoom.protoMessageName + ".IGPOfflineDeleted"
+
+      public var igpMessageID: Int64 = 0
+
+      public var igpBoth: Bool = false
+
+      public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+      public init() {}
+
+      /// Used by the decoding initializers in the SwiftProtobuf library, not generally
+      /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
+      /// initializers are defined in the SwiftProtobuf library. See the Message and
+      /// Message+*Additions` files.
+      public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+        while let fieldNumber = try decoder.nextFieldNumber() {
+          switch fieldNumber {
+          case 1: try decoder.decodeSingularInt64Field(value: &self.igpMessageID)
+          case 4: try decoder.decodeSingularBoolField(value: &self.igpBoth)
+          default: break
+          }
+        }
+      }
+
+      /// Used by the encoding methods of the SwiftProtobuf library, not generally
+      /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
+      /// other serializer methods are defined in the SwiftProtobuf library. See the
+      /// `Message` and `Message+*Additions` files.
+      public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+        if self.igpMessageID != 0 {
+          try visitor.visitSingularInt64Field(value: self.igpMessageID, fieldNumber: 1)
+        }
+        if self.igpBoth != false {
+          try visitor.visitSingularBoolField(value: self.igpBoth, fieldNumber: 4)
+        }
+        try unknownFields.traverse(visitor: &visitor)
+      }
+    }
+
     public init() {}
 
     /// Used by the decoding initializers in the SwiftProtobuf library, not generally
@@ -151,7 +194,7 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
         case 3: try decoder.decodeSingularInt64Field(value: &self.igpMessageVersion)
         case 4: try decoder.decodeSingularInt64Field(value: &self.igpStatusVersion)
         case 5: try decoder.decodeSingularInt64Field(value: &self.igpDeleteVersion)
-        case 6: try decoder.decodeRepeatedInt64Field(value: &self.igpOfflineDeleted)
+        case 6: try decoder.decodeRepeatedInt64Field(value: &self.igpOfflineDeletedDeprecated)
         case 7: try decoder.decodeRepeatedMessageField(value: &self.igpOfflineEdited)
         case 8: try decoder.decodeRepeatedInt64Field(value: &self.igpOfflineSeen)
         case 9: try decoder.decodeSingularInt64Field(value: &self.igpClearID)
@@ -159,6 +202,7 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
         case 11: try decoder.decodeSingularInt64Field(value: &self.igpCacheEndID)
         case 12: try decoder.decodeSingularEnumField(value: &self.igpOfflineMute)
         case 13: try decoder.decodeRepeatedInt64Field(value: &self.igpOfflineListened)
+        case 14: try decoder.decodeRepeatedMessageField(value: &self.igpOfflineDeleted)
         default: break
         }
       }
@@ -181,8 +225,8 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
       if self.igpDeleteVersion != 0 {
         try visitor.visitSingularInt64Field(value: self.igpDeleteVersion, fieldNumber: 5)
       }
-      if !self.igpOfflineDeleted.isEmpty {
-        try visitor.visitPackedInt64Field(value: self.igpOfflineDeleted, fieldNumber: 6)
+      if !self.igpOfflineDeletedDeprecated.isEmpty {
+        try visitor.visitPackedInt64Field(value: self.igpOfflineDeletedDeprecated, fieldNumber: 6)
       }
       if !self.igpOfflineEdited.isEmpty {
         try visitor.visitRepeatedMessageField(value: self.igpOfflineEdited, fieldNumber: 7)
@@ -204,6 +248,9 @@ public struct IGPClientCondition: SwiftProtobuf.RequestMessage {
       }
       if !self.igpOfflineListened.isEmpty {
         try visitor.visitPackedInt64Field(value: self.igpOfflineListened, fieldNumber: 13)
+      }
+      if !self.igpOfflineDeleted.isEmpty {
+        try visitor.visitRepeatedMessageField(value: self.igpOfflineDeleted, fieldNumber: 14)
       }
       try unknownFields.traverse(visitor: &visitor)
     }
@@ -346,7 +393,7 @@ extension IGPClientCondition.IGPRoom: SwiftProtobuf._MessageImplementationBase, 
     3: .standard(proto: "IGP_message_version"),
     4: .standard(proto: "IGP_status_version"),
     5: .standard(proto: "IGP_delete_version"),
-    6: .standard(proto: "IGP_offline_deleted"),
+    6: .standard(proto: "IGP_offline_deleted_deprecated"),
     7: .standard(proto: "IGP_offline_edited"),
     8: .standard(proto: "IGP_offline_seen"),
     9: .standard(proto: "IGP_clear_id"),
@@ -354,6 +401,7 @@ extension IGPClientCondition.IGPRoom: SwiftProtobuf._MessageImplementationBase, 
     11: .standard(proto: "IGP_cache_end_id"),
     12: .standard(proto: "IGP_offline_mute"),
     13: .standard(proto: "IGP_offline_listened"),
+    14: .standard(proto: "IGP_offline_deleted"),
   ]
 
   public func _protobuf_generated_isEqualTo(other: IGPClientCondition.IGPRoom) -> Bool {
@@ -361,7 +409,7 @@ extension IGPClientCondition.IGPRoom: SwiftProtobuf._MessageImplementationBase, 
     if self.igpMessageVersion != other.igpMessageVersion {return false}
     if self.igpStatusVersion != other.igpStatusVersion {return false}
     if self.igpDeleteVersion != other.igpDeleteVersion {return false}
-    if self.igpOfflineDeleted != other.igpOfflineDeleted {return false}
+    if self.igpOfflineDeletedDeprecated != other.igpOfflineDeletedDeprecated {return false}
     if self.igpOfflineEdited != other.igpOfflineEdited {return false}
     if self.igpOfflineSeen != other.igpOfflineSeen {return false}
     if self.igpClearID != other.igpClearID {return false}
@@ -369,6 +417,7 @@ extension IGPClientCondition.IGPRoom: SwiftProtobuf._MessageImplementationBase, 
     if self.igpCacheEndID != other.igpCacheEndID {return false}
     if self.igpOfflineMute != other.igpOfflineMute {return false}
     if self.igpOfflineListened != other.igpOfflineListened {return false}
+    if self.igpOfflineDeleted != other.igpOfflineDeleted {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }
@@ -391,6 +440,20 @@ extension IGPClientCondition.IGPRoom.IGPOfflineEdited: SwiftProtobuf._MessageImp
   public func _protobuf_generated_isEqualTo(other: IGPClientCondition.IGPRoom.IGPOfflineEdited) -> Bool {
     if self.igpMessageID != other.igpMessageID {return false}
     if self.igpMessage != other.igpMessage {return false}
+    if unknownFields != other.unknownFields {return false}
+    return true
+  }
+}
+
+extension IGPClientCondition.IGPRoom.IGPOfflineDeleted: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .standard(proto: "IGP_message_id"),
+    4: .standard(proto: "IGP_both"),
+  ]
+
+  public func _protobuf_generated_isEqualTo(other: IGPClientCondition.IGPRoom.IGPOfflineDeleted) -> Bool {
+    if self.igpMessageID != other.igpMessageID {return false}
+    if self.igpBoth != other.igpBoth {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }

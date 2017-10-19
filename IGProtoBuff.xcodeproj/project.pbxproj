@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		FA76382E1E2FFD5E00C24391 /* IGProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAA1BDB21F98EDF90010FE8A /* ClientMuteRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */; };
+		FAA1BDB81F98EE230010FE8A /* ClientPinRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */; };
+		FAA1BDB91F98EE230010FE8A /* UserProfileSetBio.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB41F98EE220010FE8A /* UserProfileSetBio.pb.swift */; };
+		FAA1BDBA1F98EE230010FE8A /* ClientRoomReport.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB51F98EE220010FE8A /* ClientRoomReport.pb.swift */; };
+		FAA1BDBB1F98EE230010FE8A /* UserProfileGetBio.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB61F98EE230010FE8A /* UserProfileGetBio.pb.swift */; };
+		FAA1BDBC1F98EE230010FE8A /* UserReport.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB71F98EE230010FE8A /* UserReport.pb.swift */; };
 		FAF5D23D1F8D66DB00A26EE1 /* SwiftProtobuf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF5D23C1F8D66CE00A26EE1 /* SwiftProtobuf.framework */; };
 		FAF5D23F1F8D6AF100A26EE1 /* ChannelAddAdmin.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D1FE1F8D665300A26EE1 /* ChannelAddAdmin.pb.swift */; };
 		FAF5D2401F8D6C2000A26EE1 /* ChannelAddMember.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5D2071F8D665600A26EE1 /* ChannelAddMember.pb.swift */; };
@@ -182,6 +188,12 @@
 		FA7638291E2FFD5E00C24391 /* IGProtoBuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGProtoBuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGProtoBuff.h; sourceTree = "<group>"; };
 		FA76382D1E2FFD5E00C24391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientMuteRoom.pb.swift; sourceTree = "<group>"; };
+		FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientPinRoom.pb.swift; sourceTree = "<group>"; };
+		FAA1BDB41F98EE220010FE8A /* UserProfileSetBio.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetBio.pb.swift; sourceTree = "<group>"; };
+		FAA1BDB51F98EE220010FE8A /* ClientRoomReport.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRoomReport.pb.swift; sourceTree = "<group>"; };
+		FAA1BDB61F98EE230010FE8A /* UserProfileGetBio.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileGetBio.pb.swift; sourceTree = "<group>"; };
+		FAA1BDB71F98EE230010FE8A /* UserReport.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReport.pb.swift; sourceTree = "<group>"; };
 		FAF5D1951F8D663800A26EE1 /* QrCodeAddContact.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrCodeAddContact.pb.swift; sourceTree = "<group>"; };
 		FAF5D1961F8D663800A26EE1 /* GroupAddAdmin.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddAdmin.pb.swift; sourceTree = "<group>"; };
 		FAF5D1971F8D663800A26EE1 /* GroupAddModerator.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupAddModerator.pb.swift; sourceTree = "<group>"; };
@@ -367,6 +379,12 @@
 		FA5A9FF11F71ECEF00D925F5 /* ProtoBuffs */ = {
 			isa = PBXGroup;
 			children = (
+				FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */,
+				FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */,
+				FAA1BDB51F98EE220010FE8A /* ClientRoomReport.pb.swift */,
+				FAA1BDB61F98EE230010FE8A /* UserProfileGetBio.pb.swift */,
+				FAA1BDB41F98EE220010FE8A /* UserProfileSetBio.pb.swift */,
+				FAA1BDB71F98EE230010FE8A /* UserReport.pb.swift */,
 				FAF5D1FE1F8D665300A26EE1 /* ChannelAddAdmin.pb.swift */,
 				FAF5D2071F8D665600A26EE1 /* ChannelAddMember.pb.swift */,
 				FAF5D21A1F8D665C00A26EE1 /* ChannelAddMessageReaction.pb.swift */,
@@ -707,6 +725,7 @@
 				FAF5D25B1F8D6C2000A26EE1 /* ChatConvertToGroup.pb.swift in Sources */,
 				FAF5D2B81F8D6C2000A26EE1 /* UserAvatarDelete.pb.swift in Sources */,
 				FAF5D2851F8D6C2000A26EE1 /* GroupAddMember.pb.swift in Sources */,
+				FAA1BDBA1F98EE230010FE8A /* ClientRoomReport.pb.swift in Sources */,
 				FAF5D2CF1F8D6C2000A26EE1 /* UserProfileSetSelfRemove.pb.swift in Sources */,
 				FAF5D2D71F8D6C2000A26EE1 /* UserTwoStepVerificationChangeRecoveryQuestion.pb.swift in Sources */,
 				FAF5D28B1F8D6C2000A26EE1 /* GroupClearMessage.pb.swift in Sources */,
@@ -761,8 +780,10 @@
 				FAF5D2AC1F8D6C2000A26EE1 /* QrCodeResolve.pb.swift in Sources */,
 				FAF5D2CD1F8D6C2000A26EE1 /* UserProfileSetGender.pb.swift in Sources */,
 				FAF5D2951F8D6C2000A26EE1 /* GroupKickModerator.pb.swift in Sources */,
+				FAA1BDB81F98EE230010FE8A /* ClientPinRoom.pb.swift in Sources */,
 				FAF5D26B1F8D6C2000A26EE1 /* ClientGetRoomMessage.pb.swift in Sources */,
 				FAF5D29D1F8D6C2000A26EE1 /* GroupUpdateUsername.pb.swift in Sources */,
+				FAA1BDB91F98EE230010FE8A /* UserProfileSetBio.pb.swift in Sources */,
 				FAF5D2D21F8D6C2000A26EE1 /* UserSessionGetActiveList.pb.swift in Sources */,
 				FAF5D2641F8D6C2000A26EE1 /* ChatUpdateStatus.pb.swift in Sources */,
 				FAF5D2A51F8D6C2000A26EE1 /* PushRateSignaling.pb.swift in Sources */,
@@ -770,6 +791,7 @@
 				FAF5D2B31F8D6C2000A26EE1 /* SignalingOffer.pb.swift in Sources */,
 				FAF5D2681F8D6C2000A26EE1 /* ClientGetRoom.pb.swift in Sources */,
 				FAF5D2C31F8D6C2000A26EE1 /* UserInfo.pb.swift in Sources */,
+				FAA1BDBC1F98EE230010FE8A /* UserReport.pb.swift in Sources */,
 				FAF5D26C1F8D6C2000A26EE1 /* ClientJoinByInviteLink.pb.swift in Sources */,
 				FAF5D2B01F8D6C2000A26EE1 /* SignalingGetConfiguration.pb.swift in Sources */,
 				FAF5D2C81F8D6C2000A26EE1 /* UserProfileGetEmail.pb.swift in Sources */,
@@ -790,6 +812,7 @@
 				FAF5D2771F8D6C2000A26EE1 /* FileUpload.pb.swift in Sources */,
 				FAF5D2C71F8D6C2000A26EE1 /* UserProfileCheckUsername.pb.swift in Sources */,
 				FAF5D2871F8D6C2000A26EE1 /* GroupAvatarAdd.pb.swift in Sources */,
+				FAA1BDB21F98EDF90010FE8A /* ClientMuteRoom.pb.swift in Sources */,
 				FAF5D2A41F8D6C2000A26EE1 /* PushLoginToken.pb.swift in Sources */,
 				FAF5D25A1F8D6C2000A26EE1 /* ChatClearMessage.pb.swift in Sources */,
 				FAF5D2811F8D6C2000A26EE1 /* GeoUpdateComment.pb.swift in Sources */,
@@ -800,6 +823,7 @@
 				FAF5D29B1F8D6C2000A26EE1 /* GroupUpdateDraft.pb.swift in Sources */,
 				FAF5D2CE1F8D6C2000A26EE1 /* UserProfileSetNickname.pb.swift in Sources */,
 				FAF5D28D1F8D6C2000A26EE1 /* GroupDelete.pb.swift in Sources */,
+				FAA1BDBB1F98EE230010FE8A /* UserProfileGetBio.pb.swift in Sources */,
 				FAF5D2461F8D6C2000A26EE1 /* ChannelCheckUsername.pb.swift in Sources */,
 				FAF5D2BB1F8D6C2000A26EE1 /* UserContactsDelete.pb.swift in Sources */,
 				FAF5D2981F8D6C2000A26EE1 /* GroupRevokeLink.pb.swift in Sources */,

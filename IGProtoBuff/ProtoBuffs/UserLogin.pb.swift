@@ -184,6 +184,11 @@ public struct IGPUserLoginResponse: SwiftProtobuf.ResponseMessage {
     set {_uniqueStorage()._igpUpdateAvailable = newValue}
   }
 
+  public var igpChatDeleteMessageForBothPeriod: Int32 {
+    get {return _storage._igpChatDeleteMessageForBothPeriod}
+    set {_uniqueStorage()._igpChatDeleteMessageForBothPeriod = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -201,6 +206,7 @@ public struct IGPUserLoginResponse: SwiftProtobuf.ResponseMessage {
         case 2: try decoder.decodeSingularBoolField(value: &_storage._igpDeprecatedClient)
         case 3: try decoder.decodeSingularStringField(value: &_storage._igpSecondaryNodeName)
         case 4: try decoder.decodeSingularBoolField(value: &_storage._igpUpdateAvailable)
+        case 5: try decoder.decodeSingularInt32Field(value: &_storage._igpChatDeleteMessageForBothPeriod)
         default: break
         }
       }
@@ -224,6 +230,9 @@ public struct IGPUserLoginResponse: SwiftProtobuf.ResponseMessage {
       }
       if _storage._igpUpdateAvailable != false {
         try visitor.visitSingularBoolField(value: _storage._igpUpdateAvailable, fieldNumber: 4)
+      }
+      if _storage._igpChatDeleteMessageForBothPeriod != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpChatDeleteMessageForBothPeriod, fieldNumber: 5)
       }
     }
     try unknownFields.traverse(visitor: &visitor)
@@ -319,6 +328,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     2: .standard(proto: "IGP_deprecated_client"),
     3: .standard(proto: "IGP_secondary_node_name"),
     4: .standard(proto: "IGP_update_available"),
+    5: .standard(proto: "IGP_chat_delete_message_for_both_period"),
   ]
 
   fileprivate class _StorageClass {
@@ -326,6 +336,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     var _igpDeprecatedClient: Bool = false
     var _igpSecondaryNodeName: String = String()
     var _igpUpdateAvailable: Bool = false
+    var _igpChatDeleteMessageForBothPeriod: Int32 = 0
 
     static let defaultInstance = _StorageClass()
 
@@ -336,6 +347,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
       _igpDeprecatedClient = source._igpDeprecatedClient
       _igpSecondaryNodeName = source._igpSecondaryNodeName
       _igpUpdateAvailable = source._igpUpdateAvailable
+      _igpChatDeleteMessageForBothPeriod = source._igpChatDeleteMessageForBothPeriod
     }
   }
 
@@ -355,6 +367,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
         if _storage._igpDeprecatedClient != other_storage._igpDeprecatedClient {return false}
         if _storage._igpSecondaryNodeName != other_storage._igpSecondaryNodeName {return false}
         if _storage._igpUpdateAvailable != other_storage._igpUpdateAvailable {return false}
+        if _storage._igpChatDeleteMessageForBothPeriod != other_storage._igpChatDeleteMessageForBothPeriod {return false}
         return true
       }
       if !storagesAreEqual {return false}
