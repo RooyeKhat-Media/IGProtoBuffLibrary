@@ -20,7 +20,9 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
 }
 
 public struct IGPUserVerify: SwiftProtobuf.RequestMessage {
-  public static let protoMessageName: String = "IGPUserVerify"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpRequest: IGPRequest {
     get {return _storage._igpRequest ?? IGPRequest()}
@@ -45,48 +47,13 @@ public struct IGPUserVerify: SwiftProtobuf.RequestMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
-        case 2: try decoder.decodeSingularInt32Field(value: &_storage._igpCode)
-        case 3: try decoder.decodeSingularStringField(value: &_storage._igpUsername)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpRequest {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if _storage._igpCode != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpCode, fieldNumber: 2)
-      }
-      if !_storage._igpUsername.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._igpUsername, fieldNumber: 3)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 public struct IGPUserVerifyResponse: SwiftProtobuf.ResponseMessage {
-  public static let protoMessageName: String = "IGPUserVerifyResponse"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpResponse: IGPResponse {
     get {return _storage._igpResponse ?? IGPResponse()}
@@ -111,49 +78,13 @@ public struct IGPUserVerifyResponse: SwiftProtobuf.ResponseMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
-        case 2: try decoder.decodeSingularStringField(value: &_storage._igpToken)
-        case 3: try decoder.decodeSingularBoolField(value: &_storage._igpNewUser)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpResponse {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if !_storage._igpToken.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._igpToken, fieldNumber: 2)
-      }
-      if _storage._igpNewUser != false {
-        try visitor.visitSingularBoolField(value: _storage._igpNewUser, fieldNumber: 3)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension IGPUserVerify: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPUserVerify"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_request"),
     2: .standard(proto: "IGP_code"),
@@ -183,6 +114,35 @@ extension IGPUserVerify: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf
     return _storage
   }
 
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
+        case 2: try decoder.decodeSingularInt32Field(value: &_storage._igpCode)
+        case 3: try decoder.decodeSingularStringField(value: &_storage._igpUsername)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpRequest {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if _storage._igpCode != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpCode, fieldNumber: 2)
+      }
+      if !_storage._igpUsername.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpUsername, fieldNumber: 3)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
   public func _protobuf_generated_isEqualTo(other: IGPUserVerify) -> Bool {
     if _storage !== other._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
@@ -201,6 +161,7 @@ extension IGPUserVerify: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf
 }
 
 extension IGPUserVerifyResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPUserVerifyResponse"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_response"),
     2: .standard(proto: "IGP_token"),
@@ -228,6 +189,35 @@ extension IGPUserVerifyResponse: SwiftProtobuf._MessageImplementationBase, Swift
       _storage = _StorageClass(copying: _storage)
     }
     return _storage
+  }
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
+        case 2: try decoder.decodeSingularStringField(value: &_storage._igpToken)
+        case 3: try decoder.decodeSingularBoolField(value: &_storage._igpNewUser)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpResponse {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if !_storage._igpToken.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpToken, fieldNumber: 2)
+      }
+      if _storage._igpNewUser != false {
+        try visitor.visitSingularBoolField(value: _storage._igpNewUser, fieldNumber: 3)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
   }
 
   public func _protobuf_generated_isEqualTo(other: IGPUserVerifyResponse) -> Bool {

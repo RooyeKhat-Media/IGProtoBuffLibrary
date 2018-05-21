@@ -20,7 +20,9 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
 }
 
 public struct IGPConnectionSecuringResponse: SwiftProtobuf.ResponseMessage {
-  public static let protoMessageName: String = "IGPConnectionSecuringResponse"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpResponse: IGPResponse {
     get {return _storage._igpResponse ?? IGPResponse()}
@@ -60,60 +62,13 @@ public struct IGPConnectionSecuringResponse: SwiftProtobuf.ResponseMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
-        case 2: try decoder.decodeSingularStringField(value: &_storage._igpPublicKey)
-        case 3: try decoder.decodeSingularInt32Field(value: &_storage._igpSymmetricKeyLength)
-        case 4: try decoder.decodeSingularInt32Field(value: &_storage._igpHeartbeatInterval)
-        case 5: try decoder.decodeSingularStringField(value: &_storage._igpPrimaryNodeName)
-        case 6: try decoder.decodeSingularInt32Field(value: &_storage._igpSecondaryChunkSize)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpResponse {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if !_storage._igpPublicKey.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._igpPublicKey, fieldNumber: 2)
-      }
-      if _storage._igpSymmetricKeyLength != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpSymmetricKeyLength, fieldNumber: 3)
-      }
-      if _storage._igpHeartbeatInterval != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpHeartbeatInterval, fieldNumber: 4)
-      }
-      if !_storage._igpPrimaryNodeName.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._igpPrimaryNodeName, fieldNumber: 5)
-      }
-      if _storage._igpSecondaryChunkSize != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpSecondaryChunkSize, fieldNumber: 6)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 public struct IGPConnectionSymmetricKey: SwiftProtobuf.RequestMessage {
-  public static let protoMessageName: String = "IGPConnectionSymmetricKey"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpRequest: IGPRequest {
     get {return _storage._igpRequest ?? IGPRequest()}
@@ -138,48 +93,13 @@ public struct IGPConnectionSymmetricKey: SwiftProtobuf.RequestMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
-        case 2: try decoder.decodeSingularBytesField(value: &_storage._igpSymmetricKey)
-        case 3: try decoder.decodeSingularInt32Field(value: &_storage._igpVersion)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpRequest {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if !_storage._igpSymmetricKey.isEmpty {
-        try visitor.visitSingularBytesField(value: _storage._igpSymmetricKey, fieldNumber: 2)
-      }
-      if _storage._igpVersion != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpVersion, fieldNumber: 3)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 public struct IGPConnectionSymmetricKeyResponse: SwiftProtobuf.ResponseMessage {
-  public static let protoMessageName: String = "IGPConnectionSymmetricKeyResponse"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpResponse: IGPResponse {
     get {return _storage._igpResponse ?? IGPResponse()}
@@ -242,57 +162,13 @@ public struct IGPConnectionSymmetricKeyResponse: SwiftProtobuf.ResponseMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
-        case 2: try decoder.decodeSingularEnumField(value: &_storage._igpStatus)
-        case 3: try decoder.decodeSingularStringField(value: &_storage._igpSymmetricMethod)
-        case 4: try decoder.decodeSingularInt32Field(value: &_storage._igpSymmetricIvSize)
-        case 5: try decoder.decodeSingularBoolField(value: &_storage._igpSecurityIssue)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpResponse {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if _storage._igpStatus != .rejected {
-        try visitor.visitSingularEnumField(value: _storage._igpStatus, fieldNumber: 2)
-      }
-      if !_storage._igpSymmetricMethod.isEmpty {
-        try visitor.visitSingularStringField(value: _storage._igpSymmetricMethod, fieldNumber: 3)
-      }
-      if _storage._igpSymmetricIvSize != 0 {
-        try visitor.visitSingularInt32Field(value: _storage._igpSymmetricIvSize, fieldNumber: 4)
-      }
-      if _storage._igpSecurityIssue != false {
-        try visitor.visitSingularBoolField(value: _storage._igpSecurityIssue, fieldNumber: 5)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension IGPConnectionSecuringResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPConnectionSecuringResponse"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_response"),
     2: .standard(proto: "IGP_public_key"),
@@ -331,6 +207,47 @@ extension IGPConnectionSecuringResponse: SwiftProtobuf._MessageImplementationBas
     return _storage
   }
 
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
+        case 2: try decoder.decodeSingularStringField(value: &_storage._igpPublicKey)
+        case 3: try decoder.decodeSingularInt32Field(value: &_storage._igpSymmetricKeyLength)
+        case 4: try decoder.decodeSingularInt32Field(value: &_storage._igpHeartbeatInterval)
+        case 5: try decoder.decodeSingularStringField(value: &_storage._igpPrimaryNodeName)
+        case 6: try decoder.decodeSingularInt32Field(value: &_storage._igpSecondaryChunkSize)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpResponse {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if !_storage._igpPublicKey.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpPublicKey, fieldNumber: 2)
+      }
+      if _storage._igpSymmetricKeyLength != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpSymmetricKeyLength, fieldNumber: 3)
+      }
+      if _storage._igpHeartbeatInterval != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpHeartbeatInterval, fieldNumber: 4)
+      }
+      if !_storage._igpPrimaryNodeName.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpPrimaryNodeName, fieldNumber: 5)
+      }
+      if _storage._igpSecondaryChunkSize != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpSecondaryChunkSize, fieldNumber: 6)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
   public func _protobuf_generated_isEqualTo(other: IGPConnectionSecuringResponse) -> Bool {
     if _storage !== other._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
@@ -352,6 +269,7 @@ extension IGPConnectionSecuringResponse: SwiftProtobuf._MessageImplementationBas
 }
 
 extension IGPConnectionSymmetricKey: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPConnectionSymmetricKey"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_request"),
     2: .standard(proto: "IGP_symmetric_key"),
@@ -381,6 +299,35 @@ extension IGPConnectionSymmetricKey: SwiftProtobuf._MessageImplementationBase, S
     return _storage
   }
 
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
+        case 2: try decoder.decodeSingularBytesField(value: &_storage._igpSymmetricKey)
+        case 3: try decoder.decodeSingularInt32Field(value: &_storage._igpVersion)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpRequest {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if !_storage._igpSymmetricKey.isEmpty {
+        try visitor.visitSingularBytesField(value: _storage._igpSymmetricKey, fieldNumber: 2)
+      }
+      if _storage._igpVersion != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpVersion, fieldNumber: 3)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
   public func _protobuf_generated_isEqualTo(other: IGPConnectionSymmetricKey) -> Bool {
     if _storage !== other._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
@@ -399,6 +346,7 @@ extension IGPConnectionSymmetricKey: SwiftProtobuf._MessageImplementationBase, S
 }
 
 extension IGPConnectionSymmetricKeyResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPConnectionSymmetricKeyResponse"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_response"),
     2: .standard(proto: "IGP_status"),
@@ -432,6 +380,43 @@ extension IGPConnectionSymmetricKeyResponse: SwiftProtobuf._MessageImplementatio
       _storage = _StorageClass(copying: _storage)
     }
     return _storage
+  }
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
+        case 2: try decoder.decodeSingularEnumField(value: &_storage._igpStatus)
+        case 3: try decoder.decodeSingularStringField(value: &_storage._igpSymmetricMethod)
+        case 4: try decoder.decodeSingularInt32Field(value: &_storage._igpSymmetricIvSize)
+        case 5: try decoder.decodeSingularBoolField(value: &_storage._igpSecurityIssue)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpResponse {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if _storage._igpStatus != .rejected {
+        try visitor.visitSingularEnumField(value: _storage._igpStatus, fieldNumber: 2)
+      }
+      if !_storage._igpSymmetricMethod.isEmpty {
+        try visitor.visitSingularStringField(value: _storage._igpSymmetricMethod, fieldNumber: 3)
+      }
+      if _storage._igpSymmetricIvSize != 0 {
+        try visitor.visitSingularInt32Field(value: _storage._igpSymmetricIvSize, fieldNumber: 4)
+      }
+      if _storage._igpSecurityIssue != false {
+        try visitor.visitSingularBoolField(value: _storage._igpSecurityIssue, fieldNumber: 5)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
   }
 
   public func _protobuf_generated_isEqualTo(other: IGPConnectionSymmetricKeyResponse) -> Bool {

@@ -20,7 +20,9 @@ fileprivate struct _GeneratedWithProtocGenSwiftVersion: SwiftProtobuf.ProtobufAP
 }
 
 public struct IGPSignalingGetConfiguration: SwiftProtobuf.RequestMessage {
-  public static let protoMessageName: String = "IGPSignalingGetConfiguration"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpRequest: IGPRequest {
     get {return _storage._igpRequest ?? IGPRequest()}
@@ -35,40 +37,13 @@ public struct IGPSignalingGetConfiguration: SwiftProtobuf.RequestMessage {
 
   public init() {}
 
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpRequest {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
-
   fileprivate var _storage = _StorageClass.defaultInstance
 }
 
 public struct IGPSignalingGetConfigurationResponse: SwiftProtobuf.ResponseMessage {
-  public static let protoMessageName: String = "IGPSignalingGetConfigurationResponse"
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
 
   public var igpResponse: IGPResponse {
     get {return _storage._igpResponse ?? IGPResponse()}
@@ -107,7 +82,9 @@ public struct IGPSignalingGetConfigurationResponse: SwiftProtobuf.ResponseMessag
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public struct IGPIceServer: SwiftProtobuf.Message {
-    public static let protoMessageName: String = IGPSignalingGetConfigurationResponse.protoMessageName + ".IGPIceServer"
+    // SwiftProtobuf.Message conformance is added in an extension below. See the
+    // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+    // methods supported on all messages.
 
     public var igpURL: String = String()
 
@@ -118,90 +95,9 @@ public struct IGPSignalingGetConfigurationResponse: SwiftProtobuf.ResponseMessag
     public var unknownFields = SwiftProtobuf.UnknownStorage()
 
     public init() {}
-
-    /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-    /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-    /// initializers are defined in the SwiftProtobuf library. See the Message and
-    /// Message+*Additions` files.
-    public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularStringField(value: &self.igpURL)
-        case 2: try decoder.decodeSingularStringField(value: &self.igpCredential)
-        case 3: try decoder.decodeSingularStringField(value: &self.igpUsername)
-        default: break
-        }
-      }
-    }
-
-    /// Used by the encoding methods of the SwiftProtobuf library, not generally
-    /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-    /// other serializer methods are defined in the SwiftProtobuf library. See the
-    /// `Message` and `Message+*Additions` files.
-    public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-      if !self.igpURL.isEmpty {
-        try visitor.visitSingularStringField(value: self.igpURL, fieldNumber: 1)
-      }
-      if !self.igpCredential.isEmpty {
-        try visitor.visitSingularStringField(value: self.igpCredential, fieldNumber: 2)
-      }
-      if !self.igpUsername.isEmpty {
-        try visitor.visitSingularStringField(value: self.igpUsername, fieldNumber: 3)
-      }
-      try unknownFields.traverse(visitor: &visitor)
-    }
   }
 
   public init() {}
-
-  /// Used by the decoding initializers in the SwiftProtobuf library, not generally
-  /// used directly. `init(serializedData:)`, `init(jsonUTF8Data:)`, and other decoding
-  /// initializers are defined in the SwiftProtobuf library. See the Message and
-  /// Message+*Additions` files.
-  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
-    _ = _uniqueStorage()
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      while let fieldNumber = try decoder.nextFieldNumber() {
-        switch fieldNumber {
-        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
-        case 2: try decoder.decodeRepeatedMessageField(value: &_storage._igpIceServer)
-        case 3: try decoder.decodeSingularBoolField(value: &_storage._igpVoiceCalling)
-        case 4: try decoder.decodeSingularBoolField(value: &_storage._igpVideoCalling)
-        case 5: try decoder.decodeSingularBoolField(value: &_storage._igpScreenSharing)
-        case 6: try decoder.decodeSingularBoolField(value: &_storage._igpSecretChat)
-        default: break
-        }
-      }
-    }
-  }
-
-  /// Used by the encoding methods of the SwiftProtobuf library, not generally
-  /// used directly. `Message.serializedData()`, `Message.jsonUTF8Data()`, and
-  /// other serializer methods are defined in the SwiftProtobuf library. See the
-  /// `Message` and `Message+*Additions` files.
-  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
-    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
-      if let v = _storage._igpResponse {
-        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
-      }
-      if !_storage._igpIceServer.isEmpty {
-        try visitor.visitRepeatedMessageField(value: _storage._igpIceServer, fieldNumber: 2)
-      }
-      if _storage._igpVoiceCalling != false {
-        try visitor.visitSingularBoolField(value: _storage._igpVoiceCalling, fieldNumber: 3)
-      }
-      if _storage._igpVideoCalling != false {
-        try visitor.visitSingularBoolField(value: _storage._igpVideoCalling, fieldNumber: 4)
-      }
-      if _storage._igpScreenSharing != false {
-        try visitor.visitSingularBoolField(value: _storage._igpScreenSharing, fieldNumber: 5)
-      }
-      if _storage._igpSecretChat != false {
-        try visitor.visitSingularBoolField(value: _storage._igpSecretChat, fieldNumber: 6)
-      }
-    }
-    try unknownFields.traverse(visitor: &visitor)
-  }
 
   fileprivate var _storage = _StorageClass.defaultInstance
 }
@@ -209,6 +105,7 @@ public struct IGPSignalingGetConfigurationResponse: SwiftProtobuf.ResponseMessag
 // MARK: - Code below here is support for the SwiftProtobuf runtime.
 
 extension IGPSignalingGetConfiguration: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPSignalingGetConfiguration"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_request"),
   ]
@@ -232,6 +129,27 @@ extension IGPSignalingGetConfiguration: SwiftProtobuf._MessageImplementationBase
     return _storage
   }
 
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpRequest {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
   public func _protobuf_generated_isEqualTo(other: IGPSignalingGetConfiguration) -> Bool {
     if _storage !== other._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
@@ -248,6 +166,7 @@ extension IGPSignalingGetConfiguration: SwiftProtobuf._MessageImplementationBase
 }
 
 extension IGPSignalingGetConfigurationResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPSignalingGetConfigurationResponse"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_response"),
     2: .standard(proto: "IGP_ice_server"),
@@ -286,6 +205,47 @@ extension IGPSignalingGetConfigurationResponse: SwiftProtobuf._MessageImplementa
     return _storage
   }
 
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularMessageField(value: &_storage._igpResponse)
+        case 2: try decoder.decodeRepeatedMessageField(value: &_storage._igpIceServer)
+        case 3: try decoder.decodeSingularBoolField(value: &_storage._igpVoiceCalling)
+        case 4: try decoder.decodeSingularBoolField(value: &_storage._igpVideoCalling)
+        case 5: try decoder.decodeSingularBoolField(value: &_storage._igpScreenSharing)
+        case 6: try decoder.decodeSingularBoolField(value: &_storage._igpSecretChat)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if let v = _storage._igpResponse {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 1)
+      }
+      if !_storage._igpIceServer.isEmpty {
+        try visitor.visitRepeatedMessageField(value: _storage._igpIceServer, fieldNumber: 2)
+      }
+      if _storage._igpVoiceCalling != false {
+        try visitor.visitSingularBoolField(value: _storage._igpVoiceCalling, fieldNumber: 3)
+      }
+      if _storage._igpVideoCalling != false {
+        try visitor.visitSingularBoolField(value: _storage._igpVideoCalling, fieldNumber: 4)
+      }
+      if _storage._igpScreenSharing != false {
+        try visitor.visitSingularBoolField(value: _storage._igpScreenSharing, fieldNumber: 5)
+      }
+      if _storage._igpSecretChat != false {
+        try visitor.visitSingularBoolField(value: _storage._igpSecretChat, fieldNumber: 6)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
   public func _protobuf_generated_isEqualTo(other: IGPSignalingGetConfigurationResponse) -> Bool {
     if _storage !== other._storage {
       let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
@@ -307,11 +267,36 @@ extension IGPSignalingGetConfigurationResponse: SwiftProtobuf._MessageImplementa
 }
 
 extension IGPSignalingGetConfigurationResponse.IGPIceServer: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = IGPSignalingGetConfigurationResponse.protoMessageName + ".IGPIceServer"
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_url"),
     2: .standard(proto: "IGP_credential"),
     3: .standard(proto: "IGP_username"),
   ]
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      switch fieldNumber {
+      case 1: try decoder.decodeSingularStringField(value: &self.igpURL)
+      case 2: try decoder.decodeSingularStringField(value: &self.igpCredential)
+      case 3: try decoder.decodeSingularStringField(value: &self.igpUsername)
+      default: break
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if !self.igpURL.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpURL, fieldNumber: 1)
+    }
+    if !self.igpCredential.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpCredential, fieldNumber: 2)
+    }
+    if !self.igpUsername.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpUsername, fieldNumber: 3)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
 
   public func _protobuf_generated_isEqualTo(other: IGPSignalingGetConfigurationResponse.IGPIceServer) -> Bool {
     if self.igpURL != other.igpURL {return false}
