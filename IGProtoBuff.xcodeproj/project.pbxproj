@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FA76382E1E2FFD5E00C24391 /* IGProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA90B73A20B59D9700043C89 /* ChannelUpdateReactionStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73720B59D9600043C89 /* ChannelUpdateReactionStatus.pb.swift */; };
+		FA90B73B20B59D9700043C89 /* GroupPinMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73820B59D9600043C89 /* GroupPinMessage.pb.swift */; };
+		FA90B73C20B59D9700043C89 /* ChannelPinMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73920B59D9700043C89 /* ChannelPinMessage.pb.swift */; };
 		FAA1BDB21F98EDF90010FE8A /* ClientMuteRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */; };
 		FAA1BDB81F98EE230010FE8A /* ClientPinRoom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */; };
 		FAA1BDB91F98EE230010FE8A /* UserProfileSetBio.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA1BDB41F98EE220010FE8A /* UserProfileSetBio.pb.swift */; };
@@ -188,6 +191,9 @@
 		FA7638291E2FFD5E00C24391 /* IGProtoBuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGProtoBuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGProtoBuff.h; sourceTree = "<group>"; };
 		FA76382D1E2FFD5E00C24391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA90B73720B59D9600043C89 /* ChannelUpdateReactionStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateReactionStatus.pb.swift; sourceTree = "<group>"; };
+		FA90B73820B59D9600043C89 /* GroupPinMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPinMessage.pb.swift; sourceTree = "<group>"; };
+		FA90B73920B59D9700043C89 /* ChannelPinMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPinMessage.pb.swift; sourceTree = "<group>"; };
 		FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientMuteRoom.pb.swift; sourceTree = "<group>"; };
 		FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientPinRoom.pb.swift; sourceTree = "<group>"; };
 		FAA1BDB41F98EE220010FE8A /* UserProfileSetBio.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileSetBio.pb.swift; sourceTree = "<group>"; };
@@ -379,6 +385,9 @@
 		FA5A9FF11F71ECEF00D925F5 /* ProtoBuffs */ = {
 			isa = PBXGroup;
 			children = (
+				FA90B73920B59D9700043C89 /* ChannelPinMessage.pb.swift */,
+				FA90B73720B59D9600043C89 /* ChannelUpdateReactionStatus.pb.swift */,
+				FA90B73820B59D9600043C89 /* GroupPinMessage.pb.swift */,
 				FAA1BDB11F98EDF70010FE8A /* ClientMuteRoom.pb.swift */,
 				FAA1BDB31F98EE220010FE8A /* ClientPinRoom.pb.swift */,
 				FAA1BDB51F98EE220010FE8A /* ClientRoomReport.pb.swift */,
@@ -671,6 +680,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA90B73A20B59D9700043C89 /* ChannelUpdateReactionStatus.pb.swift in Sources */,
+				FA90B73B20B59D9700043C89 /* GroupPinMessage.pb.swift in Sources */,
+				FA90B73C20B59D9700043C89 /* ChannelPinMessage.pb.swift in Sources */,
 				FAF5D2861F8D6C2000A26EE1 /* GroupAddModerator.pb.swift in Sources */,
 				FAF5D25D1F8D6C2000A26EE1 /* ChatDeleteMessage.pb.swift in Sources */,
 				FAF5D28F1F8D6C2000A26EE1 /* GroupEdit.pb.swift in Sources */,

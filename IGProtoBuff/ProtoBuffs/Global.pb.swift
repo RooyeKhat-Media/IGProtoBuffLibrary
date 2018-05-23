@@ -518,6 +518,7 @@ public struct IGPRoomMessageLog: SwiftProtobuf.Message {
     case missedVideoCall // = 11
     case missedScreenShare // = 12
     case missedSecretChat // = 13
+    case pinnedMessage // = 14
     case UNRECOGNIZED(Int)
 
     public init() {
@@ -540,6 +541,7 @@ public struct IGPRoomMessageLog: SwiftProtobuf.Message {
       case 11: self = .missedVideoCall
       case 12: self = .missedScreenShare
       case 13: self = .missedSecretChat
+      case 14: self = .pinnedMessage
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
@@ -560,6 +562,7 @@ public struct IGPRoomMessageLog: SwiftProtobuf.Message {
       case .missedVideoCall: return 11
       case .missedScreenShare: return 12
       case .missedSecretChat: return 13
+      case .pinnedMessage: return 14
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -936,6 +939,11 @@ public struct IGPRoomMessage: SwiftProtobuf.Message {
     set {_uniqueStorage()._igpPreviousMessageID = newValue}
   }
 
+  public var igpRandomID: Int64 {
+    get {return _storage._igpRandomID}
+    set {_uniqueStorage()._igpRandomID = newValue}
+  }
+
   public var igpExtraType: IGPRoomMessage.IGPExtraType {
     get {return _storage._igpExtraType}
     set {_uniqueStorage()._igpExtraType = newValue}
@@ -1159,6 +1167,15 @@ public struct IGPRoom: SwiftProtobuf.Message {
     get {return _storage._igpPinID}
     set {_uniqueStorage()._igpPinID = newValue}
   }
+
+  public var igpPinnedMessage: IGPRoomMessage {
+    get {return _storage._igpPinnedMessage ?? IGPRoomMessage()}
+    set {_uniqueStorage()._igpPinnedMessage = newValue}
+  }
+  /// Returns true if `igpPinnedMessage` has been explicitly set.
+  public var hasIgpPinnedMessage: Bool {return _storage._igpPinnedMessage != nil}
+  /// Clears the value of `igpPinnedMessage`. Subsequent reads from it will return its default value.
+  public mutating func clearIgpPinnedMessage() {_storage._igpPinnedMessage = nil}
 
   public var igpChatRoomExtra: IGPChatRoom {
     get {return _storage._igpChatRoomExtra ?? IGPChatRoom()}
@@ -1988,6 +2005,7 @@ extension IGPRoomMessageLog.IGPType: SwiftProtobuf._ProtoNameProviding {
     11: .same(proto: "MISSED_VIDEO_CALL"),
     12: .same(proto: "MISSED_SCREEN_SHARE"),
     13: .same(proto: "MISSED_SECRET_CHAT"),
+    14: .same(proto: "PINNED_MESSAGE"),
   ]
 }
 
@@ -2399,6 +2417,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
     16: .standard(proto: "IGP_forward_from"),
     17: .standard(proto: "IGP_reply_to"),
     18: .standard(proto: "IGP_previous_message_id"),
+    21: .standard(proto: "IGP_random_id"),
     19: .standard(proto: "IGP_extra_type"),
     20: .standard(proto: "IGP_channel_extra"),
   ]
@@ -2422,6 +2441,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
     var _igpForwardFrom: IGPRoomMessage? = nil
     var _igpReplyTo: IGPRoomMessage? = nil
     var _igpPreviousMessageID: Int64 = 0
+    var _igpRandomID: Int64 = 0
     var _igpExtraType: IGPRoomMessage.IGPExtraType = .noExtra
     var _igpChannelExtra: IGPRoomMessage.IGPChannelExtra? = nil
 
@@ -2448,6 +2468,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
       _igpForwardFrom = source._igpForwardFrom
       _igpReplyTo = source._igpReplyTo
       _igpPreviousMessageID = source._igpPreviousMessageID
+      _igpRandomID = source._igpRandomID
       _igpExtraType = source._igpExtraType
       _igpChannelExtra = source._igpChannelExtra
     }
@@ -2485,6 +2506,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
         case 18: try decoder.decodeSingularInt64Field(value: &_storage._igpPreviousMessageID)
         case 19: try decoder.decodeSingularEnumField(value: &_storage._igpExtraType)
         case 20: try decoder.decodeSingularMessageField(value: &_storage._igpChannelExtra)
+        case 21: try decoder.decodeSingularInt64Field(value: &_storage._igpRandomID)
         default: break
         }
       }
@@ -2553,6 +2575,9 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
       if let v = _storage._igpChannelExtra {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 20)
       }
+      if _storage._igpRandomID != 0 {
+        try visitor.visitSingularInt64Field(value: _storage._igpRandomID, fieldNumber: 21)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2580,6 +2605,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
         if _storage._igpForwardFrom != other_storage._igpForwardFrom {return false}
         if _storage._igpReplyTo != other_storage._igpReplyTo {return false}
         if _storage._igpPreviousMessageID != other_storage._igpPreviousMessageID {return false}
+        if _storage._igpRandomID != other_storage._igpRandomID {return false}
         if _storage._igpExtraType != other_storage._igpExtraType {return false}
         if _storage._igpChannelExtra != other_storage._igpChannelExtra {return false}
         return true
@@ -2837,6 +2863,7 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     14: .standard(proto: "IGP_first_unread_message"),
     15: .standard(proto: "IGP_room_mute"),
     16: .standard(proto: "IGP_pin_id"),
+    17: .standard(proto: "IGP_pinned_message"),
     11: .standard(proto: "IGP_chat_room_extra"),
     12: .standard(proto: "IGP_group_room_extra"),
     13: .standard(proto: "IGP_channel_room_extra"),
@@ -2856,6 +2883,7 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
     var _igpFirstUnreadMessage: IGPRoomMessage? = nil
     var _igpRoomMute: IGPRoomMute = .unmute
     var _igpPinID: Int64 = 0
+    var _igpPinnedMessage: IGPRoomMessage? = nil
     var _igpChatRoomExtra: IGPChatRoom? = nil
     var _igpGroupRoomExtra: IGPGroupRoom? = nil
     var _igpChannelRoomExtra: IGPChannelRoom? = nil
@@ -2878,6 +2906,7 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
       _igpFirstUnreadMessage = source._igpFirstUnreadMessage
       _igpRoomMute = source._igpRoomMute
       _igpPinID = source._igpPinID
+      _igpPinnedMessage = source._igpPinnedMessage
       _igpChatRoomExtra = source._igpChatRoomExtra
       _igpGroupRoomExtra = source._igpGroupRoomExtra
       _igpChannelRoomExtra = source._igpChannelRoomExtra
@@ -2912,6 +2941,7 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
         case 14: try decoder.decodeSingularMessageField(value: &_storage._igpFirstUnreadMessage)
         case 15: try decoder.decodeSingularEnumField(value: &_storage._igpRoomMute)
         case 16: try decoder.decodeSingularInt64Field(value: &_storage._igpPinID)
+        case 17: try decoder.decodeSingularMessageField(value: &_storage._igpPinnedMessage)
         default: break
         }
       }
@@ -2968,6 +2998,9 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
       if _storage._igpPinID != 0 {
         try visitor.visitSingularInt64Field(value: _storage._igpPinID, fieldNumber: 16)
       }
+      if let v = _storage._igpPinnedMessage {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 17)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2990,6 +3023,7 @@ extension IGPRoom: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._Prot
         if _storage._igpFirstUnreadMessage != other_storage._igpFirstUnreadMessage {return false}
         if _storage._igpRoomMute != other_storage._igpRoomMute {return false}
         if _storage._igpPinID != other_storage._igpPinID {return false}
+        if _storage._igpPinnedMessage != other_storage._igpPinnedMessage {return false}
         if _storage._igpChatRoomExtra != other_storage._igpChatRoomExtra {return false}
         if _storage._igpGroupRoomExtra != other_storage._igpGroupRoomExtra {return false}
         if _storage._igpChannelRoomExtra != other_storage._igpChannelRoomExtra {return false}

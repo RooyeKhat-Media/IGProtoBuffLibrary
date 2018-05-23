@@ -85,6 +85,11 @@ public struct IGPChatSendMessage: SwiftProtobuf.RequestMessage {
   /// Clears the value of `igpForwardFrom`. Subsequent reads from it will return its default value.
   public mutating func clearIgpForwardFrom() {_storage._igpForwardFrom = nil}
 
+  public var igpRandomID: Int64 {
+    get {return _storage._igpRandomID}
+    set {_uniqueStorage()._igpRandomID = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -141,6 +146,7 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
     7: .standard(proto: "IGP_contact"),
     8: .standard(proto: "IGP_reply_to"),
     9: .standard(proto: "IGP_forward_from"),
+    10: .standard(proto: "IGP_random_id"),
   ]
 
   fileprivate class _StorageClass {
@@ -153,6 +159,7 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
     var _igpContact: IGPRoomMessageContact? = nil
     var _igpReplyTo: Int64 = 0
     var _igpForwardFrom: IGPRoomMessageForwardFrom? = nil
+    var _igpRandomID: Int64 = 0
 
     static let defaultInstance = _StorageClass()
 
@@ -168,6 +175,7 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
       _igpContact = source._igpContact
       _igpReplyTo = source._igpReplyTo
       _igpForwardFrom = source._igpForwardFrom
+      _igpRandomID = source._igpRandomID
     }
   }
 
@@ -192,6 +200,7 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
         case 7: try decoder.decodeSingularMessageField(value: &_storage._igpContact)
         case 8: try decoder.decodeSingularInt64Field(value: &_storage._igpReplyTo)
         case 9: try decoder.decodeSingularMessageField(value: &_storage._igpForwardFrom)
+        case 10: try decoder.decodeSingularInt64Field(value: &_storage._igpRandomID)
         default: break
         }
       }
@@ -227,6 +236,9 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
       if let v = _storage._igpForwardFrom {
         try visitor.visitSingularMessageField(value: v, fieldNumber: 9)
       }
+      if _storage._igpRandomID != 0 {
+        try visitor.visitSingularInt64Field(value: _storage._igpRandomID, fieldNumber: 10)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -245,6 +257,7 @@ extension IGPChatSendMessage: SwiftProtobuf._MessageImplementationBase, SwiftPro
         if _storage._igpContact != other_storage._igpContact {return false}
         if _storage._igpReplyTo != other_storage._igpReplyTo {return false}
         if _storage._igpForwardFrom != other_storage._igpForwardFrom {return false}
+        if _storage._igpRandomID != other_storage._igpRandomID {return false}
         return true
       }
       if !storagesAreEqual {return false}
