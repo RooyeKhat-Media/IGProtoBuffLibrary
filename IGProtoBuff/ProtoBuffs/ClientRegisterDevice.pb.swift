@@ -38,7 +38,46 @@ public struct IGPClientRegisterDevice: SwiftProtobuf.RequestMessage {
     set {_uniqueStorage()._igpToken = newValue}
   }
 
+  public var igpType: IGPClientRegisterDevice.IGPType {
+    get {return _storage._igpType}
+    set {_uniqueStorage()._igpType = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public enum IGPType: SwiftProtobuf.Enum {
+    public typealias RawValue = Int
+    case generic // = 0
+    case android // = 1
+    case ios // = 2
+    case web // = 3
+    case UNRECOGNIZED(Int)
+
+    public init() {
+      self = .generic
+    }
+
+    public init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .generic
+      case 1: self = .android
+      case 2: self = .ios
+      case 3: self = .web
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    public var rawValue: Int {
+      switch self {
+      case .generic: return 0
+      case .android: return 1
+      case .ios: return 2
+      case .web: return 3
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
 
   public init() {}
 
@@ -73,11 +112,13 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
   public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
     1: .standard(proto: "IGP_request"),
     2: .standard(proto: "IGP_token"),
+    3: .standard(proto: "IGP_type"),
   ]
 
   fileprivate class _StorageClass {
     var _igpRequest: IGPRequest? = nil
     var _igpToken: String = String()
+    var _igpType: IGPClientRegisterDevice.IGPType = .generic
 
     static let defaultInstance = _StorageClass()
 
@@ -86,6 +127,7 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
     init(copying source: _StorageClass) {
       _igpRequest = source._igpRequest
       _igpToken = source._igpToken
+      _igpType = source._igpType
     }
   }
 
@@ -103,6 +145,7 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
         switch fieldNumber {
         case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
         case 2: try decoder.decodeSingularStringField(value: &_storage._igpToken)
+        case 3: try decoder.decodeSingularEnumField(value: &_storage._igpType)
         default: break
         }
       }
@@ -117,6 +160,9 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
       if !_storage._igpToken.isEmpty {
         try visitor.visitSingularStringField(value: _storage._igpToken, fieldNumber: 2)
       }
+      if _storage._igpType != .generic {
+        try visitor.visitSingularEnumField(value: _storage._igpType, fieldNumber: 3)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -128,6 +174,7 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
         let other_storage = _args.1
         if _storage._igpRequest != other_storage._igpRequest {return false}
         if _storage._igpToken != other_storage._igpToken {return false}
+        if _storage._igpType != other_storage._igpType {return false}
         return true
       }
       if !storagesAreEqual {return false}
@@ -135,6 +182,15 @@ extension IGPClientRegisterDevice: SwiftProtobuf._MessageImplementationBase, Swi
     if unknownFields != other.unknownFields {return false}
     return true
   }
+}
+
+extension IGPClientRegisterDevice.IGPType: SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "GENERIC"),
+    1: .same(proto: "ANDROID"),
+    2: .same(proto: "IOS"),
+    3: .same(proto: "WEB"),
+  ]
 }
 
 extension IGPClientRegisterDeviceResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
