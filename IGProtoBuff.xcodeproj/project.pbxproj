@@ -12,6 +12,7 @@
 		FA416B9120D8DEB50013DB17 /* MplGetTopupToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416B8F20D8DEB50013DB17 /* MplGetTopupToken.pb.swift */; };
 		FA416B9220D8DEB50013DB17 /* MplGetBillToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416B9020D8DEB50013DB17 /* MplGetBillToken.pb.swift */; };
 		FA76382E1E2FFD5E00C24391 /* IGProtoBuff.h in Headers */ = {isa = PBXBuildFile; fileRef = FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA8CF03720E2729400994811 /* WalletPaymentInit.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8CF03620E2729400994811 /* WalletPaymentInit.pb.swift */; };
 		FA90B73A20B59D9700043C89 /* ChannelUpdateReactionStatus.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73720B59D9600043C89 /* ChannelUpdateReactionStatus.pb.swift */; };
 		FA90B73B20B59D9700043C89 /* GroupPinMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73820B59D9600043C89 /* GroupPinMessage.pb.swift */; };
 		FA90B73C20B59D9700043C89 /* ChannelPinMessage.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA90B73920B59D9700043C89 /* ChannelPinMessage.pb.swift */; };
@@ -199,6 +200,7 @@
 		FA7638291E2FFD5E00C24391 /* IGProtoBuff.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGProtoBuff.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA76382C1E2FFD5E00C24391 /* IGProtoBuff.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGProtoBuff.h; sourceTree = "<group>"; };
 		FA76382D1E2FFD5E00C24391 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA8CF03620E2729400994811 /* WalletPaymentInit.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletPaymentInit.pb.swift; sourceTree = "<group>"; };
 		FA90B73720B59D9600043C89 /* ChannelUpdateReactionStatus.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelUpdateReactionStatus.pb.swift; sourceTree = "<group>"; };
 		FA90B73820B59D9600043C89 /* GroupPinMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPinMessage.pb.swift; sourceTree = "<group>"; };
 		FA90B73920B59D9700043C89 /* ChannelPinMessage.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelPinMessage.pb.swift; sourceTree = "<group>"; };
@@ -393,6 +395,7 @@
 		FA5A9FF11F71ECEF00D925F5 /* ProtoBuffs */ = {
 			isa = PBXGroup;
 			children = (
+				FA8CF03620E2729400994811 /* WalletPaymentInit.pb.swift */,
 				FA416B9020D8DEB50013DB17 /* MplGetBillToken.pb.swift */,
 				FA416B8F20D8DEB50013DB17 /* MplGetTopupToken.pb.swift */,
 				FA416B8D20D8DE890013DB17 /* ClientRegisterDevice.pb.swift */,
@@ -692,6 +695,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA8CF03720E2729400994811 /* WalletPaymentInit.pb.swift in Sources */,
 				FA90B73A20B59D9700043C89 /* ChannelUpdateReactionStatus.pb.swift in Sources */,
 				FA90B73B20B59D9700043C89 /* GroupPinMessage.pb.swift in Sources */,
 				FA90B73C20B59D9700043C89 /* ChannelPinMessage.pb.swift in Sources */,

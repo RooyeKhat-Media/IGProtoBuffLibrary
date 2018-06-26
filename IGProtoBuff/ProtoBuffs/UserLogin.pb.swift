@@ -124,6 +124,16 @@ public struct IGPUserLoginResponse: SwiftProtobuf.ResponseMessage {
     set {_uniqueStorage()._igpChatDeleteMessageForBothPeriod = newValue}
   }
 
+  public var igpWalletActive: Bool {
+    get {return _storage._igpWalletActive}
+    set {_uniqueStorage()._igpWalletActive = newValue}
+  }
+
+  public var igpMplActive: Bool {
+    get {return _storage._igpMplActive}
+    set {_uniqueStorage()._igpMplActive = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -282,6 +292,8 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     3: .standard(proto: "IGP_secondary_node_name"),
     4: .standard(proto: "IGP_update_available"),
     5: .standard(proto: "IGP_chat_delete_message_for_both_period"),
+    6: .standard(proto: "IGP_wallet_active"),
+    7: .standard(proto: "IGP_mpl_active"),
   ]
 
   fileprivate class _StorageClass {
@@ -290,6 +302,8 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     var _igpSecondaryNodeName: String = String()
     var _igpUpdateAvailable: Bool = false
     var _igpChatDeleteMessageForBothPeriod: Int32 = 0
+    var _igpWalletActive: Bool = false
+    var _igpMplActive: Bool = false
 
     static let defaultInstance = _StorageClass()
 
@@ -301,6 +315,8 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
       _igpSecondaryNodeName = source._igpSecondaryNodeName
       _igpUpdateAvailable = source._igpUpdateAvailable
       _igpChatDeleteMessageForBothPeriod = source._igpChatDeleteMessageForBothPeriod
+      _igpWalletActive = source._igpWalletActive
+      _igpMplActive = source._igpMplActive
     }
   }
 
@@ -321,6 +337,8 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
         case 3: try decoder.decodeSingularStringField(value: &_storage._igpSecondaryNodeName)
         case 4: try decoder.decodeSingularBoolField(value: &_storage._igpUpdateAvailable)
         case 5: try decoder.decodeSingularInt32Field(value: &_storage._igpChatDeleteMessageForBothPeriod)
+        case 6: try decoder.decodeSingularBoolField(value: &_storage._igpWalletActive)
+        case 7: try decoder.decodeSingularBoolField(value: &_storage._igpMplActive)
         default: break
         }
       }
@@ -344,6 +362,12 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
       if _storage._igpChatDeleteMessageForBothPeriod != 0 {
         try visitor.visitSingularInt32Field(value: _storage._igpChatDeleteMessageForBothPeriod, fieldNumber: 5)
       }
+      if _storage._igpWalletActive != false {
+        try visitor.visitSingularBoolField(value: _storage._igpWalletActive, fieldNumber: 6)
+      }
+      if _storage._igpMplActive != false {
+        try visitor.visitSingularBoolField(value: _storage._igpMplActive, fieldNumber: 7)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -358,6 +382,8 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
         if _storage._igpSecondaryNodeName != other_storage._igpSecondaryNodeName {return false}
         if _storage._igpUpdateAvailable != other_storage._igpUpdateAvailable {return false}
         if _storage._igpChatDeleteMessageForBothPeriod != other_storage._igpChatDeleteMessageForBothPeriod {return false}
+        if _storage._igpWalletActive != other_storage._igpWalletActive {return false}
+        if _storage._igpMplActive != other_storage._igpMplActive {return false}
         return true
       }
       if !storagesAreEqual {return false}
