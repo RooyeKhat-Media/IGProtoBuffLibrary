@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA2A506D20ECDA75002C5322 /* WalletRegister.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A506A20ECDA74002C5322 /* WalletRegister.pb.swift */; };
+		FA2A506E20ECDA75002C5322 /* BillInquiryMci.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A506B20ECDA74002C5322 /* BillInquiryMci.pb.swift */; };
+		FA2A506F20ECDA75002C5322 /* BillInquiryTelecom.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A506C20ECDA75002C5322 /* BillInquiryTelecom.pb.swift */; };
 		FA416B8C20D8DE610013DB17 /* WalletGetAccessToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416B8B20D8DE600013DB17 /* WalletGetAccessToken.pb.swift */; };
 		FA416B8E20D8DE890013DB17 /* ClientRegisterDevice.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416B8D20D8DE890013DB17 /* ClientRegisterDevice.pb.swift */; };
 		FA416B9120D8DEB50013DB17 /* MplGetTopupToken.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA416B8F20D8DEB50013DB17 /* MplGetTopupToken.pb.swift */; };
@@ -193,6 +196,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA2A506A20ECDA74002C5322 /* WalletRegister.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletRegister.pb.swift; sourceTree = "<group>"; };
+		FA2A506B20ECDA74002C5322 /* BillInquiryMci.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInquiryMci.pb.swift; sourceTree = "<group>"; };
+		FA2A506C20ECDA75002C5322 /* BillInquiryTelecom.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillInquiryTelecom.pb.swift; sourceTree = "<group>"; };
 		FA416B8B20D8DE600013DB17 /* WalletGetAccessToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletGetAccessToken.pb.swift; sourceTree = "<group>"; };
 		FA416B8D20D8DE890013DB17 /* ClientRegisterDevice.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientRegisterDevice.pb.swift; sourceTree = "<group>"; };
 		FA416B8F20D8DEB50013DB17 /* MplGetTopupToken.pb.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MplGetTopupToken.pb.swift; sourceTree = "<group>"; };
@@ -395,6 +401,9 @@
 		FA5A9FF11F71ECEF00D925F5 /* ProtoBuffs */ = {
 			isa = PBXGroup;
 			children = (
+				FA2A506B20ECDA74002C5322 /* BillInquiryMci.pb.swift */,
+				FA2A506C20ECDA75002C5322 /* BillInquiryTelecom.pb.swift */,
+				FA2A506A20ECDA74002C5322 /* WalletRegister.pb.swift */,
 				FA8CF03620E2729400994811 /* WalletPaymentInit.pb.swift */,
 				FA416B9020D8DEB50013DB17 /* MplGetBillToken.pb.swift */,
 				FA416B8F20D8DEB50013DB17 /* MplGetTopupToken.pb.swift */,
@@ -695,6 +704,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA2A506D20ECDA75002C5322 /* WalletRegister.pb.swift in Sources */,
+				FA2A506E20ECDA75002C5322 /* BillInquiryMci.pb.swift in Sources */,
+				FA2A506F20ECDA75002C5322 /* BillInquiryTelecom.pb.swift in Sources */,
 				FA8CF03720E2729400994811 /* WalletPaymentInit.pb.swift in Sources */,
 				FA90B73A20B59D9700043C89 /* ChannelUpdateReactionStatus.pb.swift in Sources */,
 				FA90B73B20B59D9700043C89 /* GroupPinMessage.pb.swift in Sources */,

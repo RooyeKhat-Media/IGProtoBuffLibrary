@@ -134,6 +134,11 @@ public struct IGPUserLoginResponse: SwiftProtobuf.ResponseMessage {
     set {_uniqueStorage()._igpMplActive = newValue}
   }
 
+  public var igpWalletAgreementAccepted: Bool {
+    get {return _storage._igpWalletAgreementAccepted}
+    set {_uniqueStorage()._igpWalletAgreementAccepted = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public init() {}
@@ -294,6 +299,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     5: .standard(proto: "IGP_chat_delete_message_for_both_period"),
     6: .standard(proto: "IGP_wallet_active"),
     7: .standard(proto: "IGP_mpl_active"),
+    8: .standard(proto: "IGP_wallet_agreement_accepted"),
   ]
 
   fileprivate class _StorageClass {
@@ -304,6 +310,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
     var _igpChatDeleteMessageForBothPeriod: Int32 = 0
     var _igpWalletActive: Bool = false
     var _igpMplActive: Bool = false
+    var _igpWalletAgreementAccepted: Bool = false
 
     static let defaultInstance = _StorageClass()
 
@@ -317,6 +324,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
       _igpChatDeleteMessageForBothPeriod = source._igpChatDeleteMessageForBothPeriod
       _igpWalletActive = source._igpWalletActive
       _igpMplActive = source._igpMplActive
+      _igpWalletAgreementAccepted = source._igpWalletAgreementAccepted
     }
   }
 
@@ -339,6 +347,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
         case 5: try decoder.decodeSingularInt32Field(value: &_storage._igpChatDeleteMessageForBothPeriod)
         case 6: try decoder.decodeSingularBoolField(value: &_storage._igpWalletActive)
         case 7: try decoder.decodeSingularBoolField(value: &_storage._igpMplActive)
+        case 8: try decoder.decodeSingularBoolField(value: &_storage._igpWalletAgreementAccepted)
         default: break
         }
       }
@@ -368,6 +377,9 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
       if _storage._igpMplActive != false {
         try visitor.visitSingularBoolField(value: _storage._igpMplActive, fieldNumber: 7)
       }
+      if _storage._igpWalletAgreementAccepted != false {
+        try visitor.visitSingularBoolField(value: _storage._igpWalletAgreementAccepted, fieldNumber: 8)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -384,6 +396,7 @@ extension IGPUserLoginResponse: SwiftProtobuf._MessageImplementationBase, SwiftP
         if _storage._igpChatDeleteMessageForBothPeriod != other_storage._igpChatDeleteMessageForBothPeriod {return false}
         if _storage._igpWalletActive != other_storage._igpWalletActive {return false}
         if _storage._igpMplActive != other_storage._igpMplActive {return false}
+        if _storage._igpWalletAgreementAccepted != other_storage._igpWalletAgreementAccepted {return false}
         return true
       }
       if !storagesAreEqual {return false}
