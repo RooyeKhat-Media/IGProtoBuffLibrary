@@ -172,6 +172,7 @@ public enum IGPRoomMessageType: SwiftProtobuf.Enum {
   case location // = 11
   case log // = 12
   case contact // = 13
+  case wallet // = 15
   case UNRECOGNIZED(Int)
 
   public init() {
@@ -195,6 +196,7 @@ public enum IGPRoomMessageType: SwiftProtobuf.Enum {
     case 12: self = .log
     case 13: self = .contact
     case 14: self = .gifText
+    case 15: self = .wallet
     default: self = .UNRECOGNIZED(rawValue)
     }
   }
@@ -216,6 +218,7 @@ public enum IGPRoomMessageType: SwiftProtobuf.Enum {
     case .log: return 12
     case .contact: return 13
     case .gifText: return 14
+    case .wallet: return 15
     case .UNRECOGNIZED(let i): return i
     }
   }
@@ -634,6 +637,81 @@ public struct IGPRoomMessageContact: SwiftProtobuf.Message {
   public init() {}
 }
 
+public struct IGPRoomMessageWallet: SwiftProtobuf.Message {
+  // SwiftProtobuf.Message conformance is added in an extension below. See the
+  // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+  // methods supported on all messages.
+
+  public var igpType: IGPRoomMessageWallet.IGPType {
+    get {return _storage._igpType}
+    set {_uniqueStorage()._igpType = newValue}
+  }
+
+  public var igpMoneyTransfer: IGPRoomMessageWallet.IGPMoneyTransfer {
+    get {return _storage._igpMoneyTransfer ?? IGPRoomMessageWallet.IGPMoneyTransfer()}
+    set {_uniqueStorage()._igpMoneyTransfer = newValue}
+  }
+  /// Returns true if `igpMoneyTransfer` has been explicitly set.
+  public var hasIgpMoneyTransfer: Bool {return _storage._igpMoneyTransfer != nil}
+  /// Clears the value of `igpMoneyTransfer`. Subsequent reads from it will return its default value.
+  public mutating func clearIgpMoneyTransfer() {_storage._igpMoneyTransfer = nil}
+
+  public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public enum IGPType: SwiftProtobuf.Enum {
+    public typealias RawValue = Int
+    case moneyTransfer // = 0
+    case UNRECOGNIZED(Int)
+
+    public init() {
+      self = .moneyTransfer
+    }
+
+    public init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .moneyTransfer
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    public var rawValue: Int {
+      switch self {
+      case .moneyTransfer: return 0
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
+
+  public struct IGPMoneyTransfer: SwiftProtobuf.Message {
+    // SwiftProtobuf.Message conformance is added in an extension below. See the
+    // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
+    // methods supported on all messages.
+
+    public var igpFromUserID: Int64 = 0
+
+    public var igpToUserID: Int64 = 0
+
+    public var igpAmount: Int64 = 0
+
+    public var igpTraceNumber: Int64 = 0
+
+    public var igpInvoiceNumber: Int64 = 0
+
+    public var igpPayTime: Int32 = 0
+
+    public var igpDescription: String = String()
+
+    public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+    public init() {}
+  }
+
+  public init() {}
+
+  fileprivate var _storage = _StorageClass.defaultInstance
+}
+
 public struct IGPRoomMessageForwardFrom: SwiftProtobuf.Message {
   // SwiftProtobuf.Message conformance is added in an extension below. See the
   // `Message` and `Message+*Additions` files in the SwiftProtobuf library for
@@ -900,6 +978,15 @@ public struct IGPRoomMessage: SwiftProtobuf.Message {
   public var hasIgpContact: Bool {return _storage._igpContact != nil}
   /// Clears the value of `igpContact`. Subsequent reads from it will return its default value.
   public mutating func clearIgpContact() {_storage._igpContact = nil}
+
+  public var igpWallet: IGPRoomMessageWallet {
+    get {return _storage._igpWallet ?? IGPRoomMessageWallet()}
+    set {_uniqueStorage()._igpWallet = newValue}
+  }
+  /// Returns true if `igpWallet` has been explicitly set.
+  public var hasIgpWallet: Bool {return _storage._igpWallet != nil}
+  /// Clears the value of `igpWallet`. Subsequent reads from it will return its default value.
+  public mutating func clearIgpWallet() {_storage._igpWallet = nil}
 
   public var igpEdited: Bool {
     get {return _storage._igpEdited}
@@ -1813,6 +1900,7 @@ extension IGPRoomMessageType: SwiftProtobuf._ProtoNameProviding {
     12: .same(proto: "LOG"),
     13: .same(proto: "CONTACT"),
     14: .same(proto: "GIF_TEXT"),
+    15: .same(proto: "WALLET"),
   ]
 }
 
@@ -2098,6 +2186,146 @@ extension IGPRoomMessageContact: SwiftProtobuf._MessageImplementationBase, Swift
     if self.igpNickname != other.igpNickname {return false}
     if self.igpPhone != other.igpPhone {return false}
     if self.igpEmail != other.igpEmail {return false}
+    if unknownFields != other.unknownFields {return false}
+    return true
+  }
+}
+
+extension IGPRoomMessageWallet: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = "IGPRoomMessageWallet"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .standard(proto: "IGP_type"),
+    2: .standard(proto: "IGP_money_transfer"),
+  ]
+
+  fileprivate class _StorageClass {
+    var _igpType: IGPRoomMessageWallet.IGPType = .moneyTransfer
+    var _igpMoneyTransfer: IGPRoomMessageWallet.IGPMoneyTransfer? = nil
+
+    static let defaultInstance = _StorageClass()
+
+    private init() {}
+
+    init(copying source: _StorageClass) {
+      _igpType = source._igpType
+      _igpMoneyTransfer = source._igpMoneyTransfer
+    }
+  }
+
+  fileprivate mutating func _uniqueStorage() -> _StorageClass {
+    if !isKnownUniquelyReferenced(&_storage) {
+      _storage = _StorageClass(copying: _storage)
+    }
+    return _storage
+  }
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    _ = _uniqueStorage()
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      while let fieldNumber = try decoder.nextFieldNumber() {
+        switch fieldNumber {
+        case 1: try decoder.decodeSingularEnumField(value: &_storage._igpType)
+        case 2: try decoder.decodeSingularMessageField(value: &_storage._igpMoneyTransfer)
+        default: break
+        }
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    try withExtendedLifetime(_storage) { (_storage: _StorageClass) in
+      if _storage._igpType != .moneyTransfer {
+        try visitor.visitSingularEnumField(value: _storage._igpType, fieldNumber: 1)
+      }
+      if let v = _storage._igpMoneyTransfer {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 2)
+      }
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public func _protobuf_generated_isEqualTo(other: IGPRoomMessageWallet) -> Bool {
+    if _storage !== other._storage {
+      let storagesAreEqual: Bool = withExtendedLifetime((_storage, other._storage)) { (_args: (_StorageClass, _StorageClass)) in
+        let _storage = _args.0
+        let other_storage = _args.1
+        if _storage._igpType != other_storage._igpType {return false}
+        if _storage._igpMoneyTransfer != other_storage._igpMoneyTransfer {return false}
+        return true
+      }
+      if !storagesAreEqual {return false}
+    }
+    if unknownFields != other.unknownFields {return false}
+    return true
+  }
+}
+
+extension IGPRoomMessageWallet.IGPType: SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "MONEY_TRANSFER"),
+  ]
+}
+
+extension IGPRoomMessageWallet.IGPMoneyTransfer: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
+  public static let protoMessageName: String = IGPRoomMessageWallet.protoMessageName + ".IGPMoneyTransfer"
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    1: .standard(proto: "IGP_from_user_id"),
+    2: .standard(proto: "IGP_to_user_id"),
+    3: .standard(proto: "IGP_amount"),
+    4: .standard(proto: "IGP_trace_number"),
+    5: .standard(proto: "IGP_invoice_number"),
+    6: .standard(proto: "IGP_pay_time"),
+    7: .standard(proto: "IGP_description"),
+  ]
+
+  public mutating func decodeMessage<D: SwiftProtobuf.Decoder>(decoder: inout D) throws {
+    while let fieldNumber = try decoder.nextFieldNumber() {
+      switch fieldNumber {
+      case 1: try decoder.decodeSingularInt64Field(value: &self.igpFromUserID)
+      case 2: try decoder.decodeSingularInt64Field(value: &self.igpToUserID)
+      case 3: try decoder.decodeSingularInt64Field(value: &self.igpAmount)
+      case 4: try decoder.decodeSingularInt64Field(value: &self.igpTraceNumber)
+      case 5: try decoder.decodeSingularInt64Field(value: &self.igpInvoiceNumber)
+      case 6: try decoder.decodeSingularInt32Field(value: &self.igpPayTime)
+      case 7: try decoder.decodeSingularStringField(value: &self.igpDescription)
+      default: break
+      }
+    }
+  }
+
+  public func traverse<V: SwiftProtobuf.Visitor>(visitor: inout V) throws {
+    if self.igpFromUserID != 0 {
+      try visitor.visitSingularInt64Field(value: self.igpFromUserID, fieldNumber: 1)
+    }
+    if self.igpToUserID != 0 {
+      try visitor.visitSingularInt64Field(value: self.igpToUserID, fieldNumber: 2)
+    }
+    if self.igpAmount != 0 {
+      try visitor.visitSingularInt64Field(value: self.igpAmount, fieldNumber: 3)
+    }
+    if self.igpTraceNumber != 0 {
+      try visitor.visitSingularInt64Field(value: self.igpTraceNumber, fieldNumber: 4)
+    }
+    if self.igpInvoiceNumber != 0 {
+      try visitor.visitSingularInt64Field(value: self.igpInvoiceNumber, fieldNumber: 5)
+    }
+    if self.igpPayTime != 0 {
+      try visitor.visitSingularInt32Field(value: self.igpPayTime, fieldNumber: 6)
+    }
+    if !self.igpDescription.isEmpty {
+      try visitor.visitSingularStringField(value: self.igpDescription, fieldNumber: 7)
+    }
+    try unknownFields.traverse(visitor: &visitor)
+  }
+
+  public func _protobuf_generated_isEqualTo(other: IGPRoomMessageWallet.IGPMoneyTransfer) -> Bool {
+    if self.igpFromUserID != other.igpFromUserID {return false}
+    if self.igpToUserID != other.igpToUserID {return false}
+    if self.igpAmount != other.igpAmount {return false}
+    if self.igpTraceNumber != other.igpTraceNumber {return false}
+    if self.igpInvoiceNumber != other.igpInvoiceNumber {return false}
+    if self.igpPayTime != other.igpPayTime {return false}
+    if self.igpDescription != other.igpDescription {return false}
     if unknownFields != other.unknownFields {return false}
     return true
   }
@@ -2423,6 +2651,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
     9: .standard(proto: "IGP_location"),
     10: .standard(proto: "IGP_log"),
     11: .standard(proto: "IGP_contact"),
+    22: .standard(proto: "IGP_wallet"),
     12: .standard(proto: "IGP_edited"),
     13: .standard(proto: "IGP_create_time"),
     14: .standard(proto: "IGP_update_time"),
@@ -2447,6 +2676,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
     var _igpLocation: IGPRoomMessageLocation? = nil
     var _igpLog: IGPRoomMessageLog? = nil
     var _igpContact: IGPRoomMessageContact? = nil
+    var _igpWallet: IGPRoomMessageWallet? = nil
     var _igpEdited: Bool = false
     var _igpCreateTime: Int32 = 0
     var _igpUpdateTime: Int32 = 0
@@ -2474,6 +2704,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
       _igpLocation = source._igpLocation
       _igpLog = source._igpLog
       _igpContact = source._igpContact
+      _igpWallet = source._igpWallet
       _igpEdited = source._igpEdited
       _igpCreateTime = source._igpCreateTime
       _igpUpdateTime = source._igpUpdateTime
@@ -2520,6 +2751,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
         case 19: try decoder.decodeSingularEnumField(value: &_storage._igpExtraType)
         case 20: try decoder.decodeSingularMessageField(value: &_storage._igpChannelExtra)
         case 21: try decoder.decodeSingularInt64Field(value: &_storage._igpRandomID)
+        case 22: try decoder.decodeSingularMessageField(value: &_storage._igpWallet)
         default: break
         }
       }
@@ -2591,6 +2823,9 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
       if _storage._igpRandomID != 0 {
         try visitor.visitSingularInt64Field(value: _storage._igpRandomID, fieldNumber: 21)
       }
+      if let v = _storage._igpWallet {
+        try visitor.visitSingularMessageField(value: v, fieldNumber: 22)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -2611,6 +2846,7 @@ extension IGPRoomMessage: SwiftProtobuf._MessageImplementationBase, SwiftProtobu
         if _storage._igpLocation != other_storage._igpLocation {return false}
         if _storage._igpLog != other_storage._igpLog {return false}
         if _storage._igpContact != other_storage._igpContact {return false}
+        if _storage._igpWallet != other_storage._igpWallet {return false}
         if _storage._igpEdited != other_storage._igpEdited {return false}
         if _storage._igpCreateTime != other_storage._igpCreateTime {return false}
         if _storage._igpUpdateTime != other_storage._igpUpdateTime {return false}

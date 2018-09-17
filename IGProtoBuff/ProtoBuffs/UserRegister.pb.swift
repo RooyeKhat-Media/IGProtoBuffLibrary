@@ -43,7 +43,43 @@ public struct IGPUserRegister: SwiftProtobuf.RequestMessage {
     set {_uniqueStorage()._igpCountryCode = newValue}
   }
 
+  public var igpPreferenceMethod: IGPUserRegister.IGPPreferenceMethod {
+    get {return _storage._igpPreferenceMethod}
+    set {_uniqueStorage()._igpPreferenceMethod = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
+
+  public enum IGPPreferenceMethod: SwiftProtobuf.Enum {
+    public typealias RawValue = Int
+    case verifyCodeAuto // = 0
+    case verifyCodeSms // = 1
+    case verifyCodeCall // = 2
+    case UNRECOGNIZED(Int)
+
+    public init() {
+      self = .verifyCodeAuto
+    }
+
+    public init?(rawValue: Int) {
+      switch rawValue {
+      case 0: self = .verifyCodeAuto
+      case 1: self = .verifyCodeSms
+      case 2: self = .verifyCodeCall
+      default: self = .UNRECOGNIZED(rawValue)
+      }
+    }
+
+    public var rawValue: Int {
+      switch self {
+      case .verifyCodeAuto: return 0
+      case .verifyCodeSms: return 1
+      case .verifyCodeCall: return 2
+      case .UNRECOGNIZED(let i): return i
+      }
+    }
+
+  }
 
   public init() {}
 
@@ -104,6 +140,11 @@ public struct IGPUserRegisterResponse: SwiftProtobuf.ResponseMessage {
     set {_uniqueStorage()._igpVerifyCodeDigitCount = newValue}
   }
 
+  public var igpCallMethodSupported: Bool {
+    get {return _storage._igpCallMethodSupported}
+    set {_uniqueStorage()._igpCallMethodSupported = newValue}
+  }
+
   public var unknownFields = SwiftProtobuf.UnknownStorage()
 
   public enum IGPMethod: SwiftProtobuf.Enum {
@@ -111,6 +152,7 @@ public struct IGPUserRegisterResponse: SwiftProtobuf.ResponseMessage {
     case verifyCodeSms // = 0
     case verifyCodeSocket // = 1
     case verifyCodeSmsSocket // = 2
+    case verifyCodeCall // = 3
     case UNRECOGNIZED(Int)
 
     public init() {
@@ -122,6 +164,7 @@ public struct IGPUserRegisterResponse: SwiftProtobuf.ResponseMessage {
       case 0: self = .verifyCodeSms
       case 1: self = .verifyCodeSocket
       case 2: self = .verifyCodeSmsSocket
+      case 3: self = .verifyCodeCall
       default: self = .UNRECOGNIZED(rawValue)
       }
     }
@@ -131,6 +174,7 @@ public struct IGPUserRegisterResponse: SwiftProtobuf.ResponseMessage {
       case .verifyCodeSms: return 0
       case .verifyCodeSocket: return 1
       case .verifyCodeSmsSocket: return 2
+      case .verifyCodeCall: return 3
       case .UNRECOGNIZED(let i): return i
       }
     }
@@ -150,12 +194,14 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
     1: .standard(proto: "IGP_request"),
     2: .standard(proto: "IGP_phone_number"),
     3: .standard(proto: "IGP_country_code"),
+    4: .standard(proto: "IGP_preference_method"),
   ]
 
   fileprivate class _StorageClass {
     var _igpRequest: IGPRequest? = nil
     var _igpPhoneNumber: Int64 = 0
     var _igpCountryCode: String = String()
+    var _igpPreferenceMethod: IGPUserRegister.IGPPreferenceMethod = .verifyCodeAuto
 
     static let defaultInstance = _StorageClass()
 
@@ -165,6 +211,7 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
       _igpRequest = source._igpRequest
       _igpPhoneNumber = source._igpPhoneNumber
       _igpCountryCode = source._igpCountryCode
+      _igpPreferenceMethod = source._igpPreferenceMethod
     }
   }
 
@@ -183,6 +230,7 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
         case 1: try decoder.decodeSingularMessageField(value: &_storage._igpRequest)
         case 2: try decoder.decodeSingularInt64Field(value: &_storage._igpPhoneNumber)
         case 3: try decoder.decodeSingularStringField(value: &_storage._igpCountryCode)
+        case 4: try decoder.decodeSingularEnumField(value: &_storage._igpPreferenceMethod)
         default: break
         }
       }
@@ -200,6 +248,9 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
       if !_storage._igpCountryCode.isEmpty {
         try visitor.visitSingularStringField(value: _storage._igpCountryCode, fieldNumber: 3)
       }
+      if _storage._igpPreferenceMethod != .verifyCodeAuto {
+        try visitor.visitSingularEnumField(value: _storage._igpPreferenceMethod, fieldNumber: 4)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -212,6 +263,7 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
         if _storage._igpRequest != other_storage._igpRequest {return false}
         if _storage._igpPhoneNumber != other_storage._igpPhoneNumber {return false}
         if _storage._igpCountryCode != other_storage._igpCountryCode {return false}
+        if _storage._igpPreferenceMethod != other_storage._igpPreferenceMethod {return false}
         return true
       }
       if !storagesAreEqual {return false}
@@ -219,6 +271,14 @@ extension IGPUserRegister: SwiftProtobuf._MessageImplementationBase, SwiftProtob
     if unknownFields != other.unknownFields {return false}
     return true
   }
+}
+
+extension IGPUserRegister.IGPPreferenceMethod: SwiftProtobuf._ProtoNameProviding {
+  public static let _protobuf_nameMap: SwiftProtobuf._NameMap = [
+    0: .same(proto: "VERIFY_CODE_AUTO"),
+    1: .same(proto: "VERIFY_CODE_SMS"),
+    2: .same(proto: "VERIFY_CODE_CALL"),
+  ]
 }
 
 extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, SwiftProtobuf._ProtoNameProviding {
@@ -233,6 +293,7 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
     7: .standard(proto: "IGP_sms_number"),
     8: .standard(proto: "IGP_verify_code_regex"),
     9: .standard(proto: "IGP_verify_code_digit_count"),
+    10: .standard(proto: "IGP_call_method_supported"),
   ]
 
   fileprivate class _StorageClass {
@@ -245,6 +306,7 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
     var _igpSmsNumber: [Int64] = []
     var _igpVerifyCodeRegex: String = String()
     var _igpVerifyCodeDigitCount: Int32 = 0
+    var _igpCallMethodSupported: Bool = false
 
     static let defaultInstance = _StorageClass()
 
@@ -260,6 +322,7 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
       _igpSmsNumber = source._igpSmsNumber
       _igpVerifyCodeRegex = source._igpVerifyCodeRegex
       _igpVerifyCodeDigitCount = source._igpVerifyCodeDigitCount
+      _igpCallMethodSupported = source._igpCallMethodSupported
     }
   }
 
@@ -284,6 +347,7 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
         case 7: try decoder.decodeRepeatedInt64Field(value: &_storage._igpSmsNumber)
         case 8: try decoder.decodeSingularStringField(value: &_storage._igpVerifyCodeRegex)
         case 9: try decoder.decodeSingularInt32Field(value: &_storage._igpVerifyCodeDigitCount)
+        case 10: try decoder.decodeSingularBoolField(value: &_storage._igpCallMethodSupported)
         default: break
         }
       }
@@ -319,6 +383,9 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
       if _storage._igpVerifyCodeDigitCount != 0 {
         try visitor.visitSingularInt32Field(value: _storage._igpVerifyCodeDigitCount, fieldNumber: 9)
       }
+      if _storage._igpCallMethodSupported != false {
+        try visitor.visitSingularBoolField(value: _storage._igpCallMethodSupported, fieldNumber: 10)
+      }
     }
     try unknownFields.traverse(visitor: &visitor)
   }
@@ -337,6 +404,7 @@ extension IGPUserRegisterResponse: SwiftProtobuf._MessageImplementationBase, Swi
         if _storage._igpSmsNumber != other_storage._igpSmsNumber {return false}
         if _storage._igpVerifyCodeRegex != other_storage._igpVerifyCodeRegex {return false}
         if _storage._igpVerifyCodeDigitCount != other_storage._igpVerifyCodeDigitCount {return false}
+        if _storage._igpCallMethodSupported != other_storage._igpCallMethodSupported {return false}
         return true
       }
       if !storagesAreEqual {return false}
@@ -351,5 +419,6 @@ extension IGPUserRegisterResponse.IGPMethod: SwiftProtobuf._ProtoNameProviding {
     0: .same(proto: "VERIFY_CODE_SMS"),
     1: .same(proto: "VERIFY_CODE_SOCKET"),
     2: .same(proto: "VERIFY_CODE_SMS_SOCKET"),
+    3: .same(proto: "VERIFY_CODE_CALL"),
   ]
 }
